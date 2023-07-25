@@ -1,0 +1,32 @@
+form
+{
+    width: 100%;
+}
+.main
+{
+    max-width: 300px;
+    margin: 30px auto 0;
+    width: 100%;
+    font-size: 20px;
+}
+input[type='password'],input[type='text']
+{
+    margin: 10px auto 0;
+    padding: 15px 10px 15px 10px;
+    font-size: 22px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    color: #000;
+}
+.icon
+{
+    font-size: 22px;
+    position: relative;
+}
+.icon i 
+{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    cursor: pointer;
+}

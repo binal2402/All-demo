@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+</head>
+<body>
+    <div class="top_title">
+        <p></p>
+    </div>
+    <div class="logomain1">
+        <img src='' alt="" class="logomain">
+    </div>
+    <div class="login">
+        <button data-tf-popup="zPQJBdz0"  data-tf-iframe-props="title=My typeform" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#FFFFFF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">login</button><script src="//embed.typeform.com/next/embed.js"></script>
+    </div>
+    <form action="" class="login_from">
+        <input type="button"  class="login_btn" />
+    </form>
+    <script>
+        var client = contentful.createClient({
+            space: 'eiu1lmaisw4n',
+            accessToken: 'zcj0iKVq4vdeMKeiJpGIXK4S403VR8GE4gzyudjhBLI',
+        });
+
+        client.getEntry('7hnnHl4TL19v3Y9i4tPNFg').then(function (entry) {
+            // logs the entry metadata
+            // console.log( entry.fields.logo.fields.file.url);
+            let logo = entry.fields.logo.fields.file.url
+            let logomain = document.querySelector(".logomain");
+            logomain.src  = logo
+            // logs the field with ID title
+            let title = entry.fields.name.content[0].content[0].value;
+            let add_css = entry.fields.name.content[0].content[0];
+            
+            console.log("----",entry.fields.form);
+            let maintitle = document.querySelector(".top_title");
+            maintitle.textContent  = title
+            maintitle.style.fontWeight = add_css.marks[0].type.toString();
+            maintitle.style.textDecoration = add_css.marks[1].type.toString();
+
+            let login = document.querySelector(".login_btn");
+            login.addEventListener("click",function () {
+                console.log("helloo");
+                window.open(`${entry.fields.form}`)
+                window.location.reload()
+            })
+            // function fromopen() {
+            //     console.log("==============");
+            //     window.open(`${entry.fields.form}`,'_blank','resizable=yes')
+            // }
+
+            // login.src = entry.fields.form
+
+        });
+    </script>
+    <style>
+        .top_title{
+            background-color: #3e87ff;
+            color: #FFFFFF;
+            padding: 15px;
+            text-align: center;
+        }
+        .logomain1,.login{
+            margin: 10px;
+            text-align: center;
+        }
+   
+    </style>
+</body>
+</html>

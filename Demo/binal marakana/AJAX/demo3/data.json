@@ -1,0 +1,25 @@
+{
+    "items": [
+      {
+        "firstName": "Krish",
+        "lastName": "Lee",
+        "phoneNumber": "123456",
+         "emailAddress": "krish.lee@learningcontainer.com"
+      },{
+        "firstName": "racks",
+        "lastName": "jacson",
+        "phoneNumber": "222222222",
+        "emailAddress": "devid.neo@learningcontainer.com"
+      },{
+        "firstName": "denial",
+         "lastName": "roast",
+         "phoneNumber": "33333333",
+         "emailAddress": "denial.roast@learningcontainer.com"
+      }
+    ],
+    "obj": {
+      "number": 1.2345e-6,
+      "enabled": true
+    }
+    
+  }

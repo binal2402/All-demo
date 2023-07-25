@@ -1,0 +1,15 @@
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+.box1 {
+  margin: 20px;
+}
+.box,
+.box1 {
+  background-color: #5B83AD;
+  color: #ffffff;
+  padding: 10px;
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}

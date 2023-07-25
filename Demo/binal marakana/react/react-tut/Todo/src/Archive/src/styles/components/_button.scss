@@ -1,0 +1,60 @@
+// Button
+.sd_btn{
+	@include defaultFontStyleFpg($font_family_medium, 22, 22, $purple); 
+	letter-spacing: -0.53px;
+	text-align: center;
+	border: 2px solid $purple;
+	background: transparent;
+	padding: 20px 30px;
+	cursor: pointer;
+	outline: none;
+	@include transitionStyle(0.3, linear);
+	&_purple{
+		border: 2px solid $purple;
+		color: $purple;
+		&:hover{
+			background: $purple;
+			color: $white !important;
+		}
+	}
+	&_darkGreen{
+		border: 2px solid $darkGreen;
+		color: $darkGreen;
+		&:hover{
+			background: $darkGreen;
+			color: $white !important;
+		}
+	}
+	&_black{
+		border: 2px solid $black;
+		color: $black;
+		&:hover{
+			background: $black;
+			color: $white !important;
+		}
+	}
+	&_pink{
+		border: 2px solid $pink;
+		color: $pink;
+		&:hover{
+			background: $pink;
+			color: $white !important;
+		}
+	}
+	&_lightGreen{
+		border: 2px solid $lightGreen;
+		color: $lightGreen;
+		&:hover{
+			background: $lightGreen;
+			color: $black !important;
+		}
+	}
+
+	&:hover{
+		svg {
+			path, polygon{
+				fill: $white;
+			}
+		}
+	}
+}

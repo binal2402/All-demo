@@ -1,0 +1,48 @@
+.form_inner_sub_title{
+    border-bottom: none;
+    padding-bottom: 16px;
+    margin-bottom: 12px;
+    @include mediaQuery($mobile){
+        flex-wrap: wrap;
+    }
+    h5{
+        @include defaultFontStyle(400,22,23,$black);
+        letter-spacing: -0.53px;
+        button{
+            margin-left: 15px;
+        }
+        @include mediaQuery($mobile){
+            @include mediaFontStyle(18, 22);
+        }
+    }
+    p{
+        @include defaultFontStyle(400,14,18,$black);
+        margin-left: 20px;
+        @include mediaQuery($mobile){
+            margin-left: 0;
+            margin-top: 5px;
+        }
+    }
+}
+.field_row_inner{
+    .field_input {
+        textarea{max-width: 100%;}
+    }
+    label{
+        .sd_question_button{
+            margin-left: 20px;
+        }
+    }
+}
+.director{
+    border-bottom: 2px solid $gainsboro;
+    padding-bottom: 40px ;
+    margin-bottom: 35px ;
+    &:last-child{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .team_info_section {
+        padding-top: 0;
+    }
+}

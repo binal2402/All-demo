@@ -1,0 +1,153 @@
+// Home page
+
+// Filters Section
+.home {
+        
+    .sd_filter_category_section{
+        background: $pink;
+        border-top: 2px solid $black;
+        padding: 35px 0;
+        @include mediaQuery($mobile) { 
+            padding: 35px 2px 32px 3px;
+        }
+        .sd_filter_category_wpr{
+            @include mediaQuery($ipad) { 
+                align-items: flex-start;
+            }
+            .sd_category_btn, .sd_filter_category_right{
+                display: none;
+            }
+            .sd_filter_category_left{
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    // Filters
+    .sd_filters_wpr{
+        background: $pink;
+    }
+    .sd_filter_checkbox{
+        label{
+            &:before{
+                background: $pink;
+            }
+        }
+    }
+    .sd_explore_section {
+        .sd_explore_search_wpr{
+            @include mediaQuery($ipad) { 
+                display: block;
+            }
+        }
+    }
+}
+
+// Program List Section
+.sd_program_list_section{
+    background: $white;
+    padding-top: 33px;
+    overflow: hidden;
+    // margin-top: -1px;
+    border-top: 2px solid $black;
+    @include mediaQuery($mobile) { 
+        padding-top: 0;
+    }
+    .sd_inner_container{
+        padding: 0 17px 0 18px;
+    }
+    .sd_program_list_header{
+        padding-bottom: 30px;
+        @include mediaQuery($mobile) { 
+            padding: 0 17px 30px 18px;  
+            display: none;
+        }
+    }
+
+    @include mediaQuery($mobile) { 
+        .sd_inner_container{
+            padding: 0;
+        }
+    }
+    .sd_program_list_wpr{
+        @include flex_wrap;
+        margin: 0 -17px;        
+    }
+}
+
+// Explore events section 
+.sd_explore_events_section{
+    // background: $pink;
+    .sd_explore_events_wpr{
+        @include flex;
+        border-top: 2px solid $black;
+        @include border_bottom_black;
+        @include mediaQuery($ipad) {
+            @include flex_dir_column;
+        }
+    }
+    .sd_explore_events_block{
+        max-width: 50%;
+        width: 100%;
+        @include mediaQuery($ipad) {
+            max-width: 100%;
+        }
+        &:first-child{
+            border-right: 2px solid $black;
+            background: $lygreen;
+            @include mediaQuery($ipad) {
+                border-right: 0;
+                @include border_bottom_black;
+            }
+        }
+        &:last-child{
+            background: $lylightgreen;
+        }
+        .sd_explore_events_inner{
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            @include mediaQuery($ipad) {
+                border-right: 0;
+                text-align: left;
+                max-width: 100%;
+                padding: 50px 17px 50px 18px;
+            }
+        }
+        .sd_explore_events_header{
+            a{
+                @include defaultFontStyleFpg($font_family_normal, 55, 60, $black);
+                letter-spacing: -1.32px;
+                text-transform: uppercase;
+                padding-top: 25px;
+                display: block;
+                @include mediaQuery($large) {
+                    @include mediaFontStyle(36, 36);
+                    letter-spacing: -0.86px;
+                }
+                span{
+                    display: block;
+                }
+            }
+        }
+
+        p{
+            padding-bottom: 15px;
+            @include mediaQuery($ipad) {
+                padding-top: 12px;
+            }
+            a{
+                color: $black;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+// Sponsored Section
+.sd_home_sponsors_section{
+    background: $white;
+}

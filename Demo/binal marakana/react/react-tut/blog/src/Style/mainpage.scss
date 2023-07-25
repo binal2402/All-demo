@@ -1,0 +1,19 @@
+
+.mainpage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: $redcolor;
+    }
+    button
+    {
+        @include btnstyle($blackColor, 24px);
+    }
+}
+
+button
+{
+    @include btnstyle($redcolor, 14px);
+}

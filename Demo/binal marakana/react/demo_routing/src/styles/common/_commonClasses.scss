@@ -1,0 +1,50 @@
+/* Display */
+.sd_block { display: block; }
+.sd_inlineblock { display: inline-block; }
+.sd_hidden { display: none; }
+
+/* Pointer */
+.sd_p_cursor{ cursor: pointer; }
+.sd_events_none { pointer-events: none; }
+
+// Border
+.border_none { border: 0 !important; }
+
+// Opacity
+.opacity_0 {
+    opacity: 0;
+}
+
+/* Flex */
+.sd_flex { @include flex; }
+.sd_flexwrap { @include f_wrap; }
+.sd_aligncenter { @include align_center; }
+.sd_justbetween { @include justify_between; }
+.sd_justcenter { @include justify_center; }
+.sd_flex_1_auto{@include flex_1_auto}
+/* Position */
+.sd_relative { position: relative; }
+.sd_absolute { position: absolute; }
+
+/* Text Alignment */
+.sd_textcenter { text-align: center; }
+.sd_textleft { text-align: left; }
+.sd_textright { text-align: right; }
+
+/* Text Formatting */
+.sd_textuppercase { text-transform: uppercase; }
+.sd_textlowercase { text-transform: lowercase; }
+.sd_textcapitalize { text-transform: capitalize; }
+
+// container
+.container{max-width: 1310px;padding: 0 15px;margin: 0 auto;}
+
+.border_bottom_gray{border-bottom: 2px solid $gainsboro;}
+.mt-25{margin-top: 25px;}
+.mt-35{margin-top: 35px;}
+.w-100{width: 100%;}
+.lg_flex_wrap{
+    @include mediaQuery($desktop){
+         @include f_wrap;
+    }
+ }

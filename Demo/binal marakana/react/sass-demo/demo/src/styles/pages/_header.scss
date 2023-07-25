@@ -1,0 +1,192 @@
+.c_top_header_wrap{
+    background-color: $themegreen;
+    padding: 10px 0;
+    .row{
+        .c_leftside{
+            a{
+                @include fontStyle(400,14,18,$white,0.5px);
+                &:first-child{
+                    margin-right: 20px;
+                }
+                .c_icon{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+.cpq_header{
+    box-shadow: 0 1px 10px 0 rgba(50, 50, 50, 0.2);
+    background: #fff;
+    position: relative;
+    .cpq_menu_wrapper{
+        width: calc(100% - 210px);
+        .profile_img{
+            img{
+                width: 44px;
+                height: 44px;
+                border: 3px solid #0e1a1f;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+.cpq_header .cpq_menu_wrapper nav ul.menu_list {
+    display: flex;
+}
+.cpq_header .profile_img {
+    margin: 0 0 0 24px;
+}
+.cpq_header .dropdown_icon_wrapper {
+    margin: 0 0 0 9px;
+}
+.cpq_header i.fa.fa-angle-down {
+    font-size: 22px;
+    color: #4a494a;
+    cursor: pointer;
+}
+.cpq_logo_wrapper a {
+    display: block;
+    line-height: 0;
+}
+.cpq_header ul.menu_list li a{
+    font-family: "ProximaNova";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: normal;
+    color: #192d39;
+    text-decoration: unset;
+}
+.cpq_header ul.menu_list li{
+    padding: 21px 12px 21px 12px;
+    position: relative;
+}
+.cpq_header ul.menu_list li:hover > a{
+    color: #1f94de !important;
+}
+.cpq_header ul.menu_list li.active > a{
+    color: #1f94de !important;
+}
+.cpq_header ul.menu_list li::after,.cpq_header ul.menu_list li::after{
+    content: '';
+    position: absolute;
+    background-color: #1f94de;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.cpq_header ul.menu_list li:hover::after,.cpq_header ul.menu_list li.active::after{
+    width: calc(100% - 24px);
+}
+.cpq_header ul.menu_list li:last-child{
+    padding-right: 0;
+}
+.cpq_header ul.menu_list li:last-child:hover::after{
+    width: 100%;
+}
+.cpq_header .profile_wrapper {
+    position: relative;
+}
+
+ul.dropdown_list {
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    top: 120%;
+    background-color: #fff;
+    margin: 0;
+    border: 1px solid #eee;
+    opacity: 0;
+    transition: 0.5s all;
+    transform: translate(-50%, 0);
+}
+.cpq_header .dropdown_icon_wrapper:hover ul.dropdown_list {
+    opacity: 1;
+}
+.cpq_header .dropdown_list li {
+    padding: 10px 15px;
+}
+.cpq_header .dropdown_list li a{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #555;
+    text-decoration: none;
+    display: inline-block;
+}
+.cpq_header .dropdown_list li a i{
+   padding: 0 5px 0 0;
+}
+.nav-mobile {
+    display: none;
+    width: 36px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+}
+#nav-toggle {
+    position: absolute;
+    top: 56%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    padding: 10px 35px 16px 0;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 32px;
+    background: #000;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+    border-radius: 5px;
+}
+#nav-toggle span:before {
+    top: -12px;
+}
+#nav-toggle span:after {
+    bottom: -12px;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+/* Sub Dropdown */
+li.dropdown{position: relative;}
+ul.sub-menu{
+ position: absolute;
+ min-width: 120px;
+ width: 100%;
+}
+ul.sub-menu li{
+ display: block !important;
+ white-space: nowrap;
+}
+ul.sub-menu li a{
+    color: #000 !important;
+}
+ul.sub-menu{
+ left:0;
+ top: 64px;
+ background-color: rgb(240, 240, 240) !important;
+}
+.sub-menu {
+    display:none;
+}

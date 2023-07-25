@@ -1,0 +1,205 @@
+// User Profile
+.sd_user_wpr{
+    padding-left: 24px;
+    border-left: 2px solid $black;
+    @include transitionStyle(0.3, linear);
+    
+    @include mediaQuery(1680px){
+        padding-left: 15px;         
+    }
+
+    @include mediaQuery($desktop){
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: $white;
+        @include flex_column;
+        transform: translateX(100%);
+        padding: 31px 0;
+        margin-bottom: 30px;
+        border-left: 0;
+        overflow: auto;
+    }
+
+    // Profile
+    .sd_user_profile{
+        cursor: pointer;
+        .sd_user_profile_image{
+            margin-right: 8px;
+            @include square(44px);
+            border: 2px solid #e9e9e9;
+            border-radius: 50%;
+            img{
+                @include square(100%);
+                border-radius: 50%;
+            }
+        }
+        p{
+            @include defaultFontStyle(200, 12.5, 20, $black, 0.39px);
+            font-family: $font_family_medium;
+            min-width: 120px;
+            max-width: 120px;
+            @include LimitLineText(1); 
+    
+            @include mediaQuery(1500px){
+                min-width: 100px;
+                max-width: 100px;             
+            }
+        }
+    }
+
+    // Cart Button
+    .sd_user_profile_cart{
+        // margin: 0 10px 0 23px;
+        // @include mediaQuery(1500px){
+        //     margin: 0 10px;      
+        // }
+        padding: 26px 19px;
+        position: relative;
+        transition: 0.3s ease-in-out;
+        border-left: 2px solid transparent;
+        &.active{
+            background: $white;
+            border-radius: 0;
+            border-left: 2px solid $black;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -4px;
+                width: 100%;
+                height: 7px;
+                background: $white;
+                left: 0;
+                z-index: 10;
+            }
+        }
+        button{
+            @include buttonReset;
+            position: relative;
+            width: 27px;
+            height: 25px;
+        } 
+        .sd_label{
+            position: absolute;
+            border-radius: 50%;
+            @include square(20px);
+            @include defaultFontStyle(400, 10, 10, $black, 0.32px);
+            @include flex_center_center;
+            top: -8px;
+            right: -14px;
+
+            &.sd_label_yellow{
+                background: $yellowish;
+            }
+        }
+    }
+    .sd_user_profile_user{
+        padding: 16px 0;
+        position: relative;
+        @include mediaQuery($desktop){
+            padding: 0;
+        }
+        &:hover{
+            .sd_user_profile_m_menu{
+                display: block;
+            }
+        }
+    }
+}
+
+// User mobile navigation
+.sd_user_profile_menus{
+    
+    &.sd_user_profile_m_menu{
+        @include minmediaQuery($desktop){
+            background: $pink;
+            position: absolute;
+            top: 79px;
+            padding: 30px 30px 0;
+            border: 2px solid $black;
+            border-top: 0;
+            z-index: 9;
+            width: 240px;
+            right: 0;
+        }
+
+        @include mediaQuery($desktop){
+            display: none !important;
+        }
+    }
+
+    @include mediaQuery($desktop){
+        width: 100%;
+        display: block;
+        margin-top: 26px;
+    }
+
+    ul{
+        list-style: none;
+        padding-bottom: 46px;
+        li{
+            padding: 10px 0;
+            &:last-child{
+                margin-top: 26px;
+                a{
+                    text-transform: capitalize;
+                    @include defaultFontStyle(200, 16, 16, $black);
+                    font-family: $font_family_medium;
+                    @include justify_center;
+                }
+            }
+        }
+        a{
+            @include defaultFontStyle(500, 18, 32, $black);
+            @include flex_align_center;
+            max-width: 185px;
+            margin: 0 auto;
+            img{    
+                margin-right: 14px;                  
+                
+            }
+        }
+    }
+}
+
+
+// Timezone - Mobile
+.sd_user_profile_timezone{
+    text-align: center;
+    width: 100%;
+    border-top: 2.4px solid $black;
+    padding: 25px;
+    @include mediaQuery($ipad){
+        display: block;
+    }
+    .sd_user_timezone_time{
+        margin-bottom: 24px;
+        p{
+            @include defaultFontStyle(500, 31.15, 35, $black);
+            letter-spacing: -0.75px;
+        }
+        .sd_user_timezone_select{
+            select, p{
+                @include defaultFontStyle(200, 14.37, 15, $black);
+                font-family: $font_family_medium;
+                letter-spacing: 0.45px;
+                @include buttonReset;
+                appearance: none;
+                // background: url('/program/images/timezone_arrow.svg') no-repeat;
+                background-position: right;
+                padding: 10px 20px;
+            }
+        }
+    }
+    .sd_user_timezone_date{
+        span{
+            @include defaultFontStyle(500, 24.88, 34, $black);
+            letter-spacing: -0.59px;
+        }
+        h3{
+            @include defaultFontStyle(500, 119.79, 120, $black);
+            letter-spacing: -2.87px;
+        }
+    }
+
+}

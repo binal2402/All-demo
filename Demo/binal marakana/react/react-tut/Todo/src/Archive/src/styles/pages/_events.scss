@@ -1,0 +1,126 @@
+// Events
+// Panelist
+.sd_panelist_sec{
+    @include flex_justify_between;
+    @include f_wrap;
+    padding: 100px 0 45px;
+    @include mediaQuery($ipad) {
+        padding: 50px 2px 20px 3px;
+    }
+}   
+.sd_panelist_block{
+    max-width: calc(50% - 95px);
+    width: 100%;    
+    margin-bottom: 60px;
+    @include mediaQuery($ipad) {
+        max-width: 100%;   
+        margin-bottom: 55px;
+    }
+
+    .sd_panelist_img{       
+        margin-right: 28px;
+        float: left;
+        
+        @include mediaQuery($large) {
+            margin-right: 19px;
+        }
+        .sd_panelist_img_inner{
+            width: 170px;
+            margin-bottom: 28px;
+            position: relative;
+            height: 0;
+            padding-bottom: 133.33%;
+
+            @include mediaQuery($large) {
+                @include square(123px);
+                margin-bottom: 21px; 
+            }
+            @include mediaQuery(370px) {
+                margin-bottom: 10px;
+            }
+            img{
+                @include square(100%);
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    .sd_panelist_name{
+        @include flex_align_center;    
+        padding: 6px 0 13px;
+        @include mediaQuery($large) {
+            @include flex_justify_center;
+            @include flex_dir_column;
+            align-items: flex-start;
+        }
+        @include mediaQuery($ipad) {            
+            min-height: 123px;      
+            padding: 0;  
+        }
+        h3{
+            @include defaultFontStyleFpg($font_family_medium, 26, 25, $black); 
+            letter-spacing: -0.62px;  
+            @include mediaQuery($large) {
+                padding: 0 0 15px;  
+            }
+            @include mediaQuery($ipad) {
+                @include mediaFontStyle(22, 24);  
+                letter-spacing: -0.53px;      
+            }
+        }
+    }
+    .sd_panelist_social{
+        @include flex_align_center;
+        list-style: none;
+        margin-left: 13px;
+        @include mediaQuery($large) {
+            margin: 0 0 10px 0;
+        }
+        li{
+            @include flex_shrink;
+            margin-left: 18px;
+            @include mediaQuery($large) {
+                &:first-child{
+                    margin-left: 0;
+                }
+            }
+            img{
+                width: 16px;
+            }
+        }
+    }
+    .sd_panelist_desc{
+        margin-left: 198px;
+        @include mediaQuery($large) {
+            margin-left: 0;
+            clear: both;
+        }
+        *{
+            @include defaultFontStyleFpg($font_family_normal, 18, 25, $black);  
+            font-size: 18px !important;
+            color: $black !important;
+            letter-spacing: 0.1px;
+            @include mediaQuery($ipad) {
+                font-size: 14.4px !important;
+            }      
+            a{
+                color: $purple !important;   
+                *{
+                    color: $purple !important;   
+                }
+            }
+        }
+        li{
+            margin-bottom: 5px !important;
+        }
+        p{
+            @include defaultFontStyleFpg($font_family_normal, 18, 25, $black);   
+            letter-spacing: -0.43px; 
+            @include mediaQuery($ipad) {
+                @include mediaFontStyle(14.4, 20);  
+                letter-spacing: -0.35px; 
+            }      
+        }
+    }
+}

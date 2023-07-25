@@ -1,0 +1,58 @@
+
+@import 'mixin';
+
+.We_Work_With
+{
+    padding-bottom:95px;
+    @include breakpoint(tablet)
+    {
+        padding-bottom: 50px;
+    }
+    @include breakpoint(mobileonly)
+    {
+        padding-bottom: 30px;
+    }
+    .container
+    {
+        .left_content
+        {
+            justify-content: center;
+            .main_title
+            {
+                @include main_title;
+                text-align: center;
+                &::before
+                {
+                    bottom: 0px;
+                    left: 49%;
+                }
+            }
+        }
+        .box
+        {
+            display: flex;
+            margin-top: 33px;
+            justify-content: space-between;
+            @include breakpoint(laptop)
+            {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .our_box
+            {
+                @include our_box;
+                @include breakpoint(laptop)
+                {
+                    margin: 10px;
+                }
+                .sub_box
+                {
+                   margin: 24px 50px;
+                }
+               
+            }
+
+        }
+        
+    }
+}

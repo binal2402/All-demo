@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?0bc5aba64282efa5cab6f31b31a565a6") format("truetype"),
+url("./flaticon.woff?0bc5aba64282efa5cab6f31b31a565a6") format("woff"),
+url("./flaticon.woff2?0bc5aba64282efa5cab6f31b31a565a6") format("woff2"),
+url("./flaticon.eot?0bc5aba64282efa5cab6f31b31a565a6#iefix") format("embedded-opentype"),
+url("./flaticon.svg?0bc5aba64282efa5cab6f31b31a565a6#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-police-car:before {
+    content: "\f101";
+}
+.flaticon-policeman:before {
+    content: "\f102";
+}
+.flaticon-protection:before {
+    content: "\f103";
+}
+.flaticon-male-consultant:before {
+    content: "\f104";
+}

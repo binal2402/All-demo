@@ -1,0 +1,6 @@
+@mixin s_sub_title ($color:null,$line-height:null)
+{
+    color:$c_primary;
+    line-height: 24px;
+}
+@include s_sub_title(red,24px);

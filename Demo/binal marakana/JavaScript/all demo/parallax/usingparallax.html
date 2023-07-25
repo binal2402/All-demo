@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parallax-window {
+            min-height: 1000px;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img3.jpg"></div>
+    <div class="parallax-window" style="background: red;">
+        <div class="parallax-slider">
+            <span style="position:absolute; top: 400px; left: 400px;">Some Text</span>
+            <p>Some other Content</p>
+          </div>
+    </div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img3.jpg"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            debugger
+            jQuery(window).trigger('resize').trigger('scroll');
+            $('.parallax-window').parallax({
+                naturalWidth: 600,
+                naturalHeight: 400
+            });
+        });
+    </script>
+</body>
+</html>

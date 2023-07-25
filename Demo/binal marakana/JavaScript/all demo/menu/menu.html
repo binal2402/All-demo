@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Brand Name</h1>
+        <small>Scroll Down <br /> &darr;</small>
+      </header>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <section class="wrapper">
+                <a href="./index.html" class="brand">Brand</a>
+                <button type="button" class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                <div class="menu" id="menu">
+                    <ul class="menu-inner">
+                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Profile</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Project</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </nav>
+    
+<main>
+    <h1>Below Navbar</h1>
+  </main>
+    <script>
+        const burgerMenu = document.getElementById("burger");
+        const navbarMenu = document.getElementById("navbar");
+
+        // Show and Hide Navbar Menu
+        burgerMenu.addEventListener("click", () => {
+            // debugger
+            burgerMenu.classList.toggle("is-active");
+            navbarMenu.classList.toggle("is-active");
+
+            if (navbarMenu.classList.contains("is-active")) {
+                navbarMenu.style.maxHeight = navbarMenu.scrollHeight + "px";
+            } else {
+                navbarMenu.removeAttribute("style");
+            }
+        });
+        window.onscroll = function() {stickyNavigation()};
+        const navTop = navbarMenu.offsetTop;
+
+        function stickyNavigation() {
+
+        if (window.pageYOffset >= navTop) {
+            navbarMenu.classList.add("sticky")
+        } else {
+            navbarMenu.classList.remove("sticky");
+        }
+        }
+
+        // window.addEventListener('scroll', stickyNavigation);
+        
+    </script>
+</body>
+</html>

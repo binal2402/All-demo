@@ -1,0 +1,287 @@
+// Film page
+
+// Tabs
+.sd_films_tab_sec{
+    margin-top: -64px;
+    @include mediaQuery($ipad) {
+        margin: 0 -2px;
+        // margin: 0 -15px;
+    }
+    @include mediaQuery($mobile) {
+         margin: 0 1px;
+        // margin: 0 -15px;
+    }
+    @include mediaQuery(374px) {
+        margin: 0 1px;
+        // margin: 0 -15px;
+    }
+    .sd_inner_container{        
+        @include mediaQuery($ipad) {
+            padding: 0;
+        }
+    }
+    .sd_films_tab_wpr{
+        ul{
+            @include flex;
+            list-style: none;
+            @include mediaQuery($mobile) {
+                margin: 0 -2px;
+            }
+        }
+        li{
+            position: relative;
+            width: 100%;
+            max-width: 280px;
+            border: 2px solid #000;
+            border-bottom: 0;
+            margin: 0 -1px;
+          
+            // &:nth-child(2) {
+            //     pointer-events: none;
+            // }
+    
+            &.active{
+                &:after{
+                    @include content;
+                    right: -2px;
+                    top: -2px;
+                    width: 2px;
+                    height: calc(100% + 2px);
+                    background: $black;
+                    z-index: 5;
+                }       
+                &:before{
+                    @include content;
+                    left: 0;
+                    bottom: -3px;
+                    width: 100%;
+                    height: 6px;
+                    background: $white;
+                    z-index: 5;
+                }       
+                .sd_film_tab_link{
+                    bottom: calc(100% + 2px);                    
+                }
+                .sd_film_tab_button{
+                    background: $white;
+                    img{
+                        display: block;
+                    }
+                }
+                .sd_film_tab_pink{
+                    color: $lygreen;                    
+                }
+                .sd_film_tab_yellow{
+                    color: $yellow;
+                }
+                .sd_film_tab_lightgreen{
+                    color: $lightGreen;
+                }
+            }
+
+            &:last-child{
+                @include mediaQuery($mobile) {
+                    border-right: 0;
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
+
+        }
+        .sd_film_tab_link{
+            @include defaultFontStyle(400, 16, 26, $black);
+            letter-spacing: -0.38px;
+            bottom: 0;
+            position: absolute;
+            @include flex_align_center;
+            padding: 7px 14px 5px 21px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 197px;
+            width: 100%;
+            @include transitionStyle(0.3, linear);
+            text-transform: capitalize;
+
+            @include mediaQuery($ipad) {
+                @include mediaFontStyle(14, 18);
+                letter-spacing: -0.24px;
+            }
+            @include mediaQuery($mobile) {
+                font-size: 10.08px;
+                padding: 5px;
+                max-width: 115px;
+            }
+            @include mediaQuery($smallMobile) {
+                max-width: 100px;
+                img{
+                    display: none;
+                }
+            }
+            img{
+                width: 15px;
+                margin-left: 7px;
+                @include mediaQuery($mobile) {
+                    width: 9.45px;
+                }
+            }
+
+            &.sd_film_link_pink{
+                background: $pink;                 
+            }
+            &.sd_film_link_yellow{
+                background: $yellow;                  
+            }
+            &.sd_film_link_lightgreen{
+                background: $lightGreen;                
+            }
+        }
+        .sd_film_tab_button{
+            position: relative;
+            @include buttonReset;
+            @include defaultFontStyleFpg($font_family_medium, 22, 24, #EDEDED);
+            @include flex_center_center;
+            background: #A4A4A4;
+            // background: $white;
+            text-transform: uppercase;
+            padding: 6px 10px;
+            width: 100%;
+            height: 62px;
+            @include mediaQuery($desktop) {
+                @include mediaFontStyle(16, 30);
+            }
+            @include mediaQuery($ipad) {
+                @include mediaFontStyle(12, 13.6);
+            }
+            @include mediaQuery(576px) {
+                height: 72px;
+            }
+            @include mediaQuery($mobile) {
+                @include flex_dir_column;
+                padding: 12px 10px;
+                .sd_question_button{                    
+                    width: 14px;
+                }
+            }
+            @include mediaQuery($smallMobile) {
+                font-size: 14px;
+            }
+            img{
+                width: 18px;
+                margin-left: 14px;
+                display: none;
+                @include mediaQuery($mobile) {
+                    width: 14px;
+                    margin: 0;
+                    position: absolute;
+                    bottom: -20px;
+                    z-index: 55;
+                } 
+                &:hover{
+                    + .sd_question_button{
+                        span{
+                            top: -43px;
+                            display: block;
+                            right: calc(100% + 30px);
+                            left: auto;
+                            
+                            &:before{
+                                right: -8px;
+                                left: auto;
+                                transform: translateY(-50%) rotate(-140deg);
+                            }
+                            @include mediaQuery($mobile) {
+                                right: calc(100% + 20px);
+                                top: -29px;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Filters
+.sd_filter_film_section{
+    // padding: 35px 0 20px;
+    border-top: 2px solid $black;
+}
+.sd_cat_label{
+    span{
+        background: $lynxWhite2;
+        text-transform: uppercase;
+        padding: 5px;
+        @include defaultFontStyle(400, 10, 14, $black);
+        margin-right: 13px;
+        margin-bottom: 5px;
+        position: relative;
+        z-index: 3;
+        img{
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    }
+}
+
+.film, .beyond-film, .new-frontier{  
+    .sd_explore_sec_header{
+        padding-bottom: 3px;
+    }
+    .sd_explore_search_wpr{
+        .sd_menu_search{
+            margin: 20px 0 -75px auto;
+            @include mediaQuery($desktop) { 
+                margin: 0 0 20px auto;
+            }
+        }
+    }
+}
+
+// Films Section
+.sd_film_section{
+    width: 100%;
+    @include flex_shrink;
+    padding-top: 35px;
+    @include transitionStyle(0.4, linear);
+    padding-bottom: 22px;
+    @include mediaQuery($mobile) { 
+        padding-top: 30px;
+    }
+
+    .sd_film_list_wpr{
+        @include flex_wrap;
+        margin: 0 -20px;   
+        @include mediaQuery(576px) { 
+            margin: 0 1px 0 4px;   
+        }
+    }
+}
+
+.sd_main_section{
+    padding: 0;
+    position: relative;
+    @include flex;
+    @include mediaQuery($ipad) { 
+        overflow: hidden; 
+    }
+
+    &.sd_catalog_view_active{
+        .sd_film_section{
+            transform: translateX(0%);
+        }   
+        .sd_calendar_section{
+            transform: translateX(100%);
+        }     
+    }
+
+    &.sd_schedule_view_active{
+        .sd_film_section{
+            height: 0;
+            transform: translateX(-200%);
+        }   
+        .sd_calendar_section{
+            transform: translateX(-100%);
+        }
+    }
+}

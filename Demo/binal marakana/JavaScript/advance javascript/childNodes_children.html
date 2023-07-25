@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myid">
+        <!-- this is comment -->
+        <span>helloo</span>
+    </h1>
+    <p id="myid1">i am paragraph</p>
+
+    <script>
+        var result = document.getElementById("myid");
+        var len = result.childNodes.length;
+        console.log(len);
+
+        var len1 = result.children.length;
+        console.log(len1);
+
+        // var cnlen = result.childNodes.length;
+        // for (let i = 0; i < cnlen; i++) {
+        //     console.log(result.childNodes[i]);
+        // }
+
+        var cnlenn = result.children.length;
+        for (let i = 0; i < cnlenn; i++) {
+            console.log(result.children[i]);
+        }
+
+        // result.children[0].textContent = "i am changeing text";
+
+        console.log(result.firstChild.nextSibling);
+    </script>
+</body>
+</html> 

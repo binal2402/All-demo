@@ -1,0 +1,149 @@
+@import 'mixin';
+
+footer
+{
+    background-color: $c_dark;
+    padding: 94px 0 75px 0;
+    @include breakpoint(tablet)
+    {
+        padding: 50px 0 45px 0;
+    }
+    .footer_content
+    {
+        display: flex;
+        @include breakpoint(laptop)
+        {
+            flex-wrap: wrap;
+        }
+        .social_media
+        {
+            width: calc(40% - 30px);
+            margin-right: 30px;
+            @include breakpoint(tablet)
+            {
+                margin-bottom: 20px;
+            }
+            @include breakpoint(onlylaptop)
+            {
+                width: calc(50% - 30px);
+            }
+            @include breakpoint(onlytablet)
+            {
+                width: calc(50% - 30px);
+            }
+            @include breakpoint(phablet)
+            {
+                width: 100%;
+            }
+            .f_content
+            {
+                color: $c_secondary;
+                line-height: 24px;
+                padding: 28px 0 24px;
+            }
+            img
+            {
+                margin: unset;
+            }
+            .social_icon
+            {
+                display: flex;
+                .s_icon
+                {
+                    width: 36px;
+                    height: 36px;
+                    border: 1px solid $c_white;
+                    border-radius: 50%;
+                    margin: 5px;
+                    color: $c_white;
+                    i
+                    {
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px 0;
+                    }
+                    &:hover
+                    {
+                        background-color: $c_white;
+                        color: $c_dark;
+                    }
+                }
+               
+            }
+        }
+        .quick_link
+        {
+            width: calc(20% - 30px);
+            @include breakpoint(onlylaptop)
+            {
+                width: calc(50% - 30px);
+            }
+            @include breakpoint(tablet)
+            {
+                margin-bottom: 20px;
+            }
+            @include breakpoint(onlytablet)
+            {
+                width: calc(50% - 30px);
+            }
+            @include breakpoint(phablet)
+            {
+                width: 100%;
+            }
+            margin-right: 30px;
+            @include f_content;
+            span
+            {
+                color: $c_orange_color;
+            }
+        }
+        .Security_Licenses
+        {
+            width:20%;
+            @include breakpoint(onlylaptop)
+            {
+                width: calc(50% - 30px);
+            }
+            @include breakpoint(onlytablet)
+            {
+                width: calc(50% - 30px);
+            }
+            @include breakpoint(phablet)
+            {
+                width: 100%;
+            }
+             @include f_content;
+            span
+            {
+                color: $c_orange_color;
+            }
+        }
+        .Support
+        {
+            width: calc(20% - 30px);
+            @include breakpoint(onlylaptop)
+            {
+                width: calc(50% - 30px);
+            }
+            @include breakpoint(onlytablet)
+            {
+                width: calc(50% - 30px);
+            }
+            @include breakpoint(phablet)
+            {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            margin-right: 30px;
+            @include f_content;
+        }
+    }
+}
+.copy_right
+{
+    padding: 20px;
+    color: $c_white;
+    background-color: $c_dark;
+    border-top: 1px solid $c_white;
+    text-align: center;
+}

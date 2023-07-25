@@ -1,0 +1,18 @@
+// Hero Header
+.form_header{
+    .sd_header_top_title {
+        padding: 60px 15px;
+        @include mediaQuery($ipad){
+           padding: 80px 0 40px;
+        }
+        h1{
+            @include defaultFontStyleFpg($font_family_medium,50,45,$black,-1.2px);
+            @include mediaQuery($ipad){
+                @include mediaFontStyle(40, 45)
+            }
+            @include mediaQuery($mobile){
+                @include mediaFontStyle(30, 35)
+            }
+        }
+    }
+}

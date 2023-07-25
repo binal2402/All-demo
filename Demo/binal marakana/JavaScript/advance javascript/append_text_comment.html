@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+        <h1 id="myh1">helooo</h1>
+        <h2>i am h2</h2>
+    </div>
+    <script>
+        // create new element h2
+        var nEnode = document.createElement("h2");
+
+        // create new text  Node
+        var nTnode  =document.createTextNode("text by js");
+
+        // create Comment 
+        var nCnode = document.createComment("comment by js");
+
+        // append new text node to new Element node h2
+        nEnode.appendChild(nTnode);
+        // console.log(nEnode);
+
+        // append new comment node to new Element node h2
+        nEnode.appendChild(nCnode);
+
+
+        var targetnode =  document.getElementById("myid");
+        targetnode.appendChild(nEnode);
+
+
+        console.log(targetnode);
+        
+    </script>
+</body>
+</html>

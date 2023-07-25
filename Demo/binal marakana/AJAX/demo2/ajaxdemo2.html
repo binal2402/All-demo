@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mytable {
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+        }
+        .mytable td{
+            border: 1px solid #ccc;
+            padding:10px;
+        }
+        .mytable th{
+            border: 1px solid #ccc;
+            padding:10px;
+        }
+        button
+        {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="button" id="btnget" value="Get Data">
+    <br><br>
+    <table id="resultdiv" class="mytable">
+      
+    </table>
+
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btnget').click(function(){
+                var resultElement = $('#resultdiv');
+                resultElement.append('');
+
+                
+                $.ajax({
+                    url:'https://jsonplaceholder.typicode.com/posts/1/comments',
+                    type:'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        $.each(data,function(index,val){
+                             // var fullname  = val.id + ' ' +val.name;
+                            resultElement.append('<tr><td>' + val.id + '</td><td>'+ val.email +'</td></tr>');
+                        })
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                    
+                    // complete: function(jqerror){
+                    //     if(jqerror.status == '401'){
+                    //         resultElement.empty();
+                    //         resultElement.append('<tr><td>' + jqerror.status +':'+jqerror.statusText +'</td></tr>')
+                    //     }
+                    // }
+
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

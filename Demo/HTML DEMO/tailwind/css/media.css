@@ -1,0 +1,369 @@
+@media (min-width: 320px) and (max-width: 480px)
+{
+	.slider_content .main_header
+	{
+    	font-size: 51px!important;
+    	line-height: 60px!important;
+	}
+	.menu_icon
+	{
+    	margin-inline-start: auto;
+	}
+	.side_menu
+	{
+		top:103px!important;
+	}
+	.slider_content
+	{
+	    margin-left: 0px; 
+	    text-align: center;
+	}
+	.grid-container {
+    
+    margin-top: 17px;
+     margin-left: auto; 
+     margin-right: 0px; 
+	}
+	/*---------Register To Attend Market--------*/
+	.custom-select
+	{
+	     width: 100%;
+	}
+	
+	.mail_box input[type=email]
+	{
+		 width: 100%;
+	}
+
+	.icon_mail
+	{
+	   display: none;	
+	   
+	}
+	.register .container
+	{
+    	padding: 79px 45px;
+  	}
+  	.mail_box input[type=email]
+   	{
+   		padding: 9px 10px 12px 66px;
+	}
+	.custom-select 
+	{
+    	padding: 11px 10px 15px 23px;
+    	margin-bottom: 10px;
+	}
+	
+
+	/*-------Who We are?--------*/
+
+	.who_header
+	{
+	    font-size: 36px;
+	}
+
+	.Fashion_show
+	{
+	    padding-top: 50px;
+	}
+	.fashion_content
+	{
+	    
+	    margin: 38px 0;
+	    padding: 34px 20px;
+	}
+	table td
+	{
+   		padding: 16px 41px!important;
+   		min-width: 0;
+	}
+	.Dallas_Design
+	{
+    	margin: 50px 0;
+   
+	}
+	/*------------Find The Diamond  of your Dream?---------*/
+	.find_diamond
+	{
+		padding: 12px 18px;
+	}
+	
+	.main_container ul li
+	{
+		font-size: 16px;
+	}
+}
+@media (min-width: 480px) and (max-width: 575px)
+{
+	
+	.menu_icon
+	{
+    	margin-inline-start: auto;
+	}
+	.side_menu
+	{
+		top:103px!important;
+	}
+	.slider_content
+	{
+	    margin-left: 0px; 
+	    text-align: center;
+	    margin-bottom: 20px;
+	}
+	/*------------Find The Diamond  of your Dream?---------*/
+
+	.find_diamond
+	{
+		padding: 52px 108px;
+	}
+	.who_header
+	{
+		font-size: 75px;
+	}
+
+}
+@media (min-width: 576px) and (max-width: 768px)
+{
+	
+	/*---------Top Header----------*/
+	.menu_icon
+	{
+    	margin-inline-start: auto;
+	}
+	.user_box 
+	{
+	    padding: 27px 3px;
+	}
+	.side_menu
+	{
+		top:103px!important;
+	}
+	.slider_content
+	{
+	    margin-left: 0px; 
+	    text-align: center;
+	    margin-bottom: 20px;
+	}
+	/*---------Register To Attend Market--------*/
+
+	.register .container
+	{
+		padding: 50px 70px;
+	}
+
+	.icon_mail
+	{
+	    position: absolute;
+	    top: -8px;
+	    left: 38px;
+	}
+	/*-------Who We are?--------*/
+	.who_header
+	{
+	    font-size: 72px;
+	}
+	/*------------Find The Diamond  of your Dream?---------*/
+	.find_diamond
+	{
+		padding: 52px 108px;
+	}
+}
+@media (max-width: 1024px)
+{
+	body
+	{
+	    font-size: 16px;
+		line-height: 18px;
+	}
+	.fashion_content p 
+	{
+    	padding: 18px 0;	
+	}
+	.Dallas_Design p 
+	{
+    	padding: 15px 0;
+	}
+	.fashion_content .alltop_header
+	{
+    	padding-top: 10px;
+	}
+	.who_we_are .alltop_header
+	{
+    	padding: 25px 0;
+	}
+	.slider_content .main_header
+	{
+    	font-size: 60px;
+	    line-height: 72px;
+    
+	}
+	.main_menu
+	{
+		display: none;
+	}
+	.menu_icon
+	{
+		display: inline-block;
+		font-size: 24px;
+	}
+	.mobile_menu_bar
+	{
+		display: block;
+		background-color: #424040;
+	}
+	.mobile_menu_bar li a
+	{
+		color: white;
+		padding: 10px;
+		display: block;
+	}
+	.side_menu
+	{
+		width: 100%;
+		position: fixed;
+		top:129px;
+		left: 0;
+		overflow: scroll;
+		padding:20px;
+		transition: .3s;
+		z-index: 1; 
+	}
+	
+	.side_open
+	{
+		left: 0px;
+	}
+	.side_close
+	{
+		left: 1029px;
+	}
+	.alltop_header
+	{
+	    font-size: 30px;
+	    line-height: 40px;
+	}
+	.register {
+    	margin-top: 71px;
+	}
+	.register .alltop_header
+	{
+		width: 100%;
+		margin-right: 0px;
+	}
+	
+	.reg_sub_content
+	{
+		width: 100%;
+	}
+	.who_we_are
+	{
+    	padding: 50px 20px;
+   	}
+   	
+	.book_travel
+	{
+    	padding: 50px 0;
+	}
+	.Fashion_show .container
+	{
+    	padding-bottom: 20px;
+   	}
+   	.sub_text
+   	{
+ 		font-size: 13px;
+	}
+	.main_count
+	{
+ 	   font-size: 25px;
+	}
+   	/*-----book travel------*/
+
+	.book_travel .container
+	{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: -webkit-center;
+	}
+	.left_side,.right_side
+	{
+		width: 100%;
+		padding-right: 0;
+	}
+	table td {
+	   
+	    padding: 47px 66px;
+	    
+	}
+	.design-grid,.Dallas_content
+	{
+		width: 100%;
+		padding-left: 0;
+	}
+	.Dallas_Design .design-grid
+	{
+    	width: 100%;
+	}
+	.left_side p
+	{
+    	padding: 17px 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px)
+{
+	
+/*---------Register To Attend Market--------*/
+    .icon_mail
+	{
+		position: absolute;
+		top: -9px;
+		left: 40px;
+		font-size: 33px;
+	}
+/*-------Who We are?--------*/
+	.who_header
+	{
+		font-size: 105px;
+	}
+/*-----book travel------*/
+
+	.book_travel .container
+	{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: -webkit-center;
+	}
+	.left_side,.right_side
+	{
+		width: 100%;
+	}
+/*---------Fashion show-------*/
+		
+	.Fashion_show .container {
+	    text-align: -webkit-center;
+	    
+	}	
+
+	
+}
+	
+@media (min-width: 1024px) and (max-width: 1279px)
+{
+  /*---------Top Header----------*/
+
+  	.main_menu ul li a
+	{
+		padding: 0px 5px;
+	}	
+}
+
+@media (min-width: 1280px)
+{
+
+/*---------Top Header----------*/
+  		
+  	.main_menu ul li a
+	{
+		padding: 0px 10px;
+	}
+		
+}

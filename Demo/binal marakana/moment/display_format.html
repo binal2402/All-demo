@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/moment.js"></script>
+    <script>
+         var m = moment();
+        //  console.log(m.format("L"));
+
+        var m2 = moment("2021-05-13");
+        // console.log(m2.from(m));
+
+
+        var emoment = moment().add(2, "hours");
+        // console.log(emoment.toString());
+        console.log(emoment.calendar());
+
+        console.log(m.diff(m2, "days"));
+        console.log(m2.daysInMonth());
+
+        // conver json
+        var jsonobj ={
+            momentobj:m2
+        };
+        console.log(JSON.stringify(jsonobj));
+    </script>
+</body>
+</html>

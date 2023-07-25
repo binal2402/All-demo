@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="" name="myform" onsubmit="return validateform()">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text"  name="name" id="name"/>
+                    <span id="username"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" name="address" id="address" />
+                    <span id="useraddress"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>E-mail Address:</td>
+                <td><input type="text" name="EMail" id="EMail"/>
+                    <span id="userEMail"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input type="password" name="Password" id="Password" class="active"/>
+                    <div class="icon">
+                        <i class="fa fa-eye-slash" id="icon"></i>
+                    </div>
+                    <span id="userPassword"></span>
+                </td>
+                    
+            </tr>
+            <tr>
+                <td>Confirm Password: </td>
+                <td><input type="password" name="Password2" id="Password2" class="active"/>
+                    <span id="userCPassword"></span>
+                </td>
+                    
+            </tr>
+            <tr>
+                <td>Gender: </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">Male
+                    <input type="radio" id="female" name="gender" value="Female">Female
+                    <span id="usergender"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby: </td>
+                <td>
+                    <input type="checkbox" id="music" name="hobby" value="Music">Music
+                    <input type="checkbox" id="dance" name="hobby" value="Dance">Dance
+                    <input type="checkbox" id="reading" name="hobby" value="reading">Reading
+                    <span id="userhobby"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Select City: </td>
+                <td>
+                    <select name="city" id="city">
+                        <option value="">Select city</option>
+                        <option value="Surat">Surat</option>
+                        <option value="vapi">vapi</option>
+                        <option value="Rajkot">Rajkot</option>
+                    </select>
+                    <span id="usercity"></span>
+                </td>
+            </tr>
+            <tr>
+                <div>
+                    <td><input type="submit" value="submit"></td>
+                    <td><input type="reset" value="cancel"></td>
+                </div>
+               
+
+            </tr>
+        </table>
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

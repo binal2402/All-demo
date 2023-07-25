@@ -1,0 +1,61 @@
+.form_footer{
+    @include flex_align_center();
+    justify-content: space-between;
+    .left_side{
+        @include flex_align_center();
+        .icon{
+            margin-right: 14px;
+            cursor: pointer;
+        }
+        .text{
+            @include defaultFontStyle(400,22,22, $black,-0.53);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        @include mediaQuery($mobile){
+            width: 100%;
+            margin-bottom: 15px
+        }
+    }
+    .right_side{
+        @include flex_align_center();
+        .btn{
+            margin-right: 22px;
+            button{
+                cursor: pointer;
+                transition: 0.2s ease-in-out;
+                @include defaultFontStyle(400,22,22, $black,-0.53);
+                padding: 21px 0 18px 0;
+                width: 200px;
+                background-color: transparent;
+                border: 2px solid $black;
+                .back{
+                    margin-right: 15px;
+                }
+                .next{
+                    margin-left: 15px;
+                }
+                &:hover{
+                    color: $white;
+                    background-color: $black;
+                    svg{
+                        filter: brightness(0) invert(1);
+                    }
+                }
+                @include mediaQuery($ipad){
+                    width: 135px;
+                }
+            }
+            &:last-child{
+                margin: 0;
+            }
+        }
+        @include mediaQuery($mobile){
+            width: 100%;
+        }
+    }
+    @include mediaQuery($mobile){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

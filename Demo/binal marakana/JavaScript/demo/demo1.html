@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script> -->
+   
+</head>
+<body>
+    <!-- <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+    <p id="demo"></p> -->
+
+    <!-- <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button> -->
+
+    
+    <!-- <button onclick="document.getElementById('myImage').src='img/img1.jpg'">Turn on the light</button>
+    <img id="myImage" src="img/img2.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='img/img2.jpg'">Turn off the light</button> -->
+
+
+    <!-- <p id="demo">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button> -->
+
+    <!-- <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "My First JavaScript";
+    </script> -->
+
+    <!-- <p id="demo">A Paragraph.</p>
+    <button type="button" onclick="myFunction()">Try it</button> -->
+
+    <!-- <script>
+        var x, y, z;  // Statement 1
+        x = 5;        // Statement 2
+        y = 6;        // Statement 3
+        z = x + y;    // Statement 4
+
+        document.getElementById("demo").innerHTML =
+        "The value of z is " + z + "."; 
+    </script> -->
+
+    <p id="demo"></p>
+    <!-- <script>
+        var person = {
+        firstName : "John",
+        lastName  : "Doe",
+        age     : 50,
+        eyeColor  : "blue"
+      };
+      
+      document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old.";
+    </script> -->
+
+    <script>
+        // function myFunction(p1, p2){
+        //     return p1 * p2;
+        // }
+        // document.getElementById("demo").innerHTML = myFunction(3,5);
+
+        document.getElementById("demo").innerHTML =
+        "The temperature is " + toCelsius(77) + " Celsius";
+
+        function toCelsius(fahrenheit) {
+        return (5/9) * (fahrenheit-32);
+        } 
+
+        var cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("demo").innerHTML = cars[0];
+
+        const person = {firstName:"John", lastName:"Doe", age:46};
+        document.getElementById("demo").innerHTML = person.firstName;
+    </script>
+    
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

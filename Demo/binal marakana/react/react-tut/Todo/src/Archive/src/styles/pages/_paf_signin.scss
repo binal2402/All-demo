@@ -1,0 +1,268 @@
+
+//  Signin pages
+.sd_form_group{
+    padding-bottom: 10px;
+    position: relative;
+    label{
+        @include defaultFontStyle(400,22,28,$black,-0.24px);
+        display: block;
+        @include mediaQuery(991px){
+        }
+        img{
+            display: inline-block;
+            margin-left: 5px;
+        }
+    }
+    .border_btn{
+        position: relative;
+        @include Borderbtn;
+        .submit_loading{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// Text Field
+.field_input{
+    input{
+        display: block;
+        width: 100%;
+        border: none;
+        outline: none;
+        height: 40px;
+        @include defaultFontStyle(400, 16, 20, $black, -0.38px);
+        border: 1px solid $black;
+        padding:10px 17px;
+        &::placeholder{
+            color: $placeholder;
+        }
+        &:disabled{
+            // background:$disable;
+        }
+        &:read-only{
+            background: #E5E5E5;
+            // padding-left: 0;
+            pointer-events: none;
+        }
+        @include mediaQuery(480px){
+            padding:10px;
+        }
+    }
+    &.passwordField{
+        input{
+            padding-right: 40px;
+        }
+    }
+    textarea{
+        height: 110px;
+        width: 100%;
+        border: 1px solid $black;
+        resize: none;
+        padding:10px 11px;
+        @include defaultFontStyle(400, 16, 20, $black, -0.34px);
+        &:read-only{
+            color: $black;
+            background: #E5E5E5;
+        }
+        @include mediaQuery(480px){
+            padding:10px;
+        }
+    }
+}
+
+// Dropdown
+.select_field{
+    width: 312px;
+    select{
+        border: none;
+        border-radius: 0;
+        @include defaultFontStyle(400,14,16,$black);
+        width: 100%;
+        padding: 11px 40px 11px 10px;
+        -webkit-appearance: none;
+        outline: none;
+        background:$white url('./../images/dropdown.svg') no-repeat;
+        background-position: 96%;
+        border: 1px solid $black;
+        &:disabled{
+            color: $black;
+            cursor: auto;
+            background: #E5E5E5;
+        }
+    }
+ 
+    @include mediaQuery($mobile){
+        width: 100%;
+    }
+}
+.border_select{
+    margin-top: 10px;
+    &:last-child{
+        padding-bottom: 0;
+    }
+    .select_field,.field_input{
+        width: 248px;
+        margin-left: auto;
+        select{
+            border-width: 0 0 1px 0;
+        }
+    }
+}
+
+
+// Checkbox
+.checkbox_field_row{
+    margin-bottom: 20px;
+}
+.checkBox{
+    position: relative;
+    input{
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        left: 0;
+        &:checked{
+            & ~ label{
+                &:after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    label{
+        padding-left: 30px;
+        position: relative;
+        display: inline-block;
+        color: $black;
+        @include defaultFontStyle(400,20,23);
+        @include mediaQuery($ipad){
+            @include mediaFontStyle(16,18)
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $black;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            left: 7px;
+            top: 7px;
+            transform: rotate(-45deg) translateY(-50%);
+            width: 11px;
+            height: 5px;
+            border: 1px solid $black; 
+            border-top: transparent;
+            border-right: transparent;
+            opacity: 0;
+        }
+    }
+    &.top_check{
+        label{
+            padding-left: 20px;
+            position: relative;
+            display: block;
+            color: $black;
+            @include defaultFontStyle(400,14,16);
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                width: 12px;
+                height: 12px;
+                border: 1px solid $black;
+                top: 4px;
+                transform: unset;
+                
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                left: 3px;
+                top: 7px;
+                transform: rotate(-45deg);
+                width: 6px;
+                height: 3px;
+                border: 1px solid $black; 
+                border-top: transparent;
+                border-right: transparent;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+// Auth Pages 
+.sd_auth_content{
+    padding: 33px 0 95px;
+    .error_msg{
+        @include defaultFontStyle(400,14,20,$resetcolor);
+    }
+    &_top{
+        margin-bottom: 45px;
+    }
+    &_form_title{
+        @include defaultFontStyle(400,40,45,$lygreen);
+        margin-bottom: 10px;
+    }
+    .border_btn{
+        margin-right: 41px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .auth_button_wrap{
+        margin-top: 20px;
+    }
+    .message_success{
+        margin-top: 15px;
+        p{
+            @include defaultFontStyle(400,14,14,$lygreen,-0.34px);
+            max-width: 312px;
+            margin: 0 auto;
+        }
+    }
+}
+.sd_information_title{
+    @include defaultFontStyleFpg($font_family_medium,50,45,$black);
+    margin: 65px 0;
+    @include mediaQuery($large){
+        margin: 35px 0;
+        @include mediaFontStyle(24,28)
+    }
+}
+.post_acceptance_link{
+    padding: 65px 29px;
+    border: 1px solid;
+    max-width: 670px;
+    width: 100%;
+    margin:0 15px 15px;
+    min-height: 205px;
+   @include mediaQuery(1440px){
+        padding: 35px 29px;
+        max-width: 570px;
+        min-height: 150px;
+   }
+   @include mediaQuery($large){
+       svg{max-width: 40px;max-height: 40px;}
+       padding: 15px;
+       min-height: auto;
+   }
+    p{
+        @include defaultFontStyle(400,40,45,$black);
+        margin:0 5px 0 25px;
+        @include mediaQuery($large){
+            @include mediaFontStyle(20,24);
+            margin:0 5px 0 15px;
+        }
+    }
+    .arrow_icon{
+        margin-top: 10px;
+    }
+}

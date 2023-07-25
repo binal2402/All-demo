@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea, iframe{
+            display: block;
+            margin: 10px 0;
+        }
+        iframe{
+            width: 500px;
+            border: 1px solid #a9a9a9;
+        }
+    </style>
+</head>
+<body>
+    <textarea rows="5" cols="50" placeholder="Type HTML or text here..."></textarea>
+    <button type="button" onclick="updateIframe()">Insert Content</button>
+    <iframe id="myframe"></iframe>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        function updateIframe(){
+            var myFrame = $("#myframe").contents().find('body');
+            var textareaValue = $("textarea").val();
+            myFrame.html(textareaValue);
+        }
+    </script>
+</body>
+</html>

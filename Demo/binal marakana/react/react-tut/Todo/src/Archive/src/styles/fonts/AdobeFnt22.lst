@@ -1,0 +1,396 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/AdobeFnt22.lst
+FileLength:9242
+FileModTime:645655820
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:LaNordV2.1-Regular
+FamilyName:La Nord V2.1
+StyleName:Regular
+MenuName:La Nord V2.1
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:La Nord V2.1 Regular
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/LaNordV2.1-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:113880
+FileModTime:582788180
+NameArray:0,Mac,4,La Nord V2.1 Regular
+NameArray:0,Win,1,La Nord V2.1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Pangea-Bold
+FamilyName:Pangea
+StyleName:Bold
+MenuName:Pangea
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Pangea Bold
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Pangea-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:181588
+FileModTime:637001924
+NameArray:0,Mac,4,Pangea Bold
+NameArray:0,Win,1,Pangea
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Pangea-BoldItalic
+FamilyName:Pangea
+StyleName:Bold Italic
+MenuName:Pangea
+StyleBits:3
+WeightClass:700
+WidthClass:5
+AngleClass:1
+FullName:Pangea Bold Italic
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Pangea-BoldItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:191156
+FileModTime:637001930
+NameArray:0,Mac,4,Pangea Bold Italic
+NameArray:0,Win,1,Pangea
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Pangea-Italic
+FamilyName:Pangea
+StyleName:Italic
+MenuName:Pangea
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Pangea Italic
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Pangea-Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:202172
+FileModTime:637001930
+NameArray:0,Mac,4,Pangea Italic
+NameArray:0,Win,1,Pangea
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Pangea-Light
+FamilyName:Pangea
+StyleName:Light
+MenuName:Pangea Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Pangea Light
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Pangea-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:172504
+FileModTime:637001924
+NameArray:0,Mac,4,Pangea Light
+NameArray:0,Win,1,Pangea Light
+NameArray:0,Win,16,Pangea
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Pangea-LightItalic
+FamilyName:Pangea
+StyleName:Light Italic
+MenuName:Pangea Light
+StyleBits:1
+WeightClass:300
+WidthClass:5
+AngleClass:1
+FullName:Pangea Light Italic
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Pangea-LightItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:183580
+FileModTime:637001930
+NameArray:0,Mac,4,Pangea Light Italic
+NameArray:0,Win,1,Pangea Light
+NameArray:0,Win,16,Pangea
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Pangea-Medium
+FamilyName:Pangea
+StyleName:Medium
+MenuName:Pangea Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Pangea Medium
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Pangea-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:188412
+FileModTime:637001924
+NameArray:0,Mac,4,Pangea Medium
+NameArray:0,Win,1,Pangea Medium
+NameArray:0,Win,16,Pangea
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Pangea-MediumItalic
+FamilyName:Pangea
+StyleName:Medium Italic
+MenuName:Pangea Medium
+StyleBits:1
+WeightClass:500
+WidthClass:5
+AngleClass:1
+FullName:Pangea Medium Italic
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Pangea-MediumItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:202564
+FileModTime:637001930
+NameArray:0,Mac,4,Pangea Medium Italic
+NameArray:0,Win,1,Pangea Medium
+NameArray:0,Win,16,Pangea
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Pangea-Regular
+FamilyName:Pangea
+StyleName:Regular
+MenuName:Pangea
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Pangea Regular
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Pangea-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:186484
+FileModTime:637001924
+NameArray:0,Mac,4,Pangea Regular
+NameArray:0,Win,1,Pangea
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica
+FamilyName:Helvetica
+StyleName:Regular
+MenuName:Helvetica
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Helvetica
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Helvetica.ttc
+TTCOffset:48
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2353284
+FileModTime:645655820
+NameArray:0,Mac,18,Helvetica
+NameArray:0,Mac,4,Helvetica
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-Bold
+FamilyName:Helvetica
+StyleName:Bold
+MenuName:Helvetica
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Helvetica Bold
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Helvetica.ttc
+TTCOffset:380
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2353284
+FileModTime:645655820
+NameArray:0,Mac,4,Helvetica Bold
+NameArray:0,Mac,4,Helvetica lihava
+NameArray:0,Mac,4,Helvetica Gras
+NameArray:0,Mac,4,Helvetica Fett
+NameArray:0,Mac,4,Helvetica grassetto
+NameArray:0,Mac,4,Helvetica vet
+NameArray:0,Mac,4,Helvetica Fet
+NameArray:0,Mac,4,Helvetica Negrita
+NameArray:0,Mac,4,Helvetica Carregado
+NameArray:0,Mac,4,Helvetica Halvfet
+NameArray:0,Mac,18,Helvetica Bold
+NameArray:4,Mac,4,Helvetica‭ ‬أسود
+NameArray:4,Mac,4,Helvetica‭ ‬برجسته
+NameArray:5,Mac,4,Helvetica‭ ‬עבה
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-BoldOblique
+FamilyName:Helvetica
+StyleName:Bold Oblique
+MenuName:Helvetica
+StyleBits:3
+WeightClass:700
+WidthClass:5
+AngleClass:1
+FullName:Helvetica Bold Oblique
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Helvetica.ttc
+TTCOffset:1044
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2353284
+FileModTime:645655820
+NameArray:0,Mac,18,Helvetica Bold Oblique
+NameArray:0,Mac,4,Helvetica Bold Oblique
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-Light
+FamilyName:Helvetica
+StyleName:Light
+MenuName:Helvetica
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Helvetica Light
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Helvetica.ttc
+TTCOffset:1376
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2353284
+FileModTime:645655820
+NameArray:0,Mac,18,Helvetica Light
+NameArray:0,Mac,4,Helvetica Light
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-LightOblique
+FamilyName:Helvetica
+StyleName:Light Oblique
+MenuName:Helvetica
+StyleBits:1
+WeightClass:300
+WidthClass:5
+AngleClass:1
+FullName:Helvetica Light Oblique
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Helvetica.ttc
+TTCOffset:1676
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2353284
+FileModTime:645655820
+NameArray:0,Mac,18,Helvetica Light Oblique
+NameArray:0,Mac,4,Helvetica Light Oblique
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-Oblique
+FamilyName:Helvetica
+StyleName:Oblique
+MenuName:Helvetica
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Helvetica Oblique
+WritingScript:Roman
+OutlineFileName:/Users/sonja_anderson/Desktop/ForLuis_BGs/SFF22_Brand_Guidelines_Final Folder_Checked/Document fonts/Helvetica.ttc
+TTCOffset:712
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2353284
+FileModTime:645655820
+NameArray:0,Mac,18,Helvetica Oblique
+NameArray:0,Mac,4,Helvetica Oblique
+%EndFont
+

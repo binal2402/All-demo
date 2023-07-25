@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculater</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+
+		var val,val1,val2,action="";
+		function cal(x)
+		{
+			val=document.getElementById('disp').value+=x;
+		}
+
+		function sum()
+		{
+			action="sum"
+			val1=document.getElementById('disp').value;
+			document.getElementById('disp').value="";
+		}
+
+		function sub()
+		{
+			action="sub"
+			val1=document.getElementById('disp').value;
+			document.getElementById('disp').value="";
+		}
+		function mul()
+		{
+			action="mul"
+			val1=document.getElementById('disp').value;
+			document.getElementById('disp').value="";
+		}
+		function div()
+		{
+			action="div"
+			val1=document.getElementById('disp').value;
+			document.getElementById('disp').value="";
+		}
+		
+
+		function ans()
+		{
+			val2=document.getElementById('disp').value;
+
+			if(action == "sum")
+			{
+				var ans1=parseInt(val1)+parseInt(val2);
+			}
+			if(action == "sub")
+			{
+				var ans1=parseInt(val1)-parseInt(val2);
+			}
+			if(action == "mul")
+			{
+				var ans1=parseInt(val1)*parseInt(val2);
+			}
+			if(action == "div")
+			{
+				var ans1=parseInt(val1)/parseInt(val2);
+			}
+
+			document.getElementById('disp').value = ans1;
+		}
+		function clr()
+        {
+            document.getElementById("result").value = "";
+        }
+
+		
+
+</script>
+
+
+
+
+
+</head>
+<body>
+<form>
+	<table class="calculator">
+		<tr class="outbox">
+			<td colspan="3">
+				<input type="text" name=""  id="disp">
+			</td>
+			<td class="btn_box">
+				<input type="button" name="" value="c" onclick="clr()">
+			</td>
+		</tr>
+		<tr class="btn_box">
+			<td>
+				<input type="button" name="" value="1" onclick="cal(1);">
+			</td>
+			<td>
+				<input type="button" name="" value="2" onclick="cal(2);">
+			</td>
+			<td>
+				<input type="button" name="" value="3" onclick="cal(3);">
+			</td>
+			<td>
+				<input type="button" name="" value="+" onclick="sum();">
+			</td>
+		</tr>
+		<tr class="btn_box">
+			<td>
+				<input type="button" name="" value="4" onclick="cal(4);">
+			</td>
+			<td>
+				<input type="button" name="" value="5" onclick="cal(5);">
+			</td>
+			<td>
+				<input type="button" name="" value="6" onclick="cal(6);">
+			</td>
+			<td>
+				<input type="button" name="" value="-" onclick="sub();">
+			</td>
+		</tr>
+		<tr class="btn_box">
+			<td>
+				<input type="button" name="" value="7" onclick="cal(7);">
+			</td>
+			<td>
+				<input type="button" name="" value="8" onclick="cal(8);">
+			</td>
+			<td>
+				<input type="button" name="" value="9" onclick="cal(9);">
+			</td>
+			<td>
+				<input type="button" name="" value="*" onclick="mul();">
+			</td>
+		</tr>
+		<tr class="btn_box">
+			<td>
+				<input type="button" name="" value="clr" onclick="clr();">
+			</td>
+			<td>
+				<input type="button" name="" value="0" onclick="cal(0);">
+			</td>
+			<td>
+				<input type="button" name="" value="=" onclick="ans();">
+			</td>
+			<td>
+				<input type="button" name="" value="/" onclick="div();">
+			</td>
+		</tr>
+	</table>
+</form>
+
+
+
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

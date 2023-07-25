@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="25px" viewBox="0 0 11 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <defs>
+        <polygon id="path-1" points="0.2583 0.9942 10.877 0.9942 10.877 24 0.2583 24"></polygon>
+    </defs>
+    <g id="DESKTOP" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
+        <g id="06-CAT-PARTNER" transform="translate(-1627.000000, -8302.000000)">
+            <g id="Group-11-Copy" transform="translate(0.000000, 7796.000000)">
+                <g id="Group-17" transform="translate(0.000000, 392.000000)">
+                    <g id="Group-6" transform="translate(1474.000000, 114.005900)">
+                        <g id="Group-5" transform="translate(153.000000, 0.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-4"></g>
+                            <path d="M2.6683,24.0002 L7.3003,24.0002 L7.3003,12.3992 L10.5323,12.3992 L10.8773,8.5152 L7.3003,8.5152 L7.3003,6.3032 C7.3003,5.3872 7.4843,5.0252 8.3703,5.0252 L10.8773,5.0252 L10.8773,0.9942 L7.6693,0.9942 C4.2223,0.9942 2.6683,2.5122 2.6683,5.4182 L2.6683,8.5152 L0.2583,8.5152 L0.2583,12.4482 L2.6683,12.4482 L2.6683,24.0002 Z" id="Fill-3" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+
+    <script>
+
+        // if condition
+        if (new Date().getHours() < 18) {
+            document.getElementById("demo").innerHTML = "good day!";
+        }
+
+        // if else condition
+        var hour = new Date().getHours();
+        var greeting;
+
+        if (hour < 18) {
+            greeting = "good day";
+        }else
+        {
+            greeting = "good evening";
+        }
+        document.getElementById("demo2").innerHTML = greeting;
+
+
+        //if else if condition
+        var greet;
+
+        if (hour < 10) {
+        } else if (hour < 20) {
+        greet = "Good day";
+        } else {
+        greet = "Good evening";
+        }
+        document.getElementById("demo3").innerHTML = greet;
+
+        
+    </script>
+</body>
+</html>

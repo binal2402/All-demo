@@ -1,0 +1,39 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    max-width: 1080px;
+    font-size: 20px;
+    text-align: center;
+    margin:auto;
+    color: #989898;
+   
+}
+header
+{
+    position: sticky;
+    top: 0px;
+    left: 0;
+
+}
+.progress_bar
+{
+    background-color: black;
+    padding: 4px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+}
+.progress_bar_inner
+{
+    background-color: yellow;
+    width:0%;
+    color: black;
+    padding: 8px 0px;
+    transition: .5s;
+}

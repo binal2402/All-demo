@@ -1,0 +1,6 @@
+@use 'demo-scss';
+
+h1 {
+  background-color: demo-scss.$primary-color;
+  color: white;
+}

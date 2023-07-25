@@ -1,0 +1,120 @@
+@import 'mixin';
+@import 'variable';
+
+.main_slider
+{
+    background-image: url(../images/icorp-banner-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    // @include breakpoint(desktop){
+    //     background-size: 100%;
+    // }
+    @include breakpoint(onlydesktop){
+        padding: 87px 0;
+    }
+    @include breakpoint(onlylaptop){
+        padding: 83px 0;
+    }
+    @include breakpoint(onlytablet){
+        padding: 51px 0;
+    }
+    @include breakpoint(only)
+    {
+        padding: 21px 0 !important;
+    }
+    @include breakpoint(onlyphablet){
+        padding: 31px 0;
+    }
+    @include breakpoint(mobileonly){
+        padding: 20px 0;
+    }
+    padding: 120px 0;
+    width: 100%;
+}
+
+.slider_content
+{
+    width: 50%;
+    .mail_header
+    {
+        color: $c_white;
+        font-size: 50px;
+        line-height: 59px;
+        @include breakpoint(onlydesktop)
+        {
+            font-size: 38px;
+            line-height: 39px;
+        }
+        @include breakpoint(onlylaptop)
+        {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        @include breakpoint(onlytablet)
+        {
+            font-size: 35px;
+            line-height: 34px;
+        }
+        @include breakpoint(only)
+        {
+            font-size: 19px !important;
+            line-height: 23px !important;
+        }
+        @include breakpoint(onlyphablet)
+        {
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+        @include breakpoint(mobileonly)
+        {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+      
+        span
+        {
+            color: $c_orange_color;
+        }
+    }
+    p
+    {
+        color: $c_secondary;
+        font-size: $f_large;
+        padding: 36px 0 43px 0;
+        @include breakpoint(onlylaptop)
+        {
+            font-size: 16px;
+            padding: 22px 0 24px 0;
+        }
+        @include breakpoint(onlytablet)
+        {
+            font-size: 14px;
+            padding: 23px 0 23px 0;
+        }
+        @include breakpoint(onlyphablet)
+        {
+            font-size: 14px;
+            padding: 23px 0 23px 0;
+        }
+        @include breakpoint(only)
+        {
+            font-size: 12px;
+            padding: 16px 0 16px 0;
+        }
+        @include breakpoint(phablet)
+        {
+            display: none;
+        }
+    }
+    .btn_learn_more
+    {
+        @include  all_btn;
+        i
+        {
+            padding-left: 2px;
+        }
+    }
+  
+}

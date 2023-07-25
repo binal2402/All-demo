@@ -1,0 +1,428 @@
+// Popup
+.sd_custom_popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include square(100%);
+    background: rgba($black, 0.3);
+    box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.147618);
+    z-index: 999;
+    overflow: hidden;
+    
+    // Close Popup
+    .sd_close_popup{
+        position: absolute;
+        top: 31px;
+        right: 36px;
+        @include square(28px);
+        @include buttonReset;
+        @include flex_justify_center;
+        
+        span{
+            display: block;
+            width: 2px;
+            background: $black;
+            height: 37px;
+            &:first-child{
+                transform: rotate(-45deg) translate(4px, -3px);
+            }
+            &:last-child{
+                transform: rotate(45deg) translate(-4px, -3px);
+            }
+            @include mediaQuery($ipad){
+                height: 30px;
+            }
+            @include mediaQuery($mobile){
+                height: 25px;
+            }
+        }
+        @include mediaQuery($mobile){
+            top: 25px;
+            right: 10px;
+        }
+    }
+    
+    .sd_popup_inner{        
+        max-width: 1478px;
+        margin: 0 auto;
+        width: calc(100% - 40px);
+        max-height: 100%;
+        background: $white;
+        box-shadow: 0 0 15px 5px rgba($black, 0.15);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        overflow: auto;
+        padding: 58px 98px 20px 100px;
+        border: none;
+        &.sd_submit_inner{
+            padding-bottom: 55px;
+            @include mediaQuery($ipad){
+                padding-bottom: 25px;
+            }
+        }
+        @include mediaQuery($ipad){
+            padding: 25px 25px 20px 25px;
+        }
+        .form_footer_bottom {
+            .btn button{
+                width: 115px;
+            }
+        }
+    }
+    // Popup Header
+    .sd_popup_header{
+        text-align: left;
+        h3{
+            @include defaultFontStyle(400, 40, 45, $black);  
+            @include mediaQuery($ipad){
+                @include defaultFontStyle(400, 30, 35, $black); 
+            }
+            @include mediaQuery($mobile){
+                @include defaultFontStyle(400, 22, 22, $black); 
+            }
+        }
+    }
+    
+    // Popup Content
+    .sd_popup_content{
+        padding: 20px 0 45px;
+        p, pre{
+            text-align: left;
+            @include defaultFontStyleFpg($font_family_normal, 24, 28, $black, -0.43px);  
+            // max-width: 405px;
+            // margin: 0 auto 15px;
+            white-space: pre-wrap;
+            
+            @include mediaQuery($large){
+                @include mediaFontStyle(18, 24)              
+            }
+            @include mediaQuery($mobile){
+                @include mediaFontStyle(16, 20)              
+            }     
+        }
+        a{  
+            text-transform: capitalize;
+            color: $pink;
+        }
+    
+        .sd_input_error_msg{
+            text-align: left;
+            @include defaultFontStyle(500, 12.5, 24, $pink, -0.3px); 
+        }
+        @include mediaQuery($ipad){
+            padding: 10px 0 25px;
+        }
+    }
+    
+    // Popup Button
+    .sd_popup_buttons{
+        @include flex;
+        justify-content: flex-end;
+        // padding-top: 13px;
+        button{
+            @include defaultFontStyleFpg($font_family_medium, 16.5, 16, $black, -0.4px); 
+            max-width: 200px;
+            width: 100%;
+            padding: 17px 10px;  
+            border: none;      
+            cursor: pointer;
+            background-color: transparent;
+            border: 2px solid $black;
+            @include transitionStyle(0.2, linear);
+            &:hover{
+                background-color: $black;
+                color: $white;
+            }
+            @include mediaQuery($ipad){
+                max-width: 150px;
+            }
+            @include mediaQuery($mobile){
+                max-width: 130px;
+                padding: 15px 8px;
+            }
+        }
+        .sd_grey_btn{
+            // background: $btnbg;
+            margin-right: 18px;
+            &:hover{
+                background: $black;
+                color: $white;
+            }
+        }
+        .sd_yellow_fill_btn{
+            // background: $activeBg;
+            &:hover{
+                background: $pink;
+            }
+        }
+        .sd_pink_fill_btn{
+            background: $pink;
+            // &:hover{
+            //     // background: $activeBg;
+            // }
+        }
+    }
+}
+
+// Cart poup 
+.sd_popup_light{
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include square(100%);
+    background: rgba($black, 0.1);
+    z-index: 999;
+    overflow: hidden;
+    
+    .sd_popup_light_inner{        
+        max-width: 537px;
+        margin: 0 auto; 
+        width: 100%;
+        max-height: 100%;
+        background: $white;
+        box-shadow: 0 0 15px 5px rgba($black, 0.15);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        overflow: auto;
+        padding: 10px 40px 55px;
+    }
+    
+    // Close Popup
+    .sd_close_popup{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        @include square(20px);
+        @include buttonReset;
+        @include flex_justify_center;
+        
+        span{
+            display: block;
+            width: 2px;
+            background: $black;
+            height: 25px;
+            &:first-child{
+                transform: rotate(-45deg) translate(4px, -3px);
+            }
+            &:last-child{
+                transform: rotate(45deg) translate(-4px, -3px);
+            }
+        }
+    }
+}
+// Popup Header
+.sd_popup_light_header{
+    text-align: center;
+    padding: 25px 0 0;
+    h3{
+        @include defaultFontStyle(400, 26, 26, $black, -0.62px);  
+    }
+}
+
+// Popup Content
+.sd_popup_light_content{
+    padding-top: 40px;
+    p, pre{
+        text-align: center;
+        @include defaultFontStyle(200, 16, 20, $black, -0.38px);  
+        max-width: 405px;
+        margin: 0 auto 15px;
+        white-space: pre-wrap;
+
+        @include mediaQuery($mobile){
+            font-size: 14px;                 
+        }     
+    }
+
+    h5{
+        text-align: center;
+        @include defaultFontStyle(500, 18, 18, $black);  
+
+    }
+
+    .sd_input_error_msg{
+        text-align: center;
+        @include defaultFontStyle(500, 12.5, 24, $pink, -0.3px); 
+    }
+}
+
+// Popup Button
+.sd_popup_light_buttons{
+    @include flex_center_center;
+    padding-top: 13px;
+    button{
+        @include defaultFontStyle(500, 16.5, 16, $black, -0.4px); 
+        max-width: 113px;
+        width: 100%;
+        padding: 17px 10px;  
+        border: none;      
+        cursor: pointer;
+        @include transitionStyle(0.2, linear);
+    }
+    .sd_grey_btn{
+        background: $lynxWhite2;
+        margin-right: 18px;
+        &:hover{
+            background: $black;
+            color: $white;
+        }
+    }
+    .sd_yellow_fill_btn{
+        background: $lightYellow;
+        &:hover{
+            background: $pink;
+        }
+    }
+    .sd_pink_fill_btn{
+        background: $pink;
+        &:hover{
+            background: $lightYellow;
+        }
+    }
+}
+
+// Remove Item
+.sd_remove_item{
+    h5{
+        padding: 15px 0 20px;
+    }
+}
+
+.sd_schedule_redeem {
+    padding: 0 0 0 50px;
+
+    p {
+        font-style: italic;
+    }
+}
+
+// Conditions Popup
+.sd_popup_agree_cart{
+    .sd_popup_light_inner{
+        max-width: 1020px;
+        @include mediaQuery($ipad){         
+            padding: 10px 20px 55px;
+        }     
+        ul{
+            margin-bottom: 10px;
+        }
+        li{
+            margin-bottom: 5px;
+
+            @include mediaQuery($mobile){
+                font-size: 14px;                 
+            }     
+        }
+    }   
+}
+
+
+// Popup
+// .sd_custom_popup {
+    
+//     .sd_popup_inner {
+//         max-width: 537px;
+//         box-shadow: 0 0 15px 5px rgba($black, 0.15);
+//         padding: 10px 40px 55px;
+//         border: none;
+//         left: 50%;
+//         top: 50%;
+//         transform: translate(-50%, -50%);
+
+//         @include mediaQuery($ipad) {
+//             width: 95%;
+//         }
+//     }
+ 
+
+//     // Popup Content
+//     .sd_popup_content {
+//         padding: 50px 0 0;
+
+//         p,
+//         pre {
+//             text-align: center;
+//             margin: 0 auto 15px;
+
+//             @include mediaQuery($mobile) {
+//                 font-size: 14px;
+//             }
+//         }
+
+//         a {
+//             text-transform: capitalize;
+//             color: $pink;
+//             &:hover{
+//                 text-decoration: underline;
+//             }
+//         }
+
+//     }
+
+// }
+
+.sd_free_item_popup{
+    .sd_popup_light_inner{
+        max-width: 688px;
+        @include mediaQuery($ipad) {             
+            width: 95%;
+        }
+        @include mediaQuery($mobile) { 
+            padding: 10px 20px 55px;
+        }
+    }
+    .sd_popup_light_content {
+        padding-top: 20px;
+    }  
+    .sd_user_form{
+        max-width: 100%;
+    }
+    .sd_free_item_zip{
+        max-width: 510px;
+        margin: 0 auto;
+        .form_group{ 
+            @include flex_center_center;
+            @include flex_dir_row;
+        }
+        label {
+            @include flex_shrink;
+            padding-right: 24px;
+            cursor: pointer;
+            &:after, &::before{
+                @include content;
+                content:  '';
+                left: 0;
+            }
+            &::after{  
+                transform: rotate(-45deg);
+                width: 6px;
+                height: 3px;
+                border: 1px solid $black; 
+                border-top: transparent;
+                border-right: transparent;
+                opacity: 0;
+                top: 8px !important;
+            }  
+        }
+        input{
+            max-width: 312px;
+        }
+    }
+    .sd_free_item_button{
+        text-align: center;
+        padding-top: 20px;
+        button{
+            width: 100%;
+            max-width: 198px;
+            @include mediaQuery($mobile) {
+                max-width: 150px;
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    }
+}

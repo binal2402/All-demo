@@ -1,0 +1,118 @@
+.Our_Memberships .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  .Our_Memberships .container {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+}
+
+.Our_Memberships .container .left_content {
+  width: 50%;
+}
+
+@media (max-width: 480px) {
+  .Our_Memberships .container .left_content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.Our_Memberships .container .left_content .main_title {
+  font-weight: 800;
+  font-size: 30px;
+  position: relative;
+  line-height: 57px;
+}
+
+@media (max-width: 768px) {
+  .Our_Memberships .container .left_content .main_title {
+    font-size: 24px;
+    line-height: 37px;
+  }
+}
+
+.Our_Memberships .container .left_content .main_title::before {
+  content: '';
+  width: 36px;
+  height: 4px;
+  background-color: #E02B20;
+  position: absolute;
+  bottom: 0px;
+}
+
+.Our_Memberships .container .left_content .s_sub_title {
+  color: #778591;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.Our_Memberships .container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 480px) {
+  .Our_Memberships .container .box {
+    width: 100%;
+  }
+}
+
+.Our_Memberships .container .box .our_box {
+  padding: 25px 0px;
+  max-width: 204px;
+  border: 1px solid #E9E5E5;
+  width: 100%;
+  border-radius: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 99px;
+  margin-right: 20px;
+}
+
+.Our_Memberships .container .box .our_box:hover {
+  border: 1px solid #E02B20;
+  -webkit-box-shadow: 0px 20px 70px rgba(38, 45, 63, 0.1);
+          box-shadow: 0px 20px 70px rgba(38, 45, 63, 0.1);
+}
+
+.Our_Memberships .container .box .our_box .sub_box {
+  max-width: 94px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Our_Memberships .container .box .our_box2 {
+  padding: 16px 0px;
+  max-width: 204px;
+  border: 1px solid #E9E5E5;
+  width: 100%;
+  border-radius: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 99px;
+}
+
+.Our_Memberships .container .box .our_box2:hover {
+  border: 1px solid #E02B20;
+  -webkit-box-shadow: 0px 20px 70px rgba(38, 45, 63, 0.1);
+          box-shadow: 0px 20px 70px rgba(38, 45, 63, 0.1);
+}
+
+.Our_Memberships .container .box .our_box2 .sub_box2 {
+  max-width: 75px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=Our_Memberships.css.map */

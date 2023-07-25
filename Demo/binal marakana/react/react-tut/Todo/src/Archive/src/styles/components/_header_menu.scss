@@ -1,0 +1,207 @@
+// Header Menu
+.sd_navigation {
+    list-style: none;
+    @include transitionStyle(0.3, linear);
+
+    @include mediaQuery($desktop){
+        @include flex_dir_column;
+        overflow: auto;
+        position: absolute;
+        width: 100%;
+        padding: 0 0 60px;
+        height: calc(100vh - 80px);
+        background: $pink;
+    }
+
+    li {
+        border-left: 2px solid $black;
+        position: relative;
+        @include flex_center_center;
+        max-width: 142px;
+        height: 100%;
+        text-align: center;
+        
+        @include mediaQuery(1500px){
+            max-width: 110px;                
+        }
+
+        @include mediaQuery($desktop){
+            border-right: 0;
+            @include border_bottom_black;
+            height: auto;
+            min-width: 100%;
+            padding: 8px 30px;
+            border-left: 0;
+        } 
+
+        &:hover{
+            @include minmediaQuery($desktop){
+                ul{
+                    display: block;
+                }
+            }            
+        }
+
+        &.has-innerlist{
+
+            @include mediaQuery($desktop){
+                @include flex_dir_column;             
+            }
+
+            &.active{     
+                .sd_inner_navigation{
+                    display: block;
+                }       
+            }
+        }
+        &.sd_sign_in_btn{
+            max-width: 210px;
+            a{
+                @include mediaFontStyle(16, 20);
+            }
+
+        }
+    }
+    a{
+        @include defaultFontStyleFpg($font_family_medium, 15, 15, $black);
+        padding: 16px 26px 14px;
+        @include mediaQuery(1650px){	
+            padding: 16px 20px 14px;	
+        }
+        @include mediaQuery(1500px){
+            padding: 16px 15px 14px;
+            @include mediaFontStyle(13, 16);                     
+        }
+        @include mediaQuery($desktop){
+            @include mediaFontStyle(18, 18);
+            width: 100%;    
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+
+    .toggle_arrow{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        cursor: pointer;
+        z-index: 5;
+        width: 50px;
+        height: 64px;
+        display: none;
+        @include mediaQuery($desktop){
+            display: block;       
+        }
+        &:before{
+            @include content;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            @include transitionStyle(0.2, linear);
+            @include square(0);
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;            
+            border-top: 7px solid $black;
+        }                        
+    }
+}
+
+// Inner Navigation
+.sd_inner_navigation{
+    position: absolute;
+    top: 100%;
+    right: -2px;
+    border: 2px solid $black;
+    z-index: 9;
+
+    @include mediaQuery($desktop){
+        position: static;     
+        width: 100%;    
+        border: 0;          
+    }
+
+    li{
+        width: 210px;
+        max-width: 210px;
+        background: $white;
+        @include border_bottom_black;
+        border-left: 0; 
+        text-align: right;
+        @include transitionStyle(0.2, linear);
+
+        &:hover{
+            background: $lygreen;
+            a{
+                color: $white;
+            }
+        }
+
+        &:last-child{
+            border-bottom: 0;
+        }
+
+        @include mediaQuery($desktop){
+            width: 100%;
+            max-width: 100%;     
+            text-align: center;    
+            padding: 0;      
+        }
+
+        a{
+            width: 100%;
+            padding: 32px 27px 31px;
+
+            @include mediaQuery($desktop){
+                padding: 15px 30px;    
+                @include mediaFontStyle(14, 16);         
+            }
+        }
+    }
+}
+
+// Navigation menu
+.sd_menu_options{
+    width: 100%;
+    padding: 40px 17px 30px 18px;
+    @include mediaQuery($desktop){
+        display: block;
+    }
+    @include mediaQuery($mobile){
+        padding: 40px 17px 10px 18px;
+    }
+    .sd_menu_signin{
+        a{
+            @include defaultFontStyle(300, 16, 16, $black);
+            letter-spacing: 1.1px;
+            text-transform: capitalize;
+            text-align: center;
+            display: block;
+            margin-bottom: 56px;            
+        }
+    }
+    .sd_menu_search{
+        position: relative;
+        width: 100%;
+        input{
+            @include defaultFontStyle(700, 14, 14, $black);
+            letter-spacing: 0.96px;
+            border: none;
+            background: $lightRed;
+            width: 100%;
+            padding: 16px 50px 12px;
+            text-align: center;
+            &::placeholder{
+                color: $black;
+            }
+        }
+        button{
+            @include buttonReset;
+            position: absolute;
+            width: 24px;
+            height: 25px;
+            top: 10px;
+            right: 16px;
+        }
+    }
+}

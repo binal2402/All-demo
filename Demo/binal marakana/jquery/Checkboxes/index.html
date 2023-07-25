@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><input type="checkbox"> Check or uncheck the checkbox to get the status.</p>
+    <div id="result" style="background: yellow;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('input[type="checkbox"]').click(function(){
+                if ($(this).prop("checked")==true) {
+                    $("#result").html("Checkbox is checked.");
+                }else if($(this).prop("checked") == false){
+                    $("#result").html("Checkbox is unchecked.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

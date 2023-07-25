@@ -1,0 +1,140 @@
+@import 'mixin';
+
+.msg_Moustafa
+{
+    background-color: $c_dark;
+    background-image: url('../images/msg_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 93px 0;
+    width: 100%;
+    color: $c_white;
+    @include breakpoint(tablet)
+    {
+        padding: 50px 0 50px 0;
+    }
+    .container
+    {
+        display: flex;
+        .left_img
+        {
+            width: 29%;
+            @include breakpoint(laptop)
+            {
+                display: none;
+            }
+            .Rectangle
+            {
+                background-image: url('../images/Rectangle.png');
+                background-repeat: no-repeat;
+                padding: 10px 15px 0 0;
+
+                img
+                {
+                    max-width: 100%;
+                    display: block;
+                }  
+            }
+            .name
+            {
+                text-align: center;
+                padding-top: 30px;
+            }
+        }
+        
+        .right_content
+        {
+            width: calc(71% - 34px);
+            margin-left: 34px;
+            @include breakpoint(laptop)
+            {
+                width: 100%;
+                margin-left: 0px;
+            }
+            .top_msg
+            {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 23px;
+                
+            }
+            .top_msg_header
+            {
+                font-weight: bold;
+                margin: 13px 0 16px 0;
+                font-size: 26px;
+                line-height: 38px;  
+                img
+                {
+                    margin: unset;
+                }
+                p
+                {
+                    @include breakpoint(phablet)
+                    {
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                }
+                .end_qoutes
+                {
+                    margin-left: 350px;
+                    @include breakpoint(onlyphablet)
+                    {
+                        margin-left: 295px;
+                    }
+                    @include breakpoint(mobileonly)
+                    {
+                        margin-left: 248px;
+                    }
+                }
+            }
+            .top_msg_header img
+            {
+                opacity: 0.3;
+            }
+
+            .main_round
+            {
+                vertical-align: top;
+            }   
+            .round
+            {
+                background-color:$c_orange_color;
+                border: 1px solid $c_white;
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 14px;
+                box-shadow: -1px 5px 19px -4px $c_orange_color;
+                i
+                {
+                    font-size: 14px;
+                }
+
+            }
+            .topic_name
+            {
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 9px;
+            }
+            .detail
+            {
+                color: $c_secondary;
+                font-weight: 500;
+                margin-bottom: 20px;
+                line-height: 24px;
+            }
+            .btn_Contact_Us
+            {
+                @include all_btn;
+                margin-top: 35px;
+            }
+        }
+    }
+   
+}

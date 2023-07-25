@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="movieform">
+        <input type="text" id="txtname">
+        <button>Get Data</button>
+        <!-- <input type="button" id="btnget" value="Get Data"> -->
+        <br><br>
+    </form>
+
+  
+
+    <div id="resultdiv" class="mytable">
+      
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script>
+        var data;
+        function getanswer(q){
+            
+            $.get("https://www.omdbapi.com/?s="+q+"&apikey=18bb7c74"),function(){
+                var rawstring = JSON.stringify(rawdata);
+                data = JSON.parse(rawstring)
+                var title = data.Search[0].Title;
+                var year = data.Search[0].Year;
+                var posterurl = data.Search[0].Poster;
+                document.getElementById('resultdiv').innerHTML="<h1>"+title+"</h1>";
+
+            }
+        }
+    </script> -->
+    <script>
+        $(document).ready(function(){
+            var apikey = "18bb7c74"
+            $("#movieform").submit(function(event){
+                event.preventDefault()
+
+                var resultElement = $('#resultdiv');
+                resultElement.html('');
+
+                var requestData = $('#txtname').val();
+                var url = "http://www.omdbapi.com/?apikey="+apikey
+                $.ajax({
+                    url:url,
+                    type:'GET',
+                    data:{t: requestData},
+                    // dataType: 'json',
+                    success: function (data) {
+                        console.log(data);
+                        result = `<img style="float:left;margin-right:20px" width="200" height="200" src="${data.Poster}"/>
+                                <h3>MovieName : ${data.Title}</h3>
+                                <h3>Released Date : ${data.Released}</h3>
+                                <h3>Actors Name : ${data.Actors}</h3>
+                                <h3>Genre : ${data.Genre}</h3>`;
+                        
+                        $("#resultdiv").html(result);
+                    }, error: function (err) {
+                        alert(err);
+                    }
+
+                });
+
+            })
+        })
+    </script>
+</body>
+</html>

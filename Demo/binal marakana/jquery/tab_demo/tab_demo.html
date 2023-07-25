@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab demo</title>
+    <link rel="stylesheet" href="css/tab_demo.css">
+    
+</head>
+<body>
+    <div class="">
+        <div class="tabs">
+            <ul>
+                <!-- <div class="silder"></div> -->
+    
+                <li>
+    
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Profile</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+                <li>
+                    <a href="">Settings</a>
+                </li>
+            </ul>
+        </div>
+       
+
+        <div class="content">
+            <div class="tab_wrap">
+                <h2>Home</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cupiditate 
+                    totam ex quis obcaecati dolorem, porro consectetur nam? Consequatur cumque itaque 
+                    enim non obcaecati modi eveniet sequi expedita ut assumenda!</p>
+            </div>
+            <div class="tab_wrap">
+                <h2>Profile</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cupiditate 
+                    totam ex quis obcaecati dolorem, porro consectetur nam? Consequatur cumque itaque 
+                    enim non obcaecati modi eveniet sequi expedita ut assumenda!</p>
+            </div>
+            <div class="tab_wrap">
+                <h2>Contact</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cupiditate 
+                    totam ex quis obcaecati dolorem, porro consectetur nam? Consequatur cumque itaque 
+                    enim non obcaecati modi eveniet sequi expedita ut assumenda!</p>
+            </div>
+            <div class="tab_wrap">
+                <h2>Settings</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cupiditate 
+                    totam ex quis obcaecati dolorem, porro consectetur nam? Consequatur cumque itaque 
+                    enim non obcaecati modi eveniet sequi expedita ut assumenda!</p>
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- <script>
+    //   console.log("tabs");
+        var tabs = document.querySelectorAll(".tabs ul li");
+        var tabs_wrap = document.querySelectorAll(".tab_wrap");
+
+        tabs.forEach(function(tab, tab_index) {
+            // console.log(tab);
+            // console.log(tab_index);
+            tab.addEventListener("click", function(){
+                tabs.forEach(function(tab){
+                    tab.classList.remove("active");
+                })
+                tab.classList.add("active");
+                tabs_wrap.forEach(function(content,contect_index) {
+                    if(contect_index == tab_index)
+                    {
+                        content.style.display = "block";
+                    }
+                    else
+                    {
+                        content.style.display = "none";
+                    }
+                })
+            });
+
+        });
+    </script> -->
+
+</body>
+</html>

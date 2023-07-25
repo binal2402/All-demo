@@ -1,0 +1,177 @@
+@mixin all_btn {
+    font-family:$regular_font;
+    font-weight: bold;
+    padding: 14px 29px;
+    font-size: 18px;
+    background-color: $c_orange_color;
+    color: $c_white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    @include breakpoint(tablet)
+    {
+        padding: 9px 14px;
+        font-size: 14px;
+    }
+}
+@mixin border_all_btn {
+    font-family:$regular_font;
+    font-weight: bold;
+    padding: 14px 29px;
+    font-size: $f_medium;
+    border: 1px solid $c_orange_color;
+    color: $c_orange_color;
+    background-color: $c_white;
+    outline: none;
+    border-radius: 5px;
+    @include breakpoint(tablet)
+    {
+        padding: 6px 26px;
+        font-size: 14px;
+    }    
+}
+
+@mixin main_title {
+    font-weight: 800;
+    font-size: 30px;
+    position: relative;
+    line-height: 57px;
+    @include breakpoint(tablet)
+    {
+        font-size: 24px;
+        line-height: 37px;
+    }
+    &::before
+    {
+        content: '';
+        width: 36px;
+        height: 4px;
+        background-color: $c_orange_color;
+        position: absolute;
+        bottom: 0px;
+    }
+}
+
+@mixin s_sub_title {
+    color:$c_primary;
+    line-height: 24px;
+}
+
+@mixin our_box {
+    max-width: 204px;
+    border: 1px solid $c_secondary;
+    width: 100%;
+    border-radius: 10px;
+    align-self: center;
+    height: 99px;
+    &:hover
+    {
+        border: 1px solid $c_orange_color;
+        box-shadow: 0px 20px 70px rgba(38, 45, 63, 0.1);
+    }
+}
+@mixin sub_Certifications {
+    width: calc(33.33% - 30px);
+    box-shadow: 0px 30px 100px rgba(38, 45, 63, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 15px;
+    @include breakpoint(laptop)
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .title
+    {
+        border-radius: 12px 12px 0px 0px;
+        color: $c_white;
+        font-weight: bold;
+        font-size: 22px;
+        padding: 25px 0;
+    }
+    img
+    {
+        padding: 58px 0 51px 0;
+    }
+    .name
+    {
+        font-weight: 800;
+        font-size: 24px;
+    }
+    span
+    {
+        color: $c_primary;
+    }
+    .sub_content
+    {
+        padding: 7px 0 52px 0;
+    }
+}
+@mixin f_content
+{   
+    color: $c_white;
+    .top_title
+    {
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 28px;
+        position: relative;
+        &::before
+        {
+            content: '';
+            width: 36px;
+            height: 4px;
+            background-color: $c_orange_color;
+            position: absolute;
+            bottom: -13px;
+            left: 0;
+        }
+    }
+    ul
+    {
+        margin-top: 23px;
+        li
+        {
+            padding: 9px 0;
+            i
+            {
+                padding-right: 11px;
+            }
+        }
+    }
+}
+
+@mixin breakpoint($point) {
+    @if $point == desktop {
+         @media(max-width: 1024px) { @content ; }
+   }
+    @else if $point == onlydesktop{
+        @media (min-width: 992px) and (max-width: 1024px) { @content ; }
+    }
+    @else if $point == onlylaptop {
+        @media (min-width: 768px) and (max-width: 992px) { @content ; }
+    }
+   
+    @else if $point == onlytablet {
+        @media (min-width: 480px) and (max-width: 768px) { @content ; }
+    }
+    @else if $point == only {
+        @media (min-width: 480px) and (max-width: 700px) { @content ; }
+    }
+
+    @else if $point == onlyphablet {
+        @media (min-width: 320px) and (max-width: 480px)  { @content ; }
+    }
+    @else if $point == laptop {
+        @media(max-width: 992px) { @content ; }
+    }
+    @else if $point == tablet {
+        @media(max-width: 768px) { @content ; }
+    }
+    @else if $point == phablet {
+      @media (max-width: 480px){ @content ; }
+    }
+    @else if $point == mobileonly {
+      @media (max-width: 320px)  { @content ; }
+    }
+ }

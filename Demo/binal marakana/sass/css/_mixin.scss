@@ -1,0 +1,16 @@
+@mixin all_btn {
+    font-family:$regular_font;
+    font-weight: bold;
+    padding: 14px 29px;
+    font-size: 18px;
+    background-color: $c_orange_color;
+    color: $c_white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    // @include breakpoint(tablet)
+    // {
+    //     padding: 9px 14px;
+    //     font-size: 14px;
+    // }
+}

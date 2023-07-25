@@ -1,0 +1,41 @@
+.step{
+    @include flex_align_center;
+    // @extend .sd_flexwrap;
+    padding-top: 55px;
+    padding-bottom: 49px;
+    .step_no{
+        p{
+            width: 273px;
+            @include defaultFontStyle(400,75,80, $lygreen);
+            @include mediaQuery($ipad){
+                @include defaultFontStyle(400,55,55, $lygreen);
+            }
+            @include mediaQuery($mobile){
+                @include defaultFontStyle(400,35,35, $lygreen);
+            }
+        }
+    }
+    .step_des{
+        p{
+            @include defaultFontStyle(400,18,28, $black,-0.43);
+            width: calc(100%-273px);
+            max-width: 720px;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            @include mediaQuery($ipad){
+                @include defaultFontStyle(400,16,26, $black,-0.43);
+                margin-bottom: 15px;
+            }
+             @include mediaQuery($mobile){
+                @include defaultFontStyle(400,14,24, $black,-0.43);
+            }
+        }
+    }
+    @include mediaQuery($ipad){
+        flex-wrap: wrap;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}

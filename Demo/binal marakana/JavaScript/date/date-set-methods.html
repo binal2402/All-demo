@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        // var d = new Date();
+        // d.setFullYear(2021);
+        // document.getElementById("demo").innerHTML = d;
+
+
+        var text;
+        var today = new Date();
+        var someday = new Date();
+        someday.setFullYear(2000,0,14);
+
+         if(someday > today)
+        {
+            text = "Today is before January 14, 2000.";
+        }
+        else 
+        {
+            text = "Today is after January 14, 2000.";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+//PAF header
+.form_header{
+    background-color: $lygreen;
+    // padding: 59px 15px;
+    h2{
+        @include defaultFontStyleFpg($font_family_medium,50,45,$black);
+        letter-spacing: -1.2px;
+    }
+}
+.form_steps_list{
+    @include border_bottom_black;
+    ul{
+        list-style: none;
+        margin: 55px 0 45px;
+        overflow: auto;
+        padding-bottom: 10px;
+        @include mediaQuery($ipad){
+            margin: 35px 0 25px;
+        }
+        @include mediaQuery($mobile){
+            margin: 25px 0 15px;
+        }
+        li{
+            width: 11%;
+            min-width: 128px;
+            text-align: center;
+            border-right: 2.8px solid $black;
+            padding:0 18px;
+            position: relative;
+            opacity: 0.2;
+            span{
+                display: block;
+                @include defaultFontStyle(400,28,31,$black);
+                @include mediaQuery($mobile){
+                    @include mediaFontStyle(18,21);
+                }
+            }
+            p{
+                @include defaultFontStyle(400,12.5,16,$black);
+                min-height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 5px;
+            }
+            svg{
+                position: absolute;
+                right: 6px;
+                top: 0;
+            }
+            &.complete{
+                opacity: 1;
+            }
+            &.current{
+                opacity: 1;
+                border-right: 2.8px solid #d2d2d2;
+                span{
+                    color: $lygreen;
+                }
+                p{
+                    color: $lygreen;
+                }
+                svg{
+                    path{
+                        fill:$lygreen;
+                    }
+                }
+            }
+            &:last-child{
+                border-right: 0;
+            }
+            @include mediaQuery($ipad){
+                min-width: 90px;
+                padding: 0 5px;
+            }
+            // @include mediaQuery($mobile){
+            //     min-width: 85px;
+            // }
+        }
+    }
+}
+.add_remove_icon{
+    min-width: 78px;
+    @include mediaQuery($mobile){
+        min-width: 45px;
+    }
+    span{
+        margin-top: 40px;
+        margin-right: 11px;
+        svg{
+            // cursor: pointer;
+            @include mediaQuery($mobile){
+                width: 18px;
+                margin-top: 18px;
+            }
+        }
+    }
+}
+.form_inner{
+    // margin-top: 54px;
+    // @include mediaQuery($ipad){
+    //     margin-top: 35px;
+    // }
+    // @include mediaQuery($mobile){
+    //     margin-top: 25px;
+    // }
+    .field_row_inner{
+        margin-bottom: 20px;
+        @include mediaQuery($mobile){
+            margin-bottom: 10px;
+        }
+        // label{
+        //     @include defaultFontStyle(400,14,28,$black);
+        //     text-transform: uppercase;
+        // }
+    }
+    .film_deatil_form{
+        @include border_bottom_black;
+        .film_deatil_form_inner{
+            max-width: 780px;
+            padding-bottom: 33px;
+            .sd_flex{
+                @include mediaQuery($mobile){
+                    flex-wrap: wrap
+                }
+            }
+        }
+        .f_detail_f_row{
+            .field_row_inner{
+                &:first-child{
+                    width: 18%;
+                    @include mediaQuery($mobile){
+                        width: 100%;
+                    }
+                }
+                &:nth-of-type(2){
+                    width: 79%;
+                    @include mediaQuery($mobile){
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .f_detail_s_row{
+            .field_row_inner{
+                &:first-child{
+                    width: 40%;
+                    @include mediaQuery($mobile){
+                        width: 100%;
+                    }
+                }
+                &:nth-of-type(2){
+                    width: 57%;
+                    @include mediaQuery($mobile){
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .f_detail_country_row{
+            .field_row_inner{
+                margin-right: 11px;
+                .select_field{
+                    @include mediaQuery($mobile){
+                        width: 212px;
+                    }
+                }
+            }
+            .add_remove_icon{
+                span{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .ass_container_990{
+        max-width: 990px;
+        width: 100%;
+    }
+}
+.f_step_1_heading{
+    @include border_bottom_black;
+    padding: 27px 0 77px;
+    @include mediaQuery($ipad){
+        flex-wrap: wrap;
+        padding-bottom: 25px;
+    }
+    .f_step_1_left_title{
+        @include defaultFontStyle(400,33,42,$black);
+        letter-spacing: -0.79px;
+        max-width: 471px;
+        @include mediaQuery($extraLarge) {
+            @include mediaFontStyle(30, 42); 
+        }
+        @include mediaQuery($ipad){
+            margin-bottom: 15px;
+        }
+        @include mediaQuery($mobile){
+            @include mediaFontStyle(25, 30);
+        }
+    }
+    .f_step_1_right_desc{
+        max-width: 720px;
+        p{
+            @include defaultFontStyle(400, 18,28, $black);
+            letter-spacing: -0.43px;
+            margin-bottom: 40px;
+            @include mediaQuery($ipad){
+                margin-bottom: 15px;
+            }
+            @include mediaQuery($mobile){
+                @include mediaFontStyle(14, 20);
+            }
+        }
+    }
+}
+.form_inner_title{
+    h3{
+        @include defaultFontStyle(400, 40,45, $black);
+        padding-top: 45px;
+        padding-bottom: 23px;
+        .sd_question_button{ 
+            margin-left: 20px;
+        }
+        @include mediaQuery($ipad){
+            @include mediaFontStyle(30, 35);
+            padding-top: 25px;
+        }
+        @include mediaQuery($mobile){
+            @include mediaFontStyle(25, 30);
+            padding-top: 15px;
+        }
+    }
+}
+.form_inner_sub_title{
+    border-bottom: 2px solid $gainsboro;
+    padding-bottom: 16px;
+    margin-bottom: 12px;
+    @include mediaQuery($mobile){
+        flex-wrap: wrap;
+    }
+    h5{
+        @include defaultFontStyle(400,22,23,$black);
+        letter-spacing: -0.53px;
+        button{
+            margin-left: 15px;
+        }
+        @include mediaQuery($mobile){
+            @include mediaFontStyle(18, 22);
+        }
+    }
+    p{
+        @include defaultFontStyle(400,14,18,$black);
+        margin-left: 20px;
+        @include mediaQuery($mobile){
+            margin-left: 0;
+            margin-top: 5px;
+        }
+    }
+}
+.form_sub_2_title{
+    @include defaultFontStyle(400,20,28,$black);
+    font-style: italic;
+    margin-bottom: 5px;
+    @include mediaQuery($mobile){
+        @include mediaFontStyle(18, 22);
+    }
+}
+.fullname_div{
+    .field_row_inner{
+        width: calc(33.33% - 18px);
+        @include mediaQuery($mobile){
+            width: 100%;
+        }
+    }
+    @include mediaQuery($mobile){
+        flex-wrap: wrap
+    }
+    &.two_field{
+        .field_row_inner{
+            margin-right: 27px;
+            @include mediaQuery($mobile){
+                margin-right: 0;
+            }
+        }
+    }
+    &.one_field{
+        .field_row_inner{
+            width: 66%;
+            @include mediaQuery($mobile){
+                width: 100%;
+            }
+        }
+    }
+}
+.associate_people{
+    @include border_bottom_black;
+    padding-bottom: 46px;
+    @include mediaQuery($mobile){
+        padding-bottom: 25px;
+    }
+}
+.associate_list{
+    .sd_container_990{
+        margin-right: 26px;
+        @include mediaQuery($mobile){
+            margin-right: 10px;
+        }
+    }
+}
+.synopsis_form{
+    @include border_bottom_black;
+    padding-bottom: 23px;
+    .form_inner_title{
+        h3{
+            padding-bottom: 15px;
+        }
+        p{
+            @include defaultFontStyle(400,18,28,$black);
+            letter-spacing: -0.43px;
+            max-width: 920px;
+            padding-bottom: 15px;
+        }
+    }
+    .field_row_inner{
+        .field_input {
+            textarea{max-width: 100%;}
+        }
+    }
+
+}
+.step_common{
+    .field_row_inner{
+        .textarea_word{
+            justify-content: flex-end;
+            label{
+                text-transform: capitalize !important;
+                margin-right: 20px;
+            }
+            & > span{
+                @include defaultFontStyle(400,18,28,$lygreen);
+            }
+        }
+    }
+}
+.privacy_policy_link{
+    padding-bottom: 45px;
+    @include border_bottom_black;
+    @include mediaQuery($mobile){
+        padding-bottom: 25px;
+    }
+    p{
+        @include defaultFontStyle(400,18,28,$black);
+        letter-spacing: -0.43px;
+        a{
+            @include defaultFontStyle(400,18,28,$lygreen);
+            border-bottom: 1px solid;
+        }
+    }
+}
+.electronic_sign{
+    .form_inner_title {
+        h3{
+            padding-bottom: 45px;
+            @include mediaQuery($mobile){
+                padding-bottom: 25px;
+            }
+        }
+    }
+    p{
+        @include defaultFontStyle(400,18,28,$black);
+        letter-spacing: -0.43px;
+        margin-bottom: 35px;
+        max-width: 920px;
+        @include mediaQuery($mobile){
+            @include mediaFontStyle(14, 20);
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.form_footer_links{
+    max-width: 562px;
+    border-bottom: 2px solid $gainsboro;
+    padding: 65px 0 35px;
+    margin-bottom: 25px;
+    @include mediaQuery($mobile){
+        flex-wrap: wrap;
+        padding: 25px 0;
+    }
+    a{
+        @include defaultFontStyleFpg($font_family_medium,50,45,$black);
+        display: flex;
+        align-items: center;
+        margin-right: 33px;
+        @include mediaQuery($ipad){
+            margin-right: 20px;
+        }
+        span{
+            @include defaultFontStyleFpg($font_family_medium,22,22,$black);
+            // @include defaultFontStyle(400,22,24,$black);
+            border-bottom: 2px solid;
+            margin-left: 11px;
+            @include mediaQuery($ipad){
+                margin-right: 5px;
+                @include mediaFontStyle(16, 20)
+            }
+        }
+        svg{
+            vertical-align: top;
+        }
+    }
+}
+.form_footer_bottom{
+    margin-top: 7px ;
+    .btn{
+        margin-right: 18px;
+        &:last-child{
+            margin-right: 0;
+        }
+        button{
+            border: 2px solid $black;
+            @include defaultFontStyleFpg($font_family_medium,22,22,$black);
+            padding: 19px;
+            width: 200px;
+            background-color: transparent;
+            transition: 0.5s ease all;
+            cursor: pointer;
+            svg{
+                margin-right: 20px;
+            }
+            &:hover{
+                background-color: $black;
+                color: $white;
+                transition: 0.5s ease all;
+                svg{
+                    filter: brightness(0) invert(1);
+                }
+            }
+            @include mediaQuery($mobile){
+                @include mediaFontStyle(18, 22);
+                width: 135px;
+            }
+        }
+    }
+}

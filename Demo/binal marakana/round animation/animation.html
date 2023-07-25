@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle-container {
+            background-color: #F5F5F5;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            }
+            .circle-container .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0, 168, 255, 0.5);
+            border-radius: 100%;
+            transform: translate(-50%, -50%);
+            }
+            .circle-container .circle.circle-1 {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0, 168, 255, 0.5);
+            animation: circle 3s ease-in-out infinite;
+            }
+            .circle-container .circle.circle-2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 168, 255, 0.7);
+            animation: circle2 2s ease-in-out infinite;
+            }
+            .circle-container .circle.circle-3 {
+            width: 100px;
+            height: 100px;
+            background-color: #00a8ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            }
+
+
+            @keyframes circle {
+            0% {
+                width: 100px;
+                height: 100px;
+                opacity: 1;
+            }
+            30% {
+                opacity: 0.5;
+            }
+            90% {
+                width: 500px;
+                height: 500px;
+                opacity: 0;
+            }
+            100% {
+                width: 100px;
+                height: 100px;
+                opacity: 0;
+            }
+            }
+     
+            @keyframes circle2 {
+            0% {
+                width: 100px;
+                height: 100px;
+                opacity: 1;
+            }
+            30% {
+                opacity: 0.7;
+            }
+            90% {
+                width: 250px;
+                height: 250px;
+                opacity: 0;
+            }
+            100% {
+                width: 100px;
+                height: 100px;
+                opacity: 0;
+            }
+            }
+    </style>
+</head>
+<body>
+    <div class="circle-container">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+      </div>
+    
+</body>
+</html>

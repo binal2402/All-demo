@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe
+    width="560"
+    height="420"
+    frameborder="0"
+    data-lazyembed
+    data-src="https://www.youtube.com/embed/XTYVQRdLfH0"
+    data-placeholder="https://img.youtube.com/vi/XTYVQRdLfH0/0.jpg"
+    allowfullscreen
+    ></iframe>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+     $("#playvideo").one(function(){
+    //as noted in addendum, check for querystring exitence
+    var symbol = $("#video1")[0].src.indexOf("?") > -1 ? "&" : "?";
+    //modify source to autoplay and start video
+    $("#video1")[0].src += symbol + "autoplay=1";
+    });
+    </script>
+</body>
+</html>

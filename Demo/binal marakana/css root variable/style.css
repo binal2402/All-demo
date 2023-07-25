@@ -1,0 +1,37 @@
+:root {
+    --main-color: hsl(26, 95%, 48%);
+    /* --font-size:20px; */
+    font-size: 80px;
+}
+
+.main-header {
+    color: var(--main-color);
+    font-size: var(--font-size);
+    font-size: 1rem;
+}
+.main-footer {
+    background-color: var(--main-color);
+    padding: 30px 0;
+    font-size: 30px;
+}
+.mainn
+{
+    font-size: 50px;
+}
+span{
+    font-size: 1em;
+}
+.font-awesome-icons::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    color:red;
+    -webkit-font-smoothing: antialiased;
+}
+
+.twitter::before {
+    font-family: "Font Awesome 5 Brands"; 
+    font-weight: 400;
+    content: "\f099";
+}

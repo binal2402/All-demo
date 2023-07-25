@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* resets */
+        body { margin:0px; padding:0px; }
+
+        /* main */
+        header {
+            height: 60px;
+            z-index: 10;
+        }
+        .header-banner {
+            background-color: #333;
+            background-image: url('https://37.media.tumblr.com/8b4969985e84b2aa1ac8d3449475f1af/tumblr_n3iftvUesn1snvqtdo1_1280.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 300px;
+        }
+
+        header h1 {
+            background-color: rgba(18,72,120, 0.8);
+            color: #fff;
+            padding: 0 1rem;
+            position: absolute;
+            top: 2rem; 
+            left: 2rem;
+        }
+
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; 
+        }
+
+        nav {
+            width: 100%;
+            height: 60px;
+            background: #292f36;
+            postion: fixed;
+            z-index: 10;
+        }
+
+        nav div {
+            color: white;
+            font-size: 2rem;
+            line-height: 60px;
+            position: absolute;
+            top: 0;
+            left: 2%;
+            visibility: hidden;
+        }
+        .visible-title {
+            visibility: visible;
+        }
+
+        nav ul { 
+            list-style-type: none;
+            margin: 0 2% auto 0;
+            padding-left: 0;
+            text-align: right;
+            max-width: 100%;
+        }
+        nav ul li { 
+            display: inline-block; 
+            line-height: 60px;
+            margin-left: 10px;
+        }
+        nav ul li a {
+            text-decoration: none; 
+            color: #a9abae;
+        }
+
+        /* demo content */
+        body { 
+            color: #292f36;
+            font-family: helvetica;
+            line-height: 1.6;
+        }
+        .content{ 
+            margin: 0 auto;
+            padding: 4rem 0;
+            width: 960px;
+            max-width: 100%;
+        }
+        article {
+            float: left;
+            width: 720px;
+        }
+        article p:first-of-type {
+            margin-top: 0;
+        }
+        aside {
+            float: right;
+            width: 120px;
+        }
+        p img {
+            max-width: 100%;
+        }
+
+        @media only screen and (max-width: 960px) {
+            .content{ 
+                padding: 2rem 0;
+            }
+            article {
+                float: none;
+                margin: 0 auto;
+                width: 96%;
+            }
+            article:last-of-type {  
+                margin-bottom: 3rem;
+            }
+            aside {  
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="clear"></div>
+        <nav>
+            <div class="site-title">Finland</div>
+            <ul>
+                <li><a href="/archive">Archive</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/contact">Contact</a></li>
+            <ul>
+        </nav>
+    </header>
+    <div class="main_details_blog">
+        <div class="container d-flex-only">
+            <div class="sw_left_side_data">
+                <ul class="sw_breadcrumb d-flex">
+                    <li class="sw_breadcrumb-item"><a href="https://superworks.com">Home </a></li>
+                    <li class="sw_breadcrumb-item"><a href="https://superworks.com/blog/">Blogs </a></li>
+                    <li class="sw_breadcrumb-item"><a>BLOG DETAILS </a></li>
+                </ul>
+                <div class="top_title">
+                    <h1>Clock In Clock Out Apps: Meaning, Types, 15+ Best Apps and More!</h1>
+                </div>
+                <ul class="date_time_data d-flex align_center">
+                    <li class="tag_name">Clock in clock out app</li>
+                    <li class="d-flex align_center">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.00001 13.6666C3.31801 13.6666 0.333344 10.6819 0.333344 6.99992C0.333344 3.31792 3.31801 0.333252 7.00001 0.333252C10.682 0.333252 13.6667 3.31792 13.6667 6.99992C13.6667 10.6819 10.682 13.6666 7.00001 13.6666ZM7.66668 6.99992V3.66658H6.33334V8.33325H10.3333V6.99992H7.66668Z"
+                                fill="#515869"></path>
+                        </svg>
+                        <span>10 min read</span>
+                    </li>
+                    <li class="d-flex align_center">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.3333 2.00008H13C13.1768 2.00008 13.3464 2.07032 13.4714 2.19534C13.5964 2.32037 13.6666 2.48994 13.6666 2.66675V13.3334C13.6666 13.5102 13.5964 13.6798 13.4714 13.8048C13.3464 13.9298 13.1768 14.0001 13 14.0001H0.99998C0.823169 14.0001 0.653599 13.9298 0.528575 13.8048C0.403551 13.6798 0.333313 13.5102 0.333313 13.3334V2.66675C0.333313 2.48994 0.403551 2.32037 0.528575 2.19534C0.653599 2.07032 0.823169 2.00008 0.99998 2.00008H3.66665V0.666748H4.99998V2.00008H8.99998V0.666748H10.3333V2.00008ZM1.66665 6.00008V12.6667H12.3333V6.00008H1.66665ZM2.99998 7.33342H4.33331V8.66675H2.99998V7.33342ZM2.99998 10.0001H4.33331V11.3334H2.99998V10.0001ZM5.66665 7.33342H11V8.66675H5.66665V7.33342ZM5.66665 10.0001H8.99998V11.3334H5.66665V10.0001Z"
+                                fill="#515869"></path>
+                        </svg>
+                        <span>April 12, 2023 </span>
+                    </li>
+                </ul>
+                <div class="sw_all_data">
+                    <p><img decoding="async"
+                            data-src="https://images.surferseo.art/0b53848c-7c14-40fb-8bc9-09fed3abf0c6.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/0b53848c-7c14-40fb-8bc9-09fed3abf0c6.png"></p>
+                    <p style="text-align: justify;">Tick tock, tick tock! The sound of a clock ticking away can be both
+                        soothing and nerve-wracking at the same time.&nbsp;On one hand, it marks the passage of time and
+                        helps us stay on schedule and on the other hand, it can feel like a relentless reminder that
+                        we’re constantly running out of time. But what if there was a way to make clock-watching less
+                        stressful and more productive? That’s where clock in clock out apps come in!</p>
+                    <p style="text-align: justify;">Need to mention, clock in clock out apps are the best and feasible
+                        method to track work hours of employees.</p>
+                    <p style="text-align: justify;">In this blog, we’ll explore the meaning of such apps, the different
+                        types available, and the benefits they offer. We’ll also highlight the 20 best clock in clock
+                        out apps on the market, so you can find the perfect one for your needs.&nbsp;So, whether you’re
+                        an HR manager, a small business owner, or a corporate executive, get ready to say goodbye to
+                        clock-watching and hello to productivity!</p>
+                    <p style="text-align: justify;">Let’s dive in.</p>
+                    <div id="toc_container" class="no_bullets">
+                        <ul class="toc_list">
+                            <li><a href="#What_is_a_Clock_In_Clock_Out_App">What is a Clock In Clock Out App?</a></li>
+                            <li><a href="#What_are_Different_Types_of_Clock_In_Clock_Out_Systems">What are Different
+                                    Types of Clock In Clock Out Systems?</a>
+                                <ul>
+                                    <li><a href="#Biometric_clock_in_clock_out_system">Biometric clock in clock out
+                                            system:</a></li>
+                                    <li><a href="#Mobile_clock_in_clock_out_system">Mobile clock in clock out
+                                            system:</a></li>
+                                    <li><a href="#Web-based_clock_in_clock_out_system">Web-based clock in clock out
+                                            system:</a></li>
+                                    <li><a href="#Time_clock_kiosk_system">Time clock kiosk system:</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Why_Do_Companies_Use_Clock_In_Clock_Out_Apps_or_Time_Tracking_Software">Why Do
+                                    Companies Use Clock In Clock Out Apps or Time Tracking Software?</a></li>
+                            <li><a href="#Top_6_Benefits_of_Using_Clock_In_Clock_Out_Apps">Top 6 Benefits of Using Clock
+                                    In Clock Out Apps</a></li>
+                            <li><a href="#20_Best_Clock_In_Clock_Out_Apps_or_Employee_Time_Tracking_Systems_in_2023">20
+                                    Best Clock In Clock Out Apps or Employee Time Tracking Systems in 2023</a>
+                                <ul>
+                                    <li><a href="#Super_HRMS">Super HRMS</a></li>
+                                    <li><a href="#Apploye">Apploye</a></li>
+                                    <li><a href="#When_I_Work">When I Work</a></li>
+                                    <li><a href="#Connecteam">Connecteam</a></li>
+                                    <li><a href="#Everhour">Everhour&nbsp;</a></li>
+                                    <li><a href="#Toggl">Toggl&nbsp;</a></li>
+                                    <li><a href="#Clockify">Clockify&nbsp;</a></li>
+                                    <li><a href="#Time_Doctor">Time Doctor</a></li>
+                                    <li><a href="#Quickbooks_Time">Quickbooks Time&nbsp;</a></li>
+                                    <li><a href="#Insightful">Insightful&nbsp;</a></li>
+                                    <li><a href="#TimeCamp">TimeCamp</a></li>
+                                    <li><a href="#Homebase">Homebase&nbsp;</a></li>
+                                    <li><a href="#ClockShark">ClockShark&nbsp;</a></li>
+                                    <li><a href="#Replicon">Replicon&nbsp;</a></li>
+                                    <li><a href="#Justworks_Hours">Justworks Hours&nbsp;</a></li>
+                                    <li><a href="#Timely">Timely&nbsp;</a></li>
+                                    <li><a href="#Hubstaff">Hubstaff&nbsp;</a></li>
+                                    <li><a href="#Buddy_Punch">Buddy Punch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Bottom_Line">Bottom Line</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="logo_wrap" style="text-align: justify;"><span id="What_is_a_Clock_In_Clock_Out_App_first">What is a Clock In
+                            Clock Out App?</span></h2>
+                    <p style="text-align: justify;">As the name suggests, a clock in clock out apps or systems is a time
+                        tracking tool that helps organizations keep track of employee attendance and time worked. These
+                        apps allow employees to log in to work by clocking in using their smartphones, tablets, or other
+                        mobile devices, and then clock out when their shift is finished. Using such apps can also help
+                        companies save time and money on <strong><a class="yellow blue-color"
+                                href="https://superworks.com/hr-payroll-software/" target="_blank"
+                                rel="noopener">payroll management</a></strong>.</p>
+                    <p style="text-align: justify;">With accurate and reliable time tracking data, employers can quickly
+                        and easily generate payroll reports, calculate overtime, and ensure that employees are paid for
+                        the hours they actually worked.</p>
+                    <p style="text-align: justify;">Now let’s learn different types of these apps available in the
+                        market today!</p>
+                    <h2 class="logo_wrap" style="text-align: justify;"><span
+                            id="What_are_Different_Types_of_Clock_In_Clock_Out_Systems">What are Different Types of
+                            Clock In Clock Out Systems?</span></h2>
+                    <p style="text-align: justify;">There is literally no dearth of clock in clock out apps in the
+                        market today. Out of all, here are the most popular types you should know about:</p>
+                    <ol class="logo_wrap">
+                        <li>
+                            <h3><span id="Biometric_clock_in_clock_out_system"><strong>Biometric clock in clock out
+                                        system:</strong></span></h3>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">These systems use fingerprint or facial recognition technology to
+                        verify an employee’s identity and record their attendance.&nbsp;Biometric time tracking software
+                        is highly accurate and secure, and they are particularly useful in industries where security is
+                        a concern.</p>
+                    <ol start="2" class="logo_wrap">
+                        <li>
+                            <h3><span id="Mobile_clock_in_clock_out_system"><strong>Mobile clock in clock out
+                                        system:</strong></span></h3>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">These systems allow employees to clock in and out using their
+                        smartphones or other mobile devices.&nbsp;Mobile clock in clock out apps are great for
+                        businesses with remote teams or employees who work off-site, as they allow employees to clock in
+                        from anywhere or multiple locations.</p>
+                    <ol start="3" class="logo_wrap">
+                        <li>
+                            <h3><span id="Web-based_clock_in_clock_out_system"><strong>Web-based clock in clock out
+                                        system:</strong></span></h3>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">These systems allow individuals to clock in and out via web browser
+                        on their computer, laptop and more.&nbsp;Web-based time tracking software is easy to use and
+                        requires no special expertise or additional costs, making them a great choice for small
+                        businesses.</p>
+                    <ol start="4" class="logo_wrap">
+                        <li>
+                            <h3><span id="Time_clock_kiosk_system"><strong>Time clock kiosk system:</strong></span></h3>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">These systems are physical devices that are installed in a workplace
+                        and allow employees to mark attendance just by swiping a badge or entering a code.&nbsp;Time
+                        clock kiosks are useful in industries with a high volume of employees.</p>
+                    <ol start="5" class="logo_wrap">
+                        <li>
+                            <p style="text-align: justify;"><strong>Manual clock in clock out system:&nbsp;</strong></p>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">This is the most consuming and tedious system as it involves manual
+                        data entry by employees or managers to record attendance.&nbsp;Manual time clock systems are the
+                        least accurate and most prone to error, but they are also the most affordable and accessible
+                        option for small businesses with a limited budget. Now that you know the five most common types
+                        of clock in clock out apps, you should also know that the majority of businesses in India have
+                        switched to such systems.</p>
+                    <p style="text-align: justify;">Do you wish to know why? Find the reason in the next section!</p>
+                    <h2 class="logo_wrap" style="text-align: justify;"><span
+                            id="Why_Do_Companies_Use_Clock_In_Clock_Out_Apps_or_Time_Tracking_Software">Why Do Companies
+                            Use Clock In Clock Out Apps or Time Tracking Software?</span></h2>
+                    <p style="text-align: justify;">Although any and every company can use clock in clock out apps, they
+                        are particularly useful for organizations with a mobile workforce, such as construction
+                        companies, landscaping businesses, and more. This is certainly because such companies have
+                        employees who work remotely and at multiple locations.</p>
+                    <p style="text-align: justify;">With a time clock out app, employers can easily monitor the
+                        whereabouts of their employees and ensure that they are working the hours they are supposed to.
+                        Some of the key features of clock in clock out apps include GPS tracking, automatic clock-out
+                        reminders, real-time reporting, and employee scheduling. These features allow managers to stay
+                        on top of their employee time, track employee productivity, reduce buddy punching, and optimize
+                        scheduling to ensure that there is always enough staff to meet demand.</p>
+                    <p style="text-align: justify;">Overall, a clock in clock out app is a powerful tool for managing
+                        employee attendance and time tracking. Whether you are a small business owner or <strong><a
+                                class="yellow blue-color" href="https://superworks.com/applicant-tracking-systems/"
+                                target="_blank" rel="noopener">manage a large workforce</a></strong>, a clock in clock
+                        out app can help you streamline your operations, improve productivity, and save time and money.
+                    </p>
+                    <h2 class="logo_wrap" style="text-align: justify;"><span id="Top_6_Benefits_of_Using_Clock_In_Clock_Out_Apps">Top 6
+                            Benefits of Using Clock In Clock Out Apps</span></h2>
+                    <p style="text-align: justify;">Now, it is time to dig deeper and learn the top six benefits you can
+                        achieve by using a time clock system:</p>
+                    <ol>
+                        <li>
+                            <p style="text-align: justify;"><strong>&nbsp;Accurate Timekeeping</strong>:</p>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">One of the primary benefits of using a clock in, clock out app is
+                        that it ensures accurate timekeeping. Traditional methods of tracking employee time, such as
+                        paper timesheets, can be prone to errors, such as missing punches, incorrect calculations, or
+                        time theft. Clock in, clock out apps eliminate these issues by allowing employees to clock in
+                        and out electronically, with timestamps automatically recorded for each punch. This accuracy
+                        ensures that employees are paid for the exact amount of time they worked, which can improve
+                        employee satisfaction and reduce disputes over hours worked.</p>
+                    <ol start="2">
+                        <li>
+                            <p style="text-align: justify;"><strong>Increased Efficiency</strong>:</p>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">Using an employee time clock app can also increase efficiency in the
+                        workplace. With automated time tracking, managers and HR professionals no longer need to spend
+                        hours manually calculating time cards or processing payroll. This allows them to focus on other
+                        important tasks, such as strategic planning or employee development.</p>
+                    <ol start="3">
+                        <li>
+                            <p style="text-align: justify;"><strong>Real-Time Monitoring</strong>:</p>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">Another benefit of using a clock in, clock out app is the ability to
+                        track employee time in real-time. This means managers can see when employees clock in and out,
+                        how long they’ve been working, and whether they’re working overtime. Real-time monitoring allows
+                        managers to quickly address any issues, such as employees who are consistently late or those who
+                        are working unauthorized overtime.</p>
+                    <ol start="4">
+                        <li>
+                            <p style="text-align: justify;"><strong>Improved Compliance:&nbsp;</strong></p>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">A clock out system can also help businesses comply with labor laws
+                        and regulations. For example, many apps can track and report on overtime hours, ensuring that
+                        businesses are in compliance with state and federal labor laws. Some apps also have built-in
+                        compliance features, such as alerts for breaks and meal periods, which can help prevent
+                        violations and reduce the risk of lawsuits.</p>
+                    <ol start="5">
+                        <li>
+                            <p style="text-align: justify;"><strong>Cost Savings:&nbsp;</strong></p>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">Clock in, clock out apps can also save businesses money. By reducing
+                        the time and resources needed for manual timekeeping, businesses can reduce their administrative
+                        costs. Additionally, accurate time tracking can help prevent overpayments or time theft, which
+                        can save businesses money in the long run.</p>
+                    <ol start="6">
+                        <li>
+                            <p style="text-align: justify;"><strong>Mobile Convenience:&nbsp;</strong></p>
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">Finally, a time clock system provides a level of convenience that
+                        traditional timekeeping methods simply can’t match. Many apps are accessible on mobile devices,
+                        allowing employees to clock in and out from anywhere, at any time. This can be especially useful
+                        for businesses with remote workers or employees who work off-site.</p>
+                    <h2 class="logo_wrap" style="text-align: justify;"><span
+                            id="20_Best_Clock_In_Clock_Out_Apps_or_Employee_Time_Tracking_Systems_in_2023">20 Best Clock
+                            In Clock Out Apps or Employee Time Tracking Systems in 2023</span></h2>
+                    <h3 class="logo_wrap"><span id="Super_HRMS"><strong>Super HRMS</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/7f7a9442-d081-4468-b735-d7a09a4d04f4.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/7f7a9442-d081-4468-b735-d7a09a4d04f4.png"></p>
+                    <p>Super HRMS, as the name suggestion, is one of the top-notch human resources management software
+                        that offers various features, including time and attendance tracking. It allows employees to
+                        clock in and out using a mobile app, web browser, desktop app or biometric devices, which helps
+                        companies to track time of employees accurately.</p>
+                    <p>One of the reasons why <a class="yellow blue-color"
+                            href="https://superworks.com/software-for-hr/" target="_blank" rel="noopener"><strong>Super
+                                HRMS</strong></a> might be considered one of the best clock in clock out apps is that it
+                        is easy to use and offers real-time visibility into attendance, time off, and other HR metrics.
+                        Additionally, it also offers features like shift scheduling, leave management, and payroll
+                        processing, making it a comprehensive HR software solution for companies of all sizes. You
+                        should definitely get this cloud based, online time clock and say goodbye to buddy punching,
+                        inaccurate tracking of employee hours, and more.</p>
+                    <h3 class="logo_wrap"><span id="Apploye"><strong>Apploye</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/a0743d98-5629-424e-9a4c-d8637d1b9704.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/a0743d98-5629-424e-9a4c-d8637d1b9704.png"></p>
+                    <p style="text-align: justify;">When talking about one of the top clock out apps, how can we not
+                        talk about Apploye. The software is known for enabling managers and company owners to enhance
+                        productivity through consistent tracking and management. Given its versatility as a time clock
+                        software, Apploye can be a great option for businesses. Because of its capabilities and the way
+                        it manages HR tasks with a wonderful blend of automation and creativity, Apploye has made it to
+                        the second position in our list.</p>
+                    <p style="text-align: justify;">At a really modest cost, it provides more than a hundred features.
+                        Whatever requirement your firm could have at any stage of the business, Apploye can meet any and
+                        every need – all thanks to its timesheet, remote worker time tracking, and GPS time clock
+                        capabilities.</p>
+                    <h3 class="logo_wrap"><span id="When_I_Work"><strong>When I Work</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/55a8e661-86bc-4dab-8c4f-e40f57539c8a.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/55a8e661-86bc-4dab-8c4f-e40f57539c8a.png"></p>
+                    <p>Employers may easily schedule hourly workers, track time and attendance, and communicate with
+                        them by using the When I Work app. That is not it- if you choose this software, you can also put
+                        the schedule and time clock in each employee’s pocket using free iOS and Android applications.
+                    </p>
+                    <p style="text-align: justify;">You can monitor staff availability, vacation time, and shift swaps
+                        with just a few clicks. Also, connect with your payroll provider to simplify the process and get
+                        rid of human mistakes. Some notable features of When I Work are employee scheduling, time
+                        reporting, time-off management, tracking time tasks, and workflow management.</p>
+                    <h3 class="logo_wrap"><span id="Connecteam"><strong>Connecteam</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/173c279a-28b6-4d3b-957b-0bfd986567b7.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/173c279a-28b6-4d3b-957b-0bfd986567b7.png"></p>
+                    <p style="text-align: justify;">Connecteam, a workforce management application, enables managers to
+                        put corporate operations on autopilot and focus on business expansion while also enabling staff
+                        to be more productive, adaptable, and engaged.&nbsp;With mobile-first custom checklists, forms,
+                        and reports, you can streamline employee communication, boost their professional skills,
+                        schedule shifts, track work hours with a GPS time clock, manage daily tasks, and much more.</p>
+                    <p style="text-align: justify;">Some impressive features of Connecteam are time tracking (to
+                        effortlessly export timesheets and streamline payroll), overtime management (with chat option,
+                        auto-triggered notifications), report management (to auto-generate attendance reports), and
+                        mobile accessibility (to support workers irrespective of their place and time).</p>
+                    <h3 class="logo_wrap"><span id="Everhour">Everhour<strong>&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/619c2899-423c-4284-bc31-4e61b1c4c460.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/619c2899-423c-4284-bc31-4e61b1c4c460.png"></p>
+                    <p style="text-align: justify;">Another best clock in clock out app you should definitely know about
+                        is Everhour. We included this software for multiple reasons.&nbsp;First things first, it lets
+                        businesses organise all of their project budgets, create alarms for thresholds, and schedule
+                        resources in advance, that too with a bare minimum of human errors.</p>
+                    <p style="text-align: justify;">In addition to this, you can easily measure how much time you spend
+                        on each job directly from the project management software with Everhour’s integration: Basecamp,
+                        Trello, Jira, and more. If you invest in Everhour, you will get features like time tracking,
+                        client invoicing, project management, and auto-send reminders.</p>
+                    <h3 class="logo_wrap"><span id="Toggl"><strong>Toggl&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/fe02be85-1940-4972-a0a7-a79d629bc60d.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/fe02be85-1940-4972-a0a7-a79d629bc60d.png"></p>
+                    <p style="text-align: justify;">What if we say there is a clock in clock out app that can let you
+                        integrate virtually into any process? Yes, it is possible with the Toggl app.&nbsp;Regardless of
+                        the size of your workforce, Toggl app is particularly designed to save time and money.</p>
+                    <p style="text-align: justify;">It comes with a straightforward timer that can monitor your progress
+                        across many devices at once. For all your time management needs, including reports, automated
+                        tracking, and shortcuts, you can turn to Toggl Track. Toggle offers some amazing features
+                        including time and attendance tracking, client invoicing, management features, timesheets,
+                        mobile time clock, and much more.</p>
+                    <h3 class="logo_wrap"><span id="Clockify"><strong>Clockify&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/2d819c6f-1167-4eda-ace3-48804e6e5f9a.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/2d819c6f-1167-4eda-ace3-48804e6e5f9a.png"></p>
+                    <p style="text-align: justify;">In the time tracking and employee monitoring sector, Clockify is
+                        quite popular. This is certainly because it offers some advanced capabilities and is an
+                        efficient tool to simplify the time tracking process.&nbsp;This team time tracking software can
+                        be useful for enterprises of all types as well as sizes, including digital businesses,
+                        consultancies, educational institutions, and other organisations.</p>
+                    <p style="text-align: justify;">As a business owner, you can have complete control over your
+                        business workflow- all you need to do is invest in Clockify clock in clock out app. Clockify
+                        provides businesses with time tracker, calendar, timesheets, scheduling management, time off
+                        management and much more.</p>
+                    <h3 class="logo_wrap"><span id="Time_Doctor"><strong>Time Doctor</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/5513a0c4-92de-422d-ae61-f9ffba0e6b27.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/5513a0c4-92de-422d-ae61-f9ffba0e6b27.png"></p>
+                    <p style="text-align: justify;">Time Doctor is yet another top-notch clock in clock out app in the
+                        market today. It can be a good DOCTOR for your time tracking. The software offers a number of
+                        features and benefits that let you monitor and increase employee productivity without putting in
+                        much effort.</p>
+                    <p style="text-align: justify;">With Time Doctor, you can set up time-use and distraction alerts,
+                        track activity logs, and keep an eye on staff website and app usage. Need to mention, one of the
+                        few time-tracking apps that permits screenshots is Time Doctor. Some features of Time Doctor are
+                        billing invoicing, calendar management, offline support and more.</p>
+                    <h3 class="logo_wrap"><span id="Quickbooks_Time"><strong>Quickbooks Time&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/71d9d640-feee-4d17-a122-d92097eb6786.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/71d9d640-feee-4d17-a122-d92097eb6786.png"></p>
+                    <p style="text-align: justify;">Quickbooks Time is everything you need if you have a mobile
+                        workforce. The software comes with a number of exceptional features that can support and empower
+                        remote workforces.</p>
+                    <p style="text-align: justify;">Quickbooks Time allows employees to clock in and out from any
+                        location they want, even from home or a worksite. This is certainly because software offers
+                        flexible punching options. You can also set up geofences and utilise GPS monitoring to make sure
+                        your mobile employees are reporting for work from the areas they’ve indicated they would be.
+                        This in turn will keep your employee accountable like never before. From employee scheduling to
+                        job tracking, you can avail a number of features with Quickbooks Time.</p>
+                    <h3 class="logo_wrap"><span id="Insightful"><strong>Insightful&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/6924d573-0ae3-4fea-b298-cd7938e21943.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/6924d573-0ae3-4fea-b298-cd7938e21943.png"></p>
+                    <p style="text-align: justify;">If you are looking for one excellent Clock In/Clock Out software for
+                        your team, look no further and invest in Insightful. It is designed to handle a team’s job
+                        quickly. Your team may install and use Insightful as much as they’d like using the desktop
+                        application, mobile app, or browser extension.</p>
+                    <p style="text-align: justify;">Insightful keeps track of the time you spend on projects even when
+                        you aren’t online. It will serve as a reminder to the team to maintain time and submit
+                        timesheets. Insightful software offers features like automatic time mapping, performance
+                        reliability, employee monitoring, and the list continues.</p>
+                    <h3 class="logo_wrap"><span id="TimeCamp"><strong>TimeCamp</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/201ab55e-368e-4950-a5d5-9d8457dce29d.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/201ab55e-368e-4950-a5d5-9d8457dce29d.png"></p>
+                    <p style="text-align: justify;">Are you looking for a free clock in clock out app that also comes
+                        with a wide range of powerful features? If you said yes, TimeCamp is your answer. A good number
+                        of users today are utilising the free time and expense tracking tool, TimeCamp.</p>
+                    <p style="text-align: justify;">The software helps with a lot of important processes like the
+                        decision-making process, managing team performance, and business profitability. Also, it will
+                        let you bill clients more quickly by figuring out billable and non-billable hours, which boosts
+                        their satisfaction with your service. Some amazing features of TimeCamp are time recording,
+                        workflow management client billing and much&nbsp; more.</p>
+                    <h3 class="logo_wrap"><span id="Homebase"><strong>Homebase&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/59eed38a-1bcc-4a79-863e-31779488e3b6.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/59eed38a-1bcc-4a79-863e-31779488e3b6.png"></p>
+                    <p style="text-align: justify;">Homebase is one of the all-rounder time tracking systems. It can not
+                        just handle employee scheduling, time clocks but also automate payroll, communication, and more
+                        in just a few taps.</p>
+                    <p style="text-align: justify;">Homebase is known in the market for simplifying the process of
+                        managing and processing employee payroll. It completely cuts down the need for both paperwork as
+                        well as spreadsheets. And the cherry on the cake – Homebase is online, so your team’s schedule
+                        is always current. It will be just easy and effortless to alter anything on the go, while riding
+                        the bus, or from virtually anywhere, then immediately share it within seconds.</p>
+                    <h3 class="logo_wrap"><span id="ClockShark"><strong>ClockShark&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/5bb1e55f-62f7-461e-8c72-d8286eb64f7a.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/5bb1e55f-62f7-461e-8c72-d8286eb64f7a.png"></p>
+                    <p style="text-align: justify;">ClockShark can also be an efficient pick for your business. The
+                        software can be quite helpful if you are currently managing a field service or you have a
+                        construction company that needs coordination and a strong team effort.</p>
+                    <p style="text-align: justify;">With ClockShark, you get your hands on every feature that you need
+                        to do tasks faster and accurately while being paid more swiftly and effectively, including a
+                        top-notch timesheet software. You can also control the workflow by using ClockShark. Due to its
+                        exceptional features and ability to automate the majority of tasks, it can greatly lessen the
+                        pain experienced by HR managers.</p>
+                    <h3 class="logo_wrap"><span id="Replicon"><strong>Replicon&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/a9727cfb-e38a-479c-bc81-f6979939454e.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/a9727cfb-e38a-479c-bc81-f6979939454e.png"></p>
+                    <p style="text-align: justify;">Replicon is one of the most popular time tracking systems used by a
+                        good number of businesses today. For the uninitiated, Replicon has demonstrated its mastery of
+                        many features throughout the years. We have included Replicon in our exclusive list because of
+                        its time and resource management capabilities, as well as its time and attendance features.</p>
+                    <p style="text-align: justify;">To stop time theft and cut errors that often lead to hefty fines and
+                        penalties, Replicon uses artificial intelligence-powered self-service features including face
+                        recognition, photo capture with audit trail, and improved project tracking. Some other features
+                        are time off tracking, configurable attendance tracking and intelligent approvals.</p>
+                    <h3 class="logo_wrap"><span id="Justworks_Hours"><strong>Justworks Hours&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/94bf20dd-5ee7-4120-98a2-f37b192ba97f.png"
+                            class=" lazyloaded"
+                            src="https://images.surferseo.art/94bf20dd-5ee7-4120-98a2-f37b192ba97f.png"></p>
+                    <p style="text-align: justify;">Another feature-rich clock in clock out system you should know about
+                        is Justworks Hours. It is an efficient software that delivers the necessary capabilities for
+                        managing the employees in a business, making it a superb Clock In/Clock Out software.</p>
+                    <p style="text-align: justify;">This software is made super simple to help businesses to adapt to it
+                        as quickly as possible. Additionally, it offers sophisticated capabilities such as Geofencing
+                        attendance and supports process automation through a mobile-first experience. It enables you to
+                        wave goodbye to the whole burden of manual work, thereby saving time and energy along the way.
+                        From overtime calculation to leave tracking, the software also offers a lot of features.</p>
+                    <h3 class="logo_wrap"><span id="Timely"><strong>Timely&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/71515197-5a22-47fa-9341-539a347300fa.png"
+                            class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+                    <p style="text-align: justify;">Timely is yet another tremendous clock in clock out app you can
+                        consider for your business. The software offers simple-to-use time tracking for your business,
+                        allowing you and your employees to focus on tasks that matter most for your growth.</p>
+                    <p style="text-align: justify;">Several businesses claim that the user-friendly design and automatic
+                        time tracking of this system helped them cut the timesheet by 75 percent. This software is
+                        renowned for its remarkable capacity to endure management flow while efficiently automating the
+                        process and maintaining attendance. Timely app comes with features including timesheet
+                        management, tracking projects, time off option and much more.</p>
+                    <h3 class="logo_wrap"><span id="Hubstaff"><strong>Hubstaff&nbsp;</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/efcd97a6-d249-41fb-add5-1b9abb858e5a.png"
+                            class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+                    <p style="text-align: justify;">If you are running a company that needs automation, Hubstaff can be
+                        a great tool for streamlining your routine tasks. With all of its features and choices, it
+                        strives for perfection, making it one of the industry’s early adopters.</p>
+                    <p style="text-align: justify;">Without a doubt, this software is the best option for coordinated
+                        workflow management in enterprises. More than 30 applications, including Slack, Salesforce,
+                        ClickUp, Insightly, Asana, Paymo, and PayPal, can be easily linked with it, making it easier to
+                        oversee your company’s operations. It is one of those clock-in and clock-out applications that
+                        is worth using once- we are sure you won’t regret it.</p>
+                    <h3 class="logo_wrap"><span id="Buddy_Punch"><strong>Buddy Punch</strong></span></h3>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/859963fb-e94a-43e6-b5d3-bb0d66862a0e.png"
+                            class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+                    <p style="text-align: justify;">Buddy Punch is one of those user-friendly, straightforward time
+                        clocking applications. The time-tracking features of this software are really commendable. It
+                        has the best customer service and assistance.</p>
+                    <p style="text-align: justify;">Anyone can use Buddy Punch’s time card software for attendance
+                        monitoring, time off, and overtime in real time thanks to its real-time and user-friendly
+                        features. In addition to this, its scheduling is time-saving and comprehensive. If you choose
+                        Buddy Punch, you will also get flexible punch options, punch rounding, timecard approvals,
+                        overtime management, and many other amazing features.</p>
+                    <h2 class="logo_wrap" style="text-align: justify;"><span id="Bottom_Line">Bottom Line</span></h2>
+                    <p style="text-align: center;"><img decoding="async"
+                            data-src="https://images.surferseo.art/b719075a-69ee-4470-945f-51546956ce0a.png"
+                            class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+                    <p>In conclusion, clock in clock out apps have revolutionised the way businesses track employee
+                        attendance and manage their time. They offer convenience, accuracy, and flexibility to both
+                        employers and employees.&nbsp;With a variety of options available, you can now choose the best
+                        clock in clock out app that suits their specific needs. The apps discussed in this blog are
+                        among the top-rated and most reliable options in the market. By implementing one of these apps,
+                        you can streamline time tracking processes, improve payroll accuracy, and ultimately increase
+                        your productivity and profitability in the time ahead.</p>
+                    <p>&nbsp;</p>
+                </div>
+
+            </div>
+            <div class="sw_right_side_data">
+                <div class="sw_position_fix">
+                    <div id="toc-widget-2" class="widget toc_widget">
+                        <h6 class="widget-title">Table of contents</h6>
+                        <ul class="toc_widget_list no_bullets">
+                            <li><a href="#What_is_a_Clock_In_Clock_Out_App_first" class="">What is a Clock In Clock Out
+                                    App?</a></li>
+                            <li><a href="#What_are_Different_Types_of_Clock_In_Clock_Out_Systems" class="">What are
+                                    Different Types of Clock In Clock Out Systems?</a>
+                                <ul>
+                                    <li><a href="#Biometric_clock_in_clock_out_system" class="">Biometric clock in clock
+                                            out system:</a></li>
+                                    <li><a href="#Mobile_clock_in_clock_out_system" class="">Mobile clock in clock out
+                                            system:</a></li>
+                                    <li><a href="#Web-based_clock_in_clock_out_system" class="">Web-based clock in clock
+                                            out system:</a></li>
+                                    <li><a href="#Time_clock_kiosk_system" class="">Time clock kiosk system:</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Why_Do_Companies_Use_Clock_In_Clock_Out_Apps_or_Time_Tracking_Software"
+                                    class="">Why Do Companies Use Clock In Clock Out Apps or Time Tracking Software?</a>
+                            </li>
+                            <li><a href="#Top_6_Benefits_of_Using_Clock_In_Clock_Out_Apps" class="">Top 6 Benefits of
+                                    Using Clock In Clock Out Apps</a></li>
+                            <li><a href="#20_Best_Clock_In_Clock_Out_Apps_or_Employee_Time_Tracking_Systems_in_2023"
+                                    class="">20 Best Clock In Clock Out Apps or Employee Time Tracking Systems in
+                                    2023</a>
+                                <ul>
+                                    <li><a href="#Super_HRMS" class="">Super HRMS</a></li>
+                                    <li><a href="#Apploye" class="">Apploye</a></li>
+                                    <li><a href="#When_I_Work" class="">When I Work</a></li>
+                                    <li><a href="#Connecteam" class="">Connecteam</a></li>
+                                    <li><a href="#Everhour" class="">Everhour&nbsp;</a></li>
+                                    <li><a href="#Toggl" class="">Toggl&nbsp;</a></li>
+                                    <li><a href="#Clockify">Clockify&nbsp;</a></li>
+                                    <li><a href="#Time_Doctor">Time Doctor</a></li>
+                                    <li><a href="#Quickbooks_Time">Quickbooks Time&nbsp;</a></li>
+                                    <li><a href="#Insightful">Insightful&nbsp;</a></li>
+                                    <li><a href="#TimeCamp">TimeCamp</a></li>
+                                    <li><a href="#Homebase" class="">Homebase&nbsp;</a></li>
+                                    <li><a href="#ClockShark">ClockShark&nbsp;</a></li>
+                                    <li><a href="#Replicon">Replicon&nbsp;</a></li>
+                                    <li><a href="#Justworks_Hours">Justworks Hours&nbsp;</a></li>
+                                    <li><a href="#Timely">Timely&nbsp;</a></li>
+                                    <li><a href="#Hubstaff">Hubstaff&nbsp;</a></li>
+                                    <li><a href="#Buddy_Punch">Buddy Punch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Bottom_Line">Bottom Line</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="author_newslatter_wrap d-flex justify_between">
+                <div class="sw_written_by">
+                    <div>
+                        <h6>Written By :</h6>
+                        <div class="name_img d-flex align_center">
+                            <div class="written_img">
+                                <img alt="Author-image"
+                                    data-src="https://superworks.com/wp-content/uploads/2023/04/AV.jpg" class="lazyload"
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                            </div>
+                            <p class="written_name">Alpesh Vaghasiya</p>
+                            <p class="written_description">The founder &amp; CEO of Superwroks, I'm on a mission to help
+                                small and medium-sized companies to grow to the next level of accomplishments. With a
+                                distinctive knowledge of authentic strategies and team-leading skills, my mission has
+                                always been to grow businesses digitally. The core mission of Superwroks is Connecting
+                                people, Optimizing the process, Enhancing performance.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Share this blog</h6>
+                        <ul class="d-flex">
+                            <ul class="footer_heading_list d-flex">
+                                <li class="social_icon_sec">
+                                    <a href="https://facebook.com/ubsapp">
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.17781 10.4645V18H2.80337V10.4645H0V7.40902H2.80337V6.29734C2.80337 2.17012 4.4841 0 8.04023 0C9.13043 0 9.40298 0.179734 10 0.326183V3.34837C9.3316 3.22855 9.14341 3.16198 8.44906 3.16198C7.62492 3.16198 7.18365 3.40163 6.78131 3.87426C6.37897 4.34689 6.17781 5.16568 6.17781 6.33728V7.41568H10L8.97469 10.4712H6.17781V10.4645Z"
+                                                fill="white"></path>
+                                        </svg> </a>
+                                </li>
+                                <li class="social_icon_sec">
+                                    <a href="https://twitter.com/ubs_app">
+                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 11.9934C1.82992 12.0906 3.4301 11.6869 4.99068 10.6179C3.41426 10.3637 2.32107 9.6834 1.72694 8.27798C2.1864 8.21817 2.59041 8.33031 3.06571 8.15089C1.51305 7.50798 0.506992 6.54362 0.467383 4.87654C0.95853 4.91391 1.33085 5.22042 1.91706 5.17556C0.491152 3.85984 0.055452 2.42451 0.950606 0.682675C2.43989 2.29742 4.18267 3.39635 6.31361 3.91217C6.43244 3.94208 6.54334 3.97198 6.66216 3.99441C7.20876 4.11402 7.85834 4.36819 8.19106 4.33081C8.76142 4.26353 8.19106 3.64305 8.33365 2.83567C8.78519 0.323842 11.7162 -0.819939 13.8868 0.652772C14.5205 1.08636 15.0196 1.07889 15.6454 0.817237C15.9702 0.682675 16.3029 0.548112 16.6911 0.391123C16.6039 1.10879 16.0177 1.505 15.5503 2.03577C16.0811 2.14791 16.5089 2.00587 17 1.85636C16.8336 2.37218 16.4217 2.66373 16.0494 2.94781C15.6612 3.23936 15.5107 3.54586 15.4949 4.02431C15.2572 11.2683 6.53542 16.8675 0.570369 12.412C-0.00791593 11.9784 0.55452 12.412 0 11.9934Z"
+                                                fill="white"></path>
+                                        </svg> </a>
+                                </li>
+                                <li class="social_icon_sec">
+                                    <a href="https://linkedin.com/company/ubsapp">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.16171 4.60352H0.236328V13.9324H3.16171V4.60352Z" fill="white">
+                                            </path>
+                                            <path
+                                                d="M11.0731 4.4014C10.9653 4.38791 10.8507 4.38117 10.7361 4.37443C9.09815 4.30703 8.1747 5.27766 7.85116 5.69557C7.76353 5.81016 7.72309 5.87756 7.72309 5.87756V4.63057H4.92578V13.9594H7.72309H7.85116C7.85116 13.009 7.85116 12.0653 7.85116 11.1149C7.85116 10.6027 7.85116 10.0904 7.85116 9.5781C7.85116 8.94449 7.80398 8.27044 8.12078 7.69076C8.3904 7.20544 8.87571 6.96278 9.42169 6.96278C11.0394 6.96278 11.0731 8.42547 11.0731 8.56028C11.0731 8.56702 11.0731 8.57376 11.0731 8.57376V13.9999H13.9985V7.91319C13.9985 5.83038 12.9402 4.60361 11.0731 4.4014Z"
+                                                fill="white"></path>
+                                            <path
+                                                d="M1.6986 3.39721C2.63672 3.39721 3.39721 2.63672 3.39721 1.6986C3.39721 0.760491 2.63672 0 1.6986 0C0.760488 0 0 0.760491 0 1.6986C0 2.63672 0.760488 3.39721 1.6986 3.39721Z"
+                                                fill="white"></path>
+                                        </svg> </a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sw_newslatter_by">
+                    <div class="newsletter_heading">
+                        <div class="newslatter_svg_icon"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.16667 5.95833V4.32618C2.16667 3.73182 2.65992 3.25 3.24112 3.25H22.7589C23.3523 3.25 23.8333 3.73203 23.8333 4.32618V21.6738C23.8333 22.2681 23.3401 22.75 22.7589 22.75H3.24112C2.64772 22.75 2.16667 22.268 2.16667 21.6738V20.5833H21.6667V7.90833L13 15.7083L2.16667 5.95833ZM0 10.8333H5.41667V13H0V10.8333ZM0 16.25H8.66667V18.4167H0V16.25Z"
+                                    fill="#FFA700"></path>
+                            </svg>
+                        </div>
+                        <h5>Subscribe to our Newsletter</h5>
+                    </div>
+                    <div class="subcription_form">
+                        <p>
+                            <script charset="utf-8" type="text/javascript"
+                                src="//js.hsforms.net/forms/embed/v2.js"></script>
+                            <script data-hubspot-rendered="true">
+                                hbspt.forms.create({
+                                    region: "na1",
+                                    portalId: "20332986",
+                                    formId: "a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"
+                                });
+                            </script>
+                        <div id="hbspt-form-3f84a24c-fb33-46cb-b7fb-2cd48861a412" class="hbspt-form"
+                            data-hs-forms-root="true">
+                            <form id="hsForm_a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd" method="POST" accept-charset="UTF-8"
+                                enctype="multipart/form-data" novalidate=""
+                                action="https://forms.hsforms.com/submissions/v3/public/submit/formsnext/multipart/20332986/a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"
+                                class="hs-form-private hsForm_a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd hs-form-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd hs-form-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd_3f84a24c-fb33-46cb-b7fb-2cd48861a412 hs-form stacked"
+                                target="target_iframe_a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"
+                                data-instance-id="3f84a24c-fb33-46cb-b7fb-2cd48861a412"
+                                data-form-id="a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd" data-portal-id="20332986">
+                                <div class="hs_firstname hs-firstname hs-fieldtype-text field hs-form-field"><label
+                                        id="label-firstname-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd" class=""
+                                        placeholder="Enter your "
+                                        for="firstname-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"><span></span></label>
+                                    <legend class="hs-field-desc" style="display: none;"></legend>
+                                    <div class="input"><input id="firstname-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"
+                                            name="firstname" required="" placeholder="Name*" type="text"
+                                            class="hs-input" inputmode="text" autocomplete="given-name" value=""></div>
+                                </div>
+                                <div class="hs_phone hs-phone hs-fieldtype-text field hs-form-field"><label
+                                        id="label-phone-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd" class=""
+                                        placeholder="Enter your "
+                                        for="phone-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"><span></span></label>
+                                    <legend class="hs-field-desc" style="display: none;"></legend>
+                                    <div class="input"><input id="phone-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"
+                                            name="phone" placeholder="Mobile Number" type="tel" class="hs-input"
+                                            inputmode="tel" autocomplete="tel" value=""></div>
+                                </div>
+                                <div class="hs_email hs-email hs-fieldtype-text field hs-form-field"><label
+                                        id="label-email-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd" class=""
+                                        placeholder="Enter your "
+                                        for="email-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"><span></span></label>
+                                    <legend class="hs-field-desc" style="display: none;"></legend>
+                                    <div class="input"><input id="email-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"
+                                            name="email" required="" placeholder="Email Address*" type="email"
+                                            class="hs-input" inputmode="email" autocomplete="email" value=""></div>
+                                </div>
+                                <div class="hs_form_path hs-form_path hs-fieldtype-text field hs-form-field"
+                                    style="display: none;"><label
+                                        id="label-form_path-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd" class=""
+                                        placeholder="Enter your Form Path"
+                                        for="form_path-a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"><span>Form
+                                            Path</span></label>
+                                    <legend class="hs-field-desc" style="display: none;"></legend>
+                                    <div class="input"><input name="form_path" class="hs-input" type="hidden" value="">
+                                    </div>
+                                </div>
+                                <div class="hs_submit hs-submit">
+                                    <div class="hs-field-desc" style="display: none;"></div>
+                                    <div class="actions"><input type="submit" class="hs-button primary large"
+                                            value="Subscribe"></div>
+                                </div><input name="hs_context" type="hidden"
+                                    value="{&quot;embedAtTimestamp&quot;:&quot;1682919882033&quot;,&quot;formDefinitionUpdatedAt&quot;:&quot;1681215417067&quot;,&quot;lang&quot;:&quot;en&quot;,&quot;embedType&quot;:&quot;REGULAR&quot;,&quot;disableCookieSubmission&quot;:&quot;true&quot;,&quot;clonedFromForm&quot;:&quot;516717a3-93eb-4ab9-9e7f-a67220062995&quot;,&quot;notifyHubSpotOwner&quot;:&quot;true&quot;,&quot;renderRawHtml&quot;:&quot;true&quot;,&quot;userAgent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36&quot;,&quot;pageTitle&quot;:&quot;Find the top 15+ clock in clock out apps for your business⁤&quot;,&quot;pageUrl&quot;:&quot;https://superworks.com/clock-in-clock-out-apps-meaning-types-15-best-apps-and-more/&quot;,&quot;isHubSpotCmsGeneratedPage&quot;:false,&quot;formTarget&quot;:&quot;#hbspt-form-3f84a24c-fb33-46cb-b7fb-2cd48861a412&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;timestamp&quot;:1682919882176,&quot;originalEmbedContext&quot;:{&quot;portalId&quot;:&quot;20332986&quot;,&quot;formId&quot;:&quot;a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd&quot;,&quot;region&quot;:&quot;na1&quot;,&quot;target&quot;:&quot;#hbspt-form-3f84a24c-fb33-46cb-b7fb-2cd48861a412&quot;,&quot;isBuilder&quot;:false,&quot;isTestPage&quot;:false,&quot;isPreview&quot;:false,&quot;isMobileResponsive&quot;:true},&quot;correlationId&quot;:&quot;3f84a24c-fb33-46cb-b7fb-2cd48861a412&quot;,&quot;renderedFieldsIds&quot;:[&quot;firstname&quot;,&quot;phone&quot;,&quot;email&quot;,&quot;form_path&quot;],&quot;captchaStatus&quot;:&quot;NOT_APPLICABLE&quot;,&quot;emailResubscribeStatus&quot;:&quot;NOT_APPLICABLE&quot;,&quot;isInsideCrossOriginFrame&quot;:false,&quot;source&quot;:&quot;forms-embed-1.3102&quot;,&quot;sourceName&quot;:&quot;forms-embed&quot;,&quot;sourceVersion&quot;:&quot;1.3102&quot;,&quot;sourceVersionMajor&quot;:&quot;1&quot;,&quot;sourceVersionMinor&quot;:&quot;3102&quot;,&quot;_debug_allPageIds&quot;:{},&quot;_debug_embedLogLines&quot;:[{&quot;clientTimestamp&quot;:1682919882160,&quot;level&quot;:&quot;INFO&quot;,&quot;message&quot;:&quot;Retrieved pageContext values which may be overriden by the embed context: {\&quot;pageTitle\&quot;:\&quot;Find the top 15+ clock in clock out apps for your business⁤\&quot;,\&quot;pageUrl\&quot;:\&quot;https://superworks.com/clock-in-clock-out-apps-meaning-types-15-best-apps-and-more/\&quot;,\&quot;userAgent\&quot;:\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\&quot;,\&quot;isHubSpotCmsGeneratedPage\&quot;:false}&quot;},{&quot;clientTimestamp&quot;:1682919882162,&quot;level&quot;:&quot;INFO&quot;,&quot;message&quot;:&quot;Retrieved countryCode property from normalized embed definition response: \&quot;IN\&quot;&quot;}]}"><iframe
+                                    name="target_iframe_a3e39d4f-31e7-4b11-a7be-75f98fb8f5dd"
+                                    style="display: none;"></iframe>
+                            </form>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="jquery.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>

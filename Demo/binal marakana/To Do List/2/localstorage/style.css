@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    max-width: 800px;
+    margin: 20px auto;
+}
+h1{
+    margin-bottom: 20px;
+
+}
+.txtb
+{
+    width: 91%;
+    border: none;
+    border-bottom: 2px solid #000;
+    background : none;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+}
+.formTodo
+{
+    margin-bottom: 40px;
+}
+.btn-success
+{
+    background: black;
+    border-radius: 5px;
+    padding: 11px 16px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 7px;
+    float: right;
+}
+
+.item
+{
+    width: 100%;
+    background-color:navajowhite ;
+    padding: 10px 10px 20px 10px;
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bolder;
+}
+input[type=button]
+{
+    background: black;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    margin-left: 7px;
+    float: right;
+    font-size: 14px; 
+    padding: 6px 16px;
+}

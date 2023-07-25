@@ -1,0 +1,52 @@
+// 404 page 
+.notfound{
+    // font-family: "Pangea";
+    .sd_header_section{
+        // background: url('/program/images/header_bg_purple.png') no-repeat;
+        background-size: 100% 100%;
+        padding: 178px 0 240px;
+        @include mediaQuery($desktop){
+            background-size: cover;
+        }
+        @include mediaQuery($extraLarge){
+            padding: 140px 0 150px;
+        }
+        @include mediaQuery($ipad){
+            padding: 150px 0 100px;
+        }
+    }
+    .sd_not_found_header{
+        h1{
+            @include defaultFontStyle(400, 90, 80, $white, -2.16px);
+            // font-family: "Pangea";
+            margin-bottom: 10px;
+            @include mediaQuery($extraLarge){
+                font-size: 70px;
+            }
+            @include mediaQuery($ipad){
+                @include mediaFontStyle(60, 60);
+            }
+        }
+        p{
+            @include defaultFontStyle(400, 40, 40, $white);
+            @include mediaQuery($ipad){
+                @include mediaFontStyle(30, 40);
+            }
+            @include mediaQuery($mobile){
+                @include mediaFontStyle(20, 30);
+            }
+        }
+    }
+}
+
+// Not found
+.nofound_content{
+    text-align: center;
+    padding: 40px 0;
+    @include defaultFontStyle(500, 22, 32, $black, -0.53px);
+    p{
+        @include mediaQuery($ipad){
+            font-size: 20px;
+        }    
+    }
+}

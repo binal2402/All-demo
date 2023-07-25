@@ -1,0 +1,224 @@
+@import 'mixin';
+@import 'variable';
+
+.Join_Our_Team
+{
+    background-color: #FBFAFA;
+    background-image: url('../images/Ellipse_bg.png');
+    padding: 104px 0 155px 0;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    @include breakpoint(tablet)
+    {
+        padding: 50px 0 160px 0;
+    }
+    @include breakpoint(mobileonly)
+    {
+        padding: 30px 0 160px 0;
+    }
+    .container
+    {
+        display: flex;
+        @include breakpoint(laptop)
+        {
+            flex-wrap: wrap;
+        }
+        .left_content
+        {
+            width: 50%;
+            @include breakpoint(laptop)
+            {
+               width: 100%;
+               margin-bottom: 20px;
+            }
+            .main_title
+            {
+                @include main_title;
+            }
+            .sub_title
+            {
+                font-size: 18px;
+                line-height: 21px;
+                font-weight: 600;
+                margin: 15px 0 20px 0;
+            }
+            .t_label
+            {
+                color: #000;
+                &::after
+                {
+                    content: '*';
+                    color: $c_orange_color;
+                    
+                }
+            }
+            input[type=text],input[type=email],textarea[type=text]{
+                width: 100%;
+                padding: 17px 20px;
+                margin: 10px 0 20px 0;
+                display: inline-block;
+                border: 1px solid $c_secondary;
+                border-radius: 5px;
+            }
+            ::placeholder
+            {
+                font-size: 16px;
+                font-family:'Gilroy';
+            }
+            .btn_join
+            {
+                display: flex;
+                justify-content: space-between;
+                .or
+                {
+                    font-weight: bold;
+                    text-decoration: underline;
+                    align-self: center;
+                }
+            }
+            .btn_Submit
+            {
+                @include all_btn;
+            }
+            .btn_Learn
+            {
+                @include border_all_btn;
+                color: $c_dark!important;
+                i
+                {
+                    font-size: 20px;
+                    color: $c_orange_color;
+                    padding-right: 12px;
+                    padding-top: 1px;
+                }
+            }
+        }
+    //    .right_img img
+    //    {
+    //        max-width: 100%;
+    //        display: block;
+    //    }
+       .img_about
+        {
+            width: 50%;
+            @include breakpoint(laptop){
+                width: 100%;
+            }
+            .about_img
+            {
+              
+               position: relative;
+            }
+            .about_img img
+            {
+                z-index: 9;
+               position: relative;
+            }
+            .about_img::after
+            {
+                position: absolute;
+                content: "";
+                background-image: url('../images/join-team2.png');
+                background-repeat: no-repeat;
+                right: 0px;
+                left: 148px;
+                // width: calc(100% - 140px);
+                display: block;
+                height: 100%;
+                z-index: 1;
+                border-radius: 25px;
+                bottom: -60px;
+                @include breakpoint(onlytablet)
+                {
+                    width: calc(100% - 233px);
+                }
+                @include breakpoint(phablet)
+                {
+                    display: none;
+                }
+            }
+            .Security
+            {
+                background-color:$c_white;
+                padding: 18px 25px;
+                display: inline-block;
+                box-shadow: -20px 15px 60px rgba(38, 45, 63, 0.08);
+                border-radius: 14px;
+                max-width: 215px;
+                width: 100%;
+                font-weight: bold;
+                font-size: 18px;
+                position: absolute;
+                bottom: -19px;
+                left: 38px;
+                z-index: 99;
+                .img-icon{
+                    display: flex;
+                    img
+                    {
+                        padding-right: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+.We_Make_It_Easy
+{
+    text-align: center;
+
+    .We_Make
+    {
+        background-color: $c_dark;
+        padding: 32px 0 35px 0;
+        background-image: url('../images/make_it_easy.png');    
+        border-radius: 20px;
+        margin-top: -94px;
+        background-repeat: no-repeat;
+        box-shadow: 0px 12px 50px 1px $c_light;
+        margin-bottom: 100px;
+        position: relative;
+        @include breakpoint(tablet)
+        {
+            margin-bottom: 50px;
+        }
+        &::before{
+            
+            content: '';
+            background-image: url('../images/make_it_bg.png');   
+            position: absolute; 
+            top: 0%;
+            left: 0%;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url('../images/make_it_bg2.png');    
+            top: 0;
+            right: 0%;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-position: right;
+            background-size: contain;
+        }
+        p
+        {
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 37px;
+            color: $c_white;
+        }
+        .btn_book_online
+        {
+            @include all_btn;
+            margin-top: 35px;
+        }
+    }
+
+   
+}

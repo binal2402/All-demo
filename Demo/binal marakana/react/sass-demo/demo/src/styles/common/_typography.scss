@@ -1,0 +1,20 @@
+// Fonts
+@font-face {
+	font-family: "MonumentGrotesk_Regular";
+	src:url('../fonts/ABCMonumentGrotesk-Regular.woff2') format('woff2');
+    font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "MonumentGrotesk_Medium";
+	src:url('../fonts/ABCMonumentGroteskMono-Medium.woff2') format('woff2');
+    font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: "MonumentGrotesk_Bold";
+	src:  url('../fonts/ABCMonumentGrotesk-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

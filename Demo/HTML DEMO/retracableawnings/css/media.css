@@ -1,0 +1,334 @@
+
+@media (min-width: 1200px) and (max-width: 1400px)
+{
+	.menu_bar li a
+	{
+		margin-left: 47px;
+	}
+	
+	.all_type_box
+	{
+		/*width:50%;*/
+		margin: 15px 15px;
+	}
+	.right_arrow
+	{
+	    position: absolute;
+	    top: 50%;
+	    right: -2%;
+	}
+	.left_arrow
+	{
+	    position: absolute;
+	    top: 50%;
+	    left: -1%;
+	}
+	.f_content .mail_box input[type=email]
+	{
+		padding: 16px 100px 17px 14px;
+	}
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container
+	{
+		padding: 0 20px;
+		box-sizing: border-box;
+		
+	}
+	.search
+	{
+		margin-left: 0px;
+	}
+	.menu_bar li a
+	{
+		margin-left: 29px;
+	}
+	.description
+	{
+		width: 100%;	
+	}
+	tr,td
+	{
+		padding: 18px 15px;
+		text-align: left;
+		/*position: relative;*/
+	}
+	.right_arrow
+	{
+	    position: absolute;
+	    top: 50%;
+	    right: -2%;
+	}
+	.left_arrow
+	{
+	    position: absolute;
+	    top: 50%;
+	    left: -1%;
+	}
+	.all_type_box
+	{
+		/*width:50%;*/
+		margin: 15px 15px;
+		padding: 60px 40px;
+	}
+	.Content_needs 
+	{
+		margin-top: 33px;
+	}
+	.f_content .mail_box 
+	{
+		margin-top: 28px;
+		text-align: left;
+	}
+	.f_content .btn_showall
+	{
+		margin-top: 15px;
+	}
+	.f_content .mail_box input[type=email]
+	{
+		padding: 16px 94px 17px 14px;
+    	display: block;
+	}
+}
+@media (max-width: 991px)
+{
+	.container
+	{
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	.main_title
+	{
+		font-size: 22px;
+		width: 100%;
+	}
+
+	.mobile_menu_bar
+	{
+		display: block;
+		background-color: #2F2F2F;
+	}
+	.mobile_menu_bar li a
+	{
+		color: white;
+		padding: 10px;
+		display: block;
+	}
+	.side_menu
+	{
+		width: 100%;
+		position: fixed;
+		top:78px;
+		left: 0;
+		overflow: scroll;
+		padding:20px;
+		transition: .3s;
+		z-index: 1; 
+	}
+	
+	.side_open
+	{
+		left: 0px;
+	}
+	.side_close
+	{
+		left: 1000px;
+	}
+	.text_how_to_find
+	{
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	.all_type_box
+	{
+		width:50%;
+		margin: 15px 0;
+	}
+	.menu_bar
+	{
+		display: none;
+	}
+	.main_header
+	{
+		position: relative;
+	}
+	.menu_icon
+	{
+		position: absolute;
+	    top: 25px;
+	    right: 0;
+	    font-size: 26px;
+	    display: block;
+	}
+	.retractable 
+	{
+	    padding: 33px 0 43px 0;
+	}
+	.tbl_retractable table 
+	{
+    	 margin: 21px 0; 
+	}
+	.second_retractable 
+	{
+    	padding-bottom: 33px;
+	}
+	.most_review
+	{
+    	padding-top: 36px;
+	}
+	.right_arrow,.left_arrow
+	{
+		display: none;
+	}
+	.Sign_up
+	{
+	    margin: 36px 0;
+	    padding: 33px 0 22px 0;
+	}
+	.who_needs {
+	    
+	    margin: 33px 0;
+	}
+	.f_content:nth-child(1)
+	{
+		width: 20%;
+		
+	}
+	.f_content:nth-child(2)
+	{
+		width: 40%;
+		
+	}
+	.f_content:nth-child(3)
+	{
+		width: 40%;
+	}
+	.f_content:nth-child(4)
+	{
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.f_content ul li
+	{
+		text-align: center;
+	}
+	.f_content img
+	{
+		width: 100%;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+	.description
+	{
+		width: 100%;	
+	}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	.container
+	{
+		padding: 0 20px;
+	}
+	.search
+	{
+		margin-left: 0px;
+	}
+	
+	.text_retra
+	{
+		font-size: 24px;
+	}
+	.description
+	{
+		width: 100%;	
+	}
+	.main_model
+	{
+		flex-wrap: wrap;
+    	justify-content: center;
+	}
+	.review_box
+	{
+		width:calc(50% - 12px);
+		margin: 15px 5px;
+	}
+	.best_review_box
+	{
+		width:calc(50% - 10px);
+		margin: 15px 5px;
+	}
+	.all_type_box
+	{
+		width:50%;
+		margin: 15px 0;
+	}
+	
+	.f_content .enter_mail
+	{
+		  padding: 16px 17px 17px 10px;
+	}
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+	 .search
+	  {
+	  	display: none;
+	  }
+	  .text_retra
+	  {
+	  	font-size: 30px;
+	  }
+
+ 	.description
+	{
+		width: 100%;	
+	}
+	.most_review .title,.most_review .title p
+	{
+		width: 100%;	
+		text-align: center;
+	}
+	.all_review
+	{
+		text-align: center;
+		float: none;
+	}
+  .main_model
+	{
+		display: flex;
+	    height: 100%;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+	.review_box,.best_review_box
+	{
+		width:calc(100% - 10px);
+		margin: 15px 5px;
+	}
+	
+  
+	.all_type_box
+	{
+		width:100%;
+		margin: 15px 0;
+	}
+	.Content_needs {
+    width: 80%;
+    background-color: #FBFBFB;
+    padding: 85px 33px 58px 30px;
+    margin-top: 56px;
+	}
+	.btn_showall
+	{
+		margin-top: 10px;
+	}
+	.Sign_up .mail_box input[type=email] 
+	{
+		margin-right: 0;
+		padding: 16px 37px 17px 14px;
+	}
+}

@@ -1,0 +1,106 @@
+@media (max-width: 1500px) {
+     ul.dropdown_list {
+          left: unset;
+          right: 0;
+          transform: unset;
+     }
+}
+@media (max-width: 1024px) {
+     .cpq_header ul.menu_list li {
+          padding: 21px 18px 21px 0;
+      }
+      .cpq_header .profile_img {
+          margin: 0 0 0 18px;
+      }
+}
+@media (max-width: 991px) {
+     .cpq_header .cpq_container {
+          padding: 6px 20px;
+     }
+     
+     .nav-mobile {
+          display: block;
+     }
+     .cpq_header .cpq_menu_wrapper nav ul.menu_list {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: absolute;
+          top: auto;
+          width: 100%;
+          left: 0;
+          top: 100%;
+          padding: 10px 20px 15px;
+          background: #3E4A58;
+          justify-content: center;
+          transform: scaleY(0);
+          transform-origin: 0 0 0;
+          transition: all 0.2s ease-in-out;
+          opacity: 0;
+          z-index: 99;
+     }
+     .cpq_header .cpq_menu_wrapper nav ul.menu_list.open {
+          transform: scaleY(1);
+          opacity: 1;
+     }
+     .cpq_header ul.menu_list li {
+          padding: 10px 0 0;
+     }
+     .cpq_header ul.menu_list li a {
+          color: #fff;
+     }
+     .cpq_header ul.menu_list li:hover::after {
+         display: none;
+     }
+}
+@media (max-width: 800px) {
+     .cpq_footer > .cpq_container{
+          flex-direction: column;
+     }
+     .cpq_footer .footer_store_link {
+          margin: 0 0 20px;
+          flex-wrap: wrap;
+          justify-content: center;
+     }
+     .footer_menu {
+          padding: 0;
+     }
+     .cpq_footer .footer_menu ul {
+          justify-content: center;
+     }
+}
+
+@media (max-width: 400px) {
+     ul.dropdown_list {
+          top: 110%;
+          width: 160px;
+     }
+     .cpq_logo_wrapper {
+          max-width: 160px;
+      }
+      .cpq_menu_wrapper {
+          width: calc(100% - 170px);
+      }
+      .cpq_header .cpq_container {
+          padding: 0 10px;
+      }
+      #nav-toggle {
+          padding: 10px 26px 16px 0;
+      }
+      #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+          width: 26px;
+      }
+      #nav-toggle span:after {
+          bottom: -10px;
+      }
+      #nav-toggle span:before {
+          top: -10px;
+      }
+      .nav-mobile {
+          width: 26px;
+      }
+      .cpq_header .cpq_menu_wrapper .profile_img img {
+          width: 38px;
+          height: 38px;
+      }
+}

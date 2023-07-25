@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/moment.js"></script>
+    <script>
+        // Format Dates
+        console.log(moment());
+        console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+        console.log(moment().format('dddd'));
+        console.log(moment().format("MMM Do YY"));
+        console.log(moment().format('YYYY [escaped] YYYY'));
+        console.log(moment().format());
+
+        // Relative Time
+        console.log(moment("19990224", "YYYYMMDD").fromNow());
+        console.log(moment().startOf('day').fromNow());
+        console.log(moment().endOf('day').fromNow());
+        console.log(moment().startOf('hour').fromNow());
+
+        // Calendar Time
+        console.log(moment().subtract(15, 'days').calendar());
+        console.log(moment().subtract(5, 'days').calendar());
+        console.log(moment().subtract(1, 'days').calendar());
+        console.log(moment().calendar()); 
+        console.log(moment().add(1, 'days').calendar());
+        console.log(moment().add(3, 'days').calendar());
+        console.log(moment().add(10, 'days').calendar());
+
+        console.log(moment().get('year'));
+        console.log(moment([]));
+        console.log(moment("12-25-1995", "MM-DD-YYYY"));
+
+        console.log(moment("2010 13",           "YYYY MM").isValid());
+
+        console.log(moment("29-06-1995", ["MM-DD-YYYY", "DD-MM", "DD-MM-YYYY"]));
+
+        var day = moment.unix(1318781876);
+        console.log(day);
+
+        // using Date    
+        var day = new Date(2011, 9, 16);
+        var dayWrapper = moment(day);
+        console.log(dayWrapper);
+
+        // Array
+        console.log(moment([2010,6]));
+
+        console.log(moment().isoWeekday(1));
+
+    
+    </script>
+</body>
+</html>

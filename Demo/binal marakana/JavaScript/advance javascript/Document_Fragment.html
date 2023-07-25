@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+        <h1 id="myh1">helooo</h1>
+        <h2>i am h2</h2>
+    </div>
+    <script>
+        // creating document Fragment
+        var df = document.createDocumentFragment();
+
+        var hnode = document.createElement("h3");
+        var pnode = document.createElement("p");
+
+        hnode.textContent = "h3 from js";
+        pnode.textContent = "p from js";
+
+        // console.log(hnode);
+        df.appendChild(hnode);
+        df.appendChild(pnode);
+
+        var store = document.getElementById("myid");
+
+        store.appendChild(df);
+
+
+    </script>
+</body>
+</html>

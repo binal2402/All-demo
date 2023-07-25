@@ -1,0 +1,127 @@
+// Header Film Slider
+.sd_header_film_section{
+    padding-top: 139px;
+    @include mediaQuery($large){
+        padding-top: 101px;
+    }
+    .sd_film_slider_wpr{
+        padding-bottom: 86px;
+    }
+
+    .sd_film_slider_block{
+        display: flex !important;
+        max-width: 1638px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 100px 0 80px;
+        @include mediaQuery($desktop){
+            padding: 0 50px;
+        }
+        @include mediaQuery($ipad){
+            padding: 0 2px 0 3px;
+        }
+        @include mediaQuery($large){
+            @include flex_dir_column;
+        }
+        .sd_film_slider_title{
+            max-width: 740px;
+            padding-right: 45px;
+            @include mediaQuery($desktop){
+                padding-right: 20px;
+            }
+            @include mediaQuery($large){
+                margin-bottom: 49px;
+            }
+            @include mediaQuery($ipad){
+                padding-right: 0;
+            }
+            p{
+                @include defaultFontStyle(700, 22, 40, $black);
+                letter-spacing: -0.53px;
+                text-transform: uppercase;
+                padding-top: 13px;
+                @include mediaQuery($ipad){
+                    @include mediaFontStyle(20, 30);
+                    letter-spacing: -0.48px;
+                }
+                @include mediaQuery($smallMobile) {
+                    @include mediaFontStyle(18, 28);
+                }
+            }
+            h1{
+                @include defaultFontStyle(400, 80, 75, $black);
+                letter-spacing: -1.92px;
+                text-transform: uppercase;
+                @include mediaQuery($desktop){
+                    @include mediaFontStyle(55, 70);
+                }
+                @include mediaQuery($ipad){
+                    @include mediaFontStyle(50, 49.5);
+                    letter-spacing: -1.2px;
+                }
+                @include mediaQuery($smallMobile) {
+                    @include mediaFontStyle(30, 36);
+                }
+            }
+            button{
+                @include buttonReset;
+                @include defaultFontStyle(500, 22, 32, $black);
+                letter-spacing: -0.53px;
+                text-transform: capitalize;
+                padding-top: 7px;
+                @include flex_align_center;
+                @include mediaQuery($ipad){
+                    @include mediaFontStyle(20, 30);
+                    letter-spacing: -0.48px;
+                }
+                img{
+                    width: 18px;
+                    margin-left: 12px;
+                }
+            }
+        }
+    
+        .sd_film_slider_img{
+            max-width: 700px;
+            width: 100%;
+            @include mediaQuery($large){
+                max-width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+ 
+    // Slick slider dots
+    .slick-dots{
+        bottom: -80px;
+        @include mediaQuery($large){
+            bottom: -42px;
+        }
+        li{
+            @include square(16px);
+            border: 1px solid $black;
+            border-radius: 50%;
+            @include transitionStyle(0.1, linear);
+            @include mediaQuery($ipad){
+                @include square(12px);
+            }         
+
+            &.slick-active{
+                background: $black;
+            }
+        }
+        button{
+            padding: 0;
+            &:before{
+                content: none;
+            }
+        }
+    }
+
+
+    .slick-track{
+        @include flex;
+    }
+}

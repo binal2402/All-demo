@@ -1,0 +1,89 @@
+// Banner component
+.sd_banner{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    background: $resetcolor;
+    &_inner{
+        padding: 105px 20px 110px 99px;
+        position: relative;
+        @include mediaQuery(1280px){
+            padding: 105px 20px 110px 10px;
+        }
+        @include mediaQuery(1280px){
+            padding: 105px 30px 110px 30px;
+        }
+        @include mediaQuery($ipad){
+            padding: 105px 30px 110px 10px;
+        }
+        @include mediaQuery(576px){
+            @include f_wrap;
+            padding: 50px 30px 10px;
+        }
+        &_title{
+            &::after{
+                width: 746px;
+                height: 746px;
+                border-radius: 50%;
+                position: absolute;
+                content: "";
+                left: -192px;
+                top: -195px;
+                background:$yellowcircle;
+                @include mediaQuery(1280px){
+                    width: 596px;
+                    height: 596px;
+                    top: -125px;
+                }
+                @include mediaQuery(1140px){
+                    width: 496px;
+                    height: 576px;
+                }
+                @include mediaQuery($ipad){
+                    left: -300px;
+                }
+                @include mediaQuery(576px){
+                    left: -200px;
+                    top: -375px;
+                }
+            }
+            @include mediaQuery($ipad){
+                width: 100%;
+                // background-color: $yellowcircle;
+                // padding: 30px 15px;
+            }
+            h1{
+                position: relative;
+                z-index: 2;
+                max-width: 510px;
+                @include mediaQuery(1280px){
+                    @include mediaFontStyle(65,70)
+                }
+                @include mediaQuery($ipad){
+                    // max-width: 100%;
+                    @include mediaFontStyle(40,44)
+                }
+                @include mediaQuery(576px){
+                   max-width: 270px;
+                }
+            }
+        }
+        &_detail{
+            max-width: 653px;
+            margin-left: 56px;
+            position: relative;
+            z-index: 2;
+            p{
+                @include defaultFontStyle(400,22,32,$black);
+                @include mediaQuery($ipad){
+                    @include mediaFontStyle(16,20)
+                }
+            }
+            @include mediaQuery(576px){
+                padding: 80px 10px 50px;
+                max-width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}

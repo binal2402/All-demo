@@ -1,0 +1,228 @@
+/* For Fonts */
+@mixin defaultFontStyle( $fontWeight: null, $fontSize: null, $lineHeight: null, $color: null, $letterSpacing: null) {
+	font-family: 'Pangea';
+	font-style: normal;
+	font-weight: $fontWeight;
+	font-size: ($fontSize / 10)+rem;
+	line-height: ($lineHeight / 10)+rem;
+	color: $color;
+	letter-spacing: $letterSpacing;
+}
+@mixin defaultFontStyleFpg($font-family:null, $fontSize: null, $lineHeight: null, $color: null, $letterSpacing: null) {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: normal;
+	font-size: ($fontSize / 10)+rem;
+	line-height: ($lineHeight / 10)+rem;
+	color: $color;
+	letter-spacing: $letterSpacing;
+}
+@mixin mediaFontStyle( $fontSize: null, $lineHeight: null) {
+	font-size: ($fontSize / 10)+rem;
+	line-height: ($lineHeight / 10)+rem;
+}
+
+// Media Queries
+@mixin mediaQuery ($point) {
+    @media screen and (max-width:$point) {
+        @content;
+    }
+}
+@mixin minmediaQuery ($point) {
+    @media screen and (min-width:$point) {
+        @content;
+    }
+}
+@mixin Borderbtn {
+	padding: 10px 20px;
+	border: 2px solid $black;
+	background: none;
+	@include defaultFontStyle(500,22,32,$black,-0.53px);
+	min-width: 200px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	display: inline-block;
+	&:hover{
+		border: 2px solid $black;
+		background: $black;
+		color: $white;
+	}
+}
+
+@mixin content {
+	content: '';
+	position: absolute;
+}
+
+// Flex
+@mixin flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+@mixin align_center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+@mixin justify_center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+@mixin justify_between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+@mixin  flex_1_auto {-webkit-box-flex: 1;-ms-flex: 1 auto;flex: 1 auto; }
+@mixin flex_align_center {
+	@include flex;
+	@include align_center;
+}
+@mixin flex_justify_between {
+	@include flex;
+	@include justify_between;
+}
+
+@mixin flex_justify_center {
+	@include flex;
+	@include justify_center;
+}
+
+@mixin flex_center_center {
+	@include flex;
+	@include align_center;
+	@include justify_center;
+}
+@mixin flex_center_between {
+	@include flex;
+	@include align_center;
+	@include justify_between;
+}
+
+// Flex Direction
+@mixin flex_dir_column { -webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column; }
+@mixin flex_dir_column_rev { -webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse; }
+@mixin flex_dir_row { -webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row; }
+
+@mixin flex_column {
+	@include flex;
+	@include flex_dir_column;
+}
+
+@mixin f_wrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+@mixin flex_wrap {
+	@include flex;
+	@include f_wrap;
+}
+
+@mixin flex_shrink { -ms-flex-negative: 0; flex-shrink: 0; }
+
+// Button Reset
+@mixin buttonReset{
+	background: transparent;
+	border: none;
+	outline: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+// Text Overflow Ellipse
+@mixin LimitLineText($line: null){
+	-webkit-line-clamp: $line;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+// white space for pre tag
+@mixin white_space_pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+// Utilities
+
+// Border Bottom - 2px solid black
+@mixin border_bottom_black { border-bottom: 2px solid $black; } 
+
+// Transition
+@mixin transitionStyle($time: null, $function: null) {
+	-webkit-transition: $time+s $function;
+	-o-transition: $time+s $function;
+	transition: $time+s $function
+}
+
+
+// Width and height 
+@mixin square($pixels: null) {
+	width: $pixels;
+	height: $pixels;
+}
+
+
+// For Calendar
+
+// Category
+@mixin calendarCategory {	
+	@include defaultFontStyle(500, 18, 23, $purple);
+	letter-spacing: -0.43px;
+}
+
+// Film type
+@mixin calendarFilmType {	
+	@include defaultFontStyle(500, 13, 22, $black);
+	text-transform: uppercase;
+	padding-top: 5px;
+
+	@include mediaQuery($large){
+		font-size: 12px;
+	}
+}
+
+// Film Title
+@mixin calendarFilmTitle {	
+	@include defaultFontStyle(400, 22, 25, $black);
+	letter-spacing: -0.53px;
+	margin-bottom: 7px;
+	text-transform: uppercase;
+	@include LimitLineText(2);
+	@include mediaQuery($large){
+		@include mediaFontStyle(18, 20);
+		letter-spacing: -0.43px;
+	}
+}
+
+// Film Title
+@mixin calendarFilmTime {	
+	display: none;
+	@include defaultFontStyle(500, 18, 25, $black);
+	letter-spacing: -0.43px;
+	@include mediaQuery($ipad){
+		display: block;
+	}
+}
+
+
+@for $i from 0 through 100 {
+	.sd_width_#{$i} { 
+		&:after{
+			$width: $i * 1%;
+			width: $width !important;
+		}
+	}
+}  
+
+// RTF
+@mixin rtf_content{
+	*{
+		font-size: 16px !important; 
+		color: $black !important;
+	}
+	a{
+		color: $purple !important;
+		*{
+			color: $purple !important;
+		}
+	}
+	li{
+		padding-bottom: 10px;
+	}
+	ol{
+		li{
+			margin-left: 30px !important;
+		}
+	}
+	ul{
+		li{
+			margin-left: 20px !important;
+		}
+	}
+}

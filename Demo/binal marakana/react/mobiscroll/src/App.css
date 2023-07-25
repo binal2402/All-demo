@@ -1,0 +1,225 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.md-custom-header-controls {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.md-custom-header-nav,
+.md-custom-header-view {
+  width: 180px;
+}
+
+.md-custom-header-button.mbsc-button {
+  font-size: 20px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.md-custom-header .mbsc-segmented {
+  width: 110px;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.md-custom-header .mbsc-material.mbsc-segmented,
+.md-custom-header .mbsc-windows.mbsc-segmented {
+  padding: 0;
+}
+
+.md-custom-header .mbsc-segmented .mbsc-segmented-button {
+  font-size: 20px;
+  height: 32px;
+  padding: 0;
+}
+
+.mbsc-ios.mbsc-schedule-item{
+  border-left: inset;
+  border-top: none;
+  border-color: #000;
+}
+
+.mbsc-timeline-resource.mbsc-ltr{
+  border-right-width: unset;
+}
+.md-timeline-height .mbsc-timeline-resource{
+  min-height: 120px;
+}
+.mbsc-timeline-resource{
+  border-bottom-width: 0px;
+} 
+.md-timeline-template-event-cont {
+  font-size: 15px;
+  height: 205px;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.mbsc-timeline-row{
+  height: 275px !important;
+}
+.mbsc-timeline-column,.mbsc-timeline-header-column{
+  width: 9em !important;
+}
+.mbsc-timeline-column{
+  width: 9em !important;
+}
+.mbsc-timeline-header-column{width: 9em !important;overflow: visible;}
+
+.mbsc-calendar-wrapper-fixed{
+  display: none;
+}
+.mbsc-timeline-header-date-text{
+  display: none;
+}
+.mbsc-timeline-header-date{
+  border-bottom: 0 !important;
+}
+
+/* .mbsc-timeline-column{
+  border-bottom-style:none;
+  &:nth-child(3n+1){
+      border-right: 5px solid black;
+  }
+  &:last-child{
+      border-right: unset;
+  }
+
+} */
+/* .mbsc-ios{
+  .mbsc-timeline-column{
+      border-color: $black !important;
+  }
+  .mbsc-timeline-resource{
+      border-color: $black !important;
+      &:last-child{
+          border-bottom: 0;
+      }
+  }
+} */
+
+.mbsc-timeline-column{
+  border-bottom-style:none;
+  border-right: 2px solid black;
+}
+
+.mbsc-timeline-resource-title{
+  
+}
+.md-resource-header-template-cont > h3 {
+      /* @include defaultFontStyleFpg($font_family_normal, 24, 24, black); */
+      margin-bottom: 10px
+}
+.mbsc-timeline-header-row-2{
+  height: 4em;
+}
+.mbsc-timeline-resource {
+  padding: 35px 7px 80px 16px;
+
+}
+.mbsc-schedule-time-indicator{
+  display: none;
+}
+/* .mbsc-ltr,.mbsc-timeline-header-date .mbsc-ltr{
+  &:last-child
+  {
+      &::after{
+          border-right-width: 0px;
+      }
+  }
+} */
+
+.mbsc-timeline-day >.mbsc-timeline-header-column {
+      height: 2.4em;
+      border-bottom: 0;
+}
+.mbsc-timeline-header-time {
+  text-align: center;
+  /* @include defaultFontStyleFpg($font_family_normal, 20, 24, black); */
+  letter-spacing: -.53px;
+  text-transform: uppercase;
+}
+
+.mbsc-timeline-row{
+    border-bottom-style: unset;
+}
+.mbsc-windows.mbsc-timeline-resource{
+  border-color: #000000;
+  border-width: 0px 2px 2px 0px;
+}
+
+.mbsc-timeline-resources {
+  max-width: 276px;
+  width: 100%;
+}
+
+.ios.mbsc-timeline-column {
+  border-color: black;
+}
+.mbsc-timeline-resource{
+  /* min-height: 100px !important; */
+  padding: 35px 7px 80px 16px;
+  border-bottom-width: 2px;
+  height: 275px !important;
+}
+.mbsc-timeline-resource{
+  border-bottom-width: 0px;
+}
+.mbsc-schedule-event-title{
+  font-size: 20px !important;
+  padding-bottom: 30px;
+}
+.mbsc-schedule-event-background{
+  /* height: auto; */
+}
+.mbsc-schedule-event-inner{
+  /* height: 100% !important; */
+  font-size: 1.1em !important;
+}
+.mbsc-schedule-event-range{
+  padding-bottom: 42px;
+}
+
+/* .mbsc-schedule-event{ min-height: auto !important;margin: 15px; } */
+

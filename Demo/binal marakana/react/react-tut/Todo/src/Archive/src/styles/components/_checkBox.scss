@@ -1,0 +1,78 @@
+// Checkbox
+.sd_filter_checkbox{
+    position: relative;
+    @include flex_align_center;
+    padding: 0 14px;
+    // margin-bottom: 18px;
+    @include mediaQuery($large){
+        // margin-bottom: 14px;
+    }
+    input{
+        display: none;
+        &:checked {
+            + label {
+                @include defaultFontStyle(700, 12, 16, $black);
+                font-family: $font_family_bold;
+                @include mediaQuery(576px){
+                    font-size: 14px;
+                }
+                &:after{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    label{
+        @include defaultFontStyle(400, 12, 16, $black);
+        font-family: $font_family_medium;
+        letter-spacing: -0.43px;
+        position: relative;
+        margin-bottom: 5px;
+        // padding-left: 45px;
+        cursor: pointer;
+        text-transform: uppercase;
+        @include mediaQuery($large){
+            @include mediaFontStyle(16, 25);   
+        }
+        @include mediaQuery($ipad){
+            @include mediaFontStyle(14.4, 18.4); 
+            letter-spacing: -0.35px;  
+            // padding-left: 37px;
+        }
+        @include mediaQuery(576px){
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        &:before{
+            @include content;
+            left: 0;
+            top: 0;
+            @include square(25px);
+            background: $white;
+            border: 2px solid $black;
+            @include mediaQuery($ipad){
+                @include square(20px);
+            }
+            opacity: 0;
+        }
+        &:after{
+            @include content;
+            left: 5px;
+            top: 5px;
+            @include square(15px);
+            @include transitionStyle(0.1, linear);
+            background: url('/program/images/tick_icon.svg') no-repeat;
+            background-size: contain;
+            -webkit-transform: rotate(15deg);
+                -ms-transform: rotate(15deg);
+                    transform: rotate(15deg);
+            opacity: 0;
+
+            @include mediaQuery($ipad){
+                left: 4px;
+                top: 4px;
+                @include square(12px);
+            }
+        }
+    }
+}

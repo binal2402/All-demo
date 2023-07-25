@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe id="myFrame" src="https://www.wix.com/website/templates" style="height:380px;width:100%"></iframe>
+
+    <p>Click the "Tryit" button to hide the first H1 element in the iframe (another document).</p>
+
+    <button onclick="myFunction()">Try it</button>
+    
+    <script>
+        function myFunction() {
+        var iframe = document.getElementById("myFrame");
+        var elmnt = iframe.contentWindow.document.getElementsByTagName("h1")[0];
+        elmnt.style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+$blackColor:rgb(53, 53, 53);
+$whiteColor:white;
+$redcolor:rgb(168, 1, 1);
+$font: 'Roboto';
+
+@mixin btnstyle($color , $fontSize) {
+    width: 100px;
+    height: 40px;
+    background-color:$color;
+    border: none;
+    border-radius: 5px;
+    color: $whiteColor;
+    font-size: $fontSize;
+}

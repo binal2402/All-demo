@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    max-width: 800px;
+    margin: 20px auto;
+}
+.txtb
+{
+    width: 94%;
+    border: none;
+    border-bottom: 2px solid #000;
+    background : none;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+    float: left;
+}
+button.btn.btn-success
+{
+    background: black;
+    border-radius: 5px;
+    padding: 11px 16px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    
+}
+h3
+{
+    margin: 17px 0;
+}
+.task
+{
+    width: 100%;
+    background-color:navajowhite ;
+    padding: 10px;
+    margin: 5px 0;
+}
+.task i{
+    float: right;
+    cursor: pointer;
+}

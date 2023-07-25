@@ -1,0 +1,96 @@
+// Sponsor Section
+.sd_sponsored_section{
+    margin-top: -2px;
+    border-top: 2px solid $black;
+    @include border_bottom_black; 
+    position: relative;
+    
+    .sd_sponsored_inner_flex{
+        @include mediaQuery($ipad){
+            @include flex_dir_column;
+        }
+    }
+    
+    .sd_sponsored_title{
+        transform: rotate(-90deg) translateY(60px);
+        letter-spacing: -0.14px;
+        text-align: center;
+        @include defaultFontStyleFpg($font_family_normal, 22, 26, $black);
+        text-transform: uppercase;
+        width: 180px;
+        display: inline-block;
+        margin-left: -140px;
+        flex-shrink: 0;
+        @include mediaQuery(1630px){
+            margin-left: -120px;
+        }
+        @include mediaQuery($ipad){
+            transform: rotate(0deg);
+            margin: 10px 0 25px 0;
+            width: 100%;
+            font-size: 18px;            
+        }
+        @include mediaQuery($mobile){
+            font-size: 14.4px;
+            @include mediaFontStyle(14.4, 16);
+            letter-spacing: -0.09px;
+            max-width: 160px;
+        }
+        @include mediaQuery($smallMobile){
+            margin-bottom: 50px;
+        }
+    }
+    .sd_logo_section{
+        width: calc(100% - 50px); 
+        padding: 70px 0;
+        max-width: 1440px;
+        @include mediaQuery($large){
+            padding: 50px 0;
+        }
+        @include mediaQuery($ipad){
+            width: 100%; 
+            padding: 20px 0 100px;
+        }
+    }
+    .sd_logo_sec_wpr{
+        width: 100%;
+        img{
+            margin: 0 auto;
+        }
+    }
+    .sd_view_all_sponsors{
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        @include mediaQuery($ipad){
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+        }
+        a{
+            @include defaultFontStyleFpg($font_family_medium, 14, 14, $black);
+            letter-spacing: -0.34px;
+            @include flex;
+            align-items: baseline;
+            justify-content: flex-end;
+            padding-bottom: 17px;
+            @include mediaQuery($ipad){
+                @include mediaFontStyle(11.2, 11.2);
+                letter-spacing: -0.27px;
+                @include justify_center;
+                padding-bottom: 15px;
+                align-items: flex-end;
+            }
+            img{
+                margin-left: 12px;
+                width: 18px;
+            }
+        }
+    }
+
+  
+}
+
+.sd_sponsors_pink_section{
+    background: $pink;
+}

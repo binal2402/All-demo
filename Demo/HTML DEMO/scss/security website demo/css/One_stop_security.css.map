@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAClB;EACI,OAAO,EAAE,cAAc;CAC1B",
+    "sources": [
+        "One_stop_security.scss"
+    ],
+    "names": [],
+    "file": "One_stop_security.css"
+}

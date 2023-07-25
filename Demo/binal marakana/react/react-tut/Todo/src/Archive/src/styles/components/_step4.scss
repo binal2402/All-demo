@@ -1,0 +1,120 @@
+.conatct_form{
+    .form_inner_title{
+        h5{
+            margin-bottom: 20px;
+            @include mediaQuery($ipad){
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+            }
+            &.mt-35 {
+                margin-top: 25px;
+            }
+            span{
+                @include defaultFontStyle(400,12,14,$black);
+                margin-left: 35px;
+                @include mediaQuery($ipad){
+                    margin-left: 0;
+                    margin-top: 5px;
+                    width: 100%;
+                }
+            }
+        }
+        p{
+            @include defaultFontStyle(400,20,23,$black);
+            margin-bottom: 25px !important;
+            @include mediaQuery($ipad){
+                @include mediaFontStyle(16, 20);
+                margin-bottom: 15px !important;
+            }
+            @include mediaQuery($mobile){
+                @include mediaFontStyle(14, 18)
+            }
+        }
+    }
+    .conatct_info_form_inner_top{
+        @include border_bottom_black;
+        padding: 80px 0 27px; 
+        @include mediaQuery($ipad){
+           padding: 50px 0 27px;  
+        }
+        @include mediaQuery($mobile){
+           padding: 25px 0 15px;  
+        }
+    }
+    .contact_desc{
+        @include defaultFontStyle(400, 20, 23, $black);
+        @include mediaQuery($ipad){
+            @include mediaFontStyle(16, 20) 
+        }
+        @include mediaQuery($mobile){
+            @include mediaFontStyle(14, 18) 
+        }
+        p{
+            @include defaultFontStyle(400, 20, 23, $black);
+            @include mediaQuery($ipad){
+                @include mediaFontStyle(16, 20) 
+            }
+            @include mediaQuery($mobile){
+                @include mediaFontStyle(14, 18) 
+            }
+        }
+        ul{
+            list-style: none;
+            margin: 30px 0;
+            @include mediaQuery($ipad){
+                margin: 15px 0;
+            }
+            li{
+                &::before{
+                    content: '';
+                    border-radius: 100%;
+                    display: inline-block;
+                    border: 2px solid;
+                    position: relative;
+                    top: -5px;
+                }
+            }
+        }
+    }
+    .conatct_inner_form_block{
+        @include border_bottom_black;
+        padding: 25px 0 27px;
+        margin-bottom: 35px;
+        @include mediaQuery($ipad){
+            padding: 0 0 25px;
+        }
+        @include mediaQuery($mobile){
+           margin-bottom: 25px;
+        }
+    }
+    .field_row_inner{
+        .select_field{
+            width: 100%;
+        }
+    }
+}
+
+.two_field{
+    @include mediaQuery($mobile){
+        flex-wrap: wrap;        
+    }
+    .field_row_inner{
+        width: calc(33.33% - 18px);
+        margin-right: 30px;
+        @include mediaQuery($mobile){
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+.single_field{
+    @include mediaQuery($mobile){
+        flex-wrap: wrap;        
+    }
+    .field_row_inner{
+        width: calc(68% - 18px);
+        @include mediaQuery($mobile){
+            width: 100%;
+        }
+    }
+}

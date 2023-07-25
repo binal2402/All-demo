@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Document</title>
+   
+</head>
+<body>
+    <p>Select your favorite colors:</p>
+    <!-- jquery -->
+    <form id="myForm" action="nextPage.com">
+        <div id="container"></div>
+        <!-- <button>Click me</button> -->
+
+    </form>
+
+    <!-- javascript -->
+    <!-- <table border="1">
+        <tr>
+           <td id="blah"></td>
+           <td>checkboxes should appear left of here</td>
+           <button onclick="myFunction()">Click me</button>
+        </tr>
+     </table>
+    <p id="demo"></p> -->
+    
+    <!-- <button id="submit"  onclick="changeText()">Create Checkbox</button> -->
+    <!-- <script src="checkboxes.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        
+$(document).ready(function() {
+         var list = [
+            {label: 'administrator', checked: false, value: 'administrator',id:'1'},
+            {label: 'organizer', checked: false, value: 'organizer',id:'2'},
+            {label: 'athlete', checked: false, value: 'athlete',id:'3'}
+        ];
+        for (var value of list) {
+          $('#container')
+            .append(`<input type="checkbox" id="${value.value}" name="interest" value="${value.value}">`)
+            .append(`<label for="${value.label}">${value.label}</label></div>`)
+            .append(`<br>`);
+        }
+
+        $('input[type=checkbox]').on('change', function(e) {
+            debugger
+            let data = list.find(item => item.value === e.target.id)
+            data.checked = e.target.checked
+            // $.each( list, function(userid,user) {
+            //     // alert( key + ": " + value );
+            //     if(user.id === e.target.id)
+            //     {
+                    
+            //     }else{
+            //         debugger
+            //     }
+            // });
+            console.log(data);
+        });
+
+      
+        function checkDetails(user_id, name) {
+            debugger
+            console.log(name);
+            console.log(user_id);
+        }
+
+})
+    </script>
+</body>
+</html>

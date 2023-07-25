@@ -1,0 +1,106 @@
+@import 'mixin';
+@import 'variable';
+.about_As
+{
+    padding: 94px 0 114px 0;
+    @include breakpoint(tablet)
+    {
+        padding: 25px 0 84px 0;
+    }
+  
+    .container
+    {
+        display: flex;
+        @include breakpoint(laptop){
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .left_content
+        {
+            width: 50%;
+            @include breakpoint(laptop){
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .main_title
+            {
+                @include main_title;
+            }
+            .sub_title
+            {
+                font-size: 18px;
+                line-height: 21px;
+                font-weight: 600;
+                margin: 15px 0;
+            }
+            .s_sub_title
+            {
+               @include s_sub_title;
+                margin-bottom: 10px;
+            }
+            .btn_read_more
+            {
+                @include  all_btn;
+                margin-top: 30px;
+            }
+          
+        }
+        .img_about
+        {
+            width: 50%;
+            @include breakpoint(laptop){
+                width: 100%;
+            }
+            .about_img
+            {
+               position: relative;
+            }
+            .about_img::after
+            {
+                position: absolute;
+                content: "";
+                background-image: url('../images/aboutus-2.png');
+                background-repeat: no-repeat;
+                right: 0px;
+                // left: 148px;
+                width: calc(100% - 140px);
+                display: block;
+                height: 100%;
+                z-index: -1;
+                border-radius: 25px;
+                bottom: -60px;
+                @include breakpoint(onlytablet)
+                {
+                    width: calc(100% - 233px);
+                }
+                @include breakpoint(phablet)
+                {
+                    display: none;
+                }
+            }
+            .Security
+            {
+                background-color:$c_white;
+                padding: 18px 25px;
+                display: inline-block;
+                box-shadow: -20px 15px 60px rgba(38, 45, 63, 0.08);
+                border-radius: 14px;
+                max-width: 215px;
+                width: 100%;
+                font-weight: bold;
+                font-size: 18px;
+                position: absolute;
+                bottom: -19px;
+                left: 38px;
+                .img-icon{
+                    display: flex;
+                    img
+                    {
+                        padding-right: 18px;
+                    }
+                }
+            }
+        }
+    }
+   
+}

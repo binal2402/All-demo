@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script src="js/moment.js"></script>
+    <script>
+        var m = moment();
+
+        console.log(m.toString());
+
+        // getting
+        console.log(m.minutes());
+        console.log(m.get("quarter"));
+
+        // Setting
+        m.minutes(53);
+        m.set("day" , 4);
+        console.log(m.toString());
+
+        var dmoment = moment("2019-05-25");
+
+        console.log(moment.min(moment(),dmoment).toString());
+
+
+        //subtract
+        // m.subtract({
+        //     "hours" : 7,
+        //     "minutes" : 15
+        // });
+
+        //add
+        // m.add({
+        //     "hours" : 7,
+        //     "minutes" : 15
+        // });
+
+        m.startOf("year");    
+        console.log(m.toString());
+    </script>
+</body>
+</html>

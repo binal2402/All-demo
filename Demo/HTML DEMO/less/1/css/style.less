@@ -1,0 +1,19 @@
+@import "demo.less";
+// mixin
+.bordered {
+    border-top: dotted 1px black;
+    border-bottom: solid 2px black;
+}
+
+.box1
+{
+    &:extend(.box);
+    margin: 20px;
+}
+.box
+{
+    background-color: @b_color;
+    color: @f_color;
+    padding: 10px;
+    .bordered; //calling mixin
+}

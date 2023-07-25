@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function aftertext(){
+            var text1 = "<p>binal</p>"; //html
+            var text2 = $("<i></i>").text("marakana"); //jquery
+            var txt3 = document.createElement("b");   // Create with DOM
+            txt3.innerHTML = "jQuery!";
+            $(".box").after(text1,text2,txt3);
+        }
+    </script>
+</head>
+<body>
+    <div class="box" style="width: 100px;height: 100px;background-color: black;">box</div>
+
+    <p>Click the button to insert text after the image.</p>
+
+    <button onclick="aftertext()">Insert after</button>
+
+</body>
+</html>

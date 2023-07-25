@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "msg_Moustafa.scss",
+        "mixin.scss"
+    ],
+    "names": [],
+    "file": "msg_Moustafa.css"
+}
